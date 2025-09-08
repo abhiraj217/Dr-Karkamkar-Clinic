@@ -1,0 +1,29 @@
+#testimonial-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../../assets/banner/icons/clinic-img.jpg');
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+
+}
+.testimoni-slider {
+    // Your existing styles
+    
+    .slick-dots {
+        bottom: -35px;
+        
+        li {
+            margin: 0 5px;
+            
+            button:before {
+                font-size: 10px;
+                color: white;
+                opacity: 0.5;
+            }
+            
+            &.slick-active button:before {
+                opacity: 1;
+                color: white;
+            }
+        }
+    }
+}

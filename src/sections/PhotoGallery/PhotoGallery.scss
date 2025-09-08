@@ -1,0 +1,190 @@
+.photo-collage {
+    width: 100%;
+
+    .show-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .show-more-btn {
+        position: relative;
+        right: auto;
+        width: 150px;
+        background-color: #2596be;
+        color: #ffffff;
+        padding: 10px 10px;
+        text-transform: uppercase;
+        border-radius: 15px;
+        transition: 0.3s;
+        border: 1px solid transparent;
+        font-size: 14px;
+        font-weight: 500;
+        display: inline-block;
+        box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .photo-container {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+    }
+
+    .photo-container.show {
+        opacity: 1;
+        max-height: 1000px;
+    }
+
+    .upper-photos,
+    .lower-photos {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 10px;
+
+        .food-pics {
+            width: 100%;
+            height: 298px;
+            background-color: black;
+            overflow: hidden;
+            margin: 0;
+            position: relative;
+
+            .food-img {
+                opacity: 0.7;
+                height: 100%;
+                width: 100%;
+                transform: scale(1.15);
+                transition: transform 0.5s, opacity 0.5s;
+            }
+
+            .food-img:hover {
+                transform: scale(1.03);
+                opacity: 1;
+            }
+
+            .image-label {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: bold;
+                z-index: 2;
+                color: white;
+            }
+
+            .image-label.before {
+                background-color: rgba(255, 0, 0, 0.7);
+            }
+
+            .image-label.after {
+                background-color: rgba(0, 128, 0, 0.7);
+            }
+        }
+    }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .show-more {
+        text-align: center;
+    }
+
+    .show-more-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Mobile View - Large (575px and below) */
+@media (max-width: 575px) {
+    .photo-collage {
+        .upper-photos,
+        .lower-photos {
+            gap: 5px;
+
+            .food-pics {
+                height: 120px;
+            }
+        }
+
+        .image-label {
+            font-size: 8px;
+            padding: 1px 3px;
+            top: 3px;
+            right: 3px;
+            border-radius: 2px;
+        }
+    }
+}
+
+/* Mobile View - Medium (425px and below) */
+@media (max-width: 425px) {
+    .photo-collage {
+        .upper-photos,
+        .lower-photos {
+            gap: 4px;
+
+            .food-pics {
+                height: 100px;
+            }
+        }
+
+        .image-label {
+            font-size: 7px;
+            padding: 1px 2px;
+            top: 2px;
+            right: 2px;
+            border-radius: 1px;
+        }
+    }
+}
+
+/* Mobile View - Small (375px and below) */
+@media (max-width: 375px) {
+    .photo-collage {
+        .upper-photos,
+        .lower-photos {
+            gap: 3px;
+
+            .food-pics {
+                height: 85px;
+            }
+        }
+
+        .image-label {
+            font-size: 6px;
+            padding: 1px 2px;
+            top: 2px;
+            right: 2px;
+            border-radius: 1px;
+        }
+    }
+}
+
+/* Mobile View - Extra Small (320px and below) */
+@media (max-width: 320px) {
+    .photo-collage {
+        .upper-photos,
+        .lower-photos {
+            gap: 2px;
+
+            .food-pics {
+                height: 75px;
+            }
+        }
+
+        .image-label {
+            font-size: 5px;
+            padding: 0px 1px;
+            top: 1px;
+            right: 1px;
+            border-radius: 1px;
+        }
+    }
+}
