@@ -1,74 +1,57 @@
 import React from "react";
-import "./Banner.css";
-import { Link } from "react-router-dom";
-import { FloatingWhatsApp } from "react-floating-whatsapp";
-import { handleScroll, whatsAppBotListener } from "../../utils/Utils";
-import { CONTACTUS_SECTION_ID, PHONE_NUMBER } from "../../utils/Constant";
+import { Carousel } from "react-bootstrap";
+import './Banner.css'
+
 import clinicIcon from '../../assets/ivory/ivory-img.jpg';
+import  cliniImage2 from '../../assets/banner/clinicImage.jpg';
+import hipImage from '../../assets/banner/hipJoinImage.jpg';
+import legImage from '../../assets/banner/legjointImage.jpg';
+import traumaImage from '../../assets/banner/jointxrayImage.jpg';
+import skullImage from '../../assets/banner/skulljointImage.jpg';
+import football from '../../assets/banner/footaballlimage.jpg';
+
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { whatsAppBotListener } from "../../utils/Utils";
+import { PHONE_NUMBER } from "../../utils/Constant";
 
 const Banner = () => {
-    return (
-        <section
-            id="banner-section"
-            className="section-bg home-bg banner-section"
-        >
-            <div className="d-table">
-                <div className="d-table-cell">
-                    <div className="container banner-text-div">
-                        <div className="row">
-                            <div className="col-lg-6 heading-text-div">
-                                <div
-                                    className="banner-text"
-                                    data-aos="fade-up"
-                                    data-aos-duration="1000"
-                                >
-                                    <h1 className="banner-para">Every smile deserves expert care</h1>
-                                    <p className="para-trust">
-                                        We believe in collaborative approach to
-                                        dental care at{" "}
-                                        <span className="clinic-name-text">
-                                            Ivory Multispeciality Dental Clinic
-                                        </span>
-                                        , listening to your concern and working
-                                        with you to develop a personalized
-                                        treatment plan that suites your needs.
-                                    </p>
+  return (
+    <section id="banner-section" className="section-bg home-bg banner-section">
+      <div className="carusalContainer homePageCarousalDiv">
+        <Carousel interval={2500} controls={true} indicators={true} fade={false}>
+          <Carousel.Item>
+            <img className="d-block w-100 carusalImg" src={cliniImage2} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100 carusalImg" src={hipImage} alt="Second slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100 carusalImg" src={legImage} alt="Fourth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100 carusalImg" src={skullImage} alt="Fifth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100 carusalImg" src={traumaImage} alt="Sixth slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="d-block w-100 carusalImg" src={football} alt="Seventh slide" />
+          </Carousel.Item>
+        </Carousel>
+      </div>
 
-                                    <div className="banner-bottom">
-                                        <div className="theme-btn">
-                                            <Link onClick={() => handleScroll(CONTACTUS_SECTION_ID)}>
-                                                Book an appointment
-                                            </Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="col-lg-6">
-                                <div
-                                    className="banner-img-area"
-                                    data-aos="fade-up"
-                                    data-aos-duration="2000"
-                                    data-aos-delay="0"
-                                ></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {/* What's app bot section */}
-            <FloatingWhatsApp
-                avatar={clinicIcon}
-                notification={false}
-                accountName="Dr. Simran Singh"
-                phoneNumber={PHONE_NUMBER}
-                onSubmit={(e) => {
-                    whatsAppBotListener(e.target[0].value);
-                }}
-            />
-        </section>
-    );
+      {/* WhatsApp bot section */}
+      <FloatingWhatsApp
+        avatar={clinicIcon}
+        notification={false}
+        accountName="Dr. Simran Singh"
+        phoneNumber={PHONE_NUMBER}
+        onSubmit={(e) => {
+          whatsAppBotListener(e.target[0].value);
+        }}
+      />
+    </section>
+  );
 };
 
 export default Banner;

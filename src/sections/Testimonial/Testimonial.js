@@ -198,11 +198,11 @@ const Testimonial = () => {
                 <Slider {...settings} className="testimoni-slider">
                     {testimonails
                         .filter((testimonail) => testimonail.text?.trim()) // Exclude null or empty text
-                        .map((testimonail) => (
-                            <TestimoniCard
-                                key={testimonail.id}
-                                testimonail={testimonail}
-                            />
+                        .map((testimonail, index) => (
+                              <TestimoniCard
+                                    key={testimonail.reviewUrl || index}  // ✅ stable unique key
+                                    testimonail={testimonail}
+                                />
                         ))}
                 </Slider>
                 <div className="swipe-indicator text-center mt-4">
