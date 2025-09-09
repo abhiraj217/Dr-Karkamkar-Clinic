@@ -1,0 +1,92 @@
+.aboutUsSection {
+    padding: 21px 0;
+    padding-top: 100px;
+}
+
+.section-subtitle {
+  color: #007b9e; /* blue like the SERVICES text in your screenshot */
+     font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1d1d3a;
+  margin-bottom: 20px;
+}
+
+.aboutUsText p {
+    margin-bottom: 23px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.aboutUsText h4 {
+  font-size: 20px;
+  margin: 20px 0 10px;
+  color: #1d1d3a;
+}
+
+.aboutUsText ul {
+  list-style: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.aboutUsImage .doctorImg {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  height: 600px;
+  max-width: 600px;  
+}
+
+.doctorInfo h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #1d1d3a;
+}
+
+.doctorInfo p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* CTA Button */
+.knowMoreBtn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #007b9e, #00bfa6);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 123, 158, 0.3);
+}
+
+.knowMoreBtn:hover {
+  background: linear-gradient(90deg, #00bfa6, #007b9e);
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 123, 158, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .aboutUsSection {
+    text-align: center;
+  }
+  .aboutUsText {
+    margin-bottom: 40px;
+  }
+}
