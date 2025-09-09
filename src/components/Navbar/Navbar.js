@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Navbar.scss';
-import ivoryimg from '../../assets/ivory/teeth-clinic-img.png';
+import './Navbar.css';
+import ivoryimg from '../../assets/navbar/karkamkar-clinic-logo.png';
 import { Link } from 'react-router-dom';
 import {
   BLOGS_SECTION_ID,
@@ -14,14 +14,26 @@ import { handleScroll } from '../../utils/Utils';
 const Navbar = () => {
   const navbarItems = [
     { name: 'Home', id: HOME_SECTION_ID },
-    { name: 'Services', id: SERVICE_SECTION_ID },
-    { name: 'Testimonials', id: TESTIMONIAL_SECTION_ID },
-    { name: 'Blogs', id: BLOGS_SECTION_ID },
+    { name: 'About Us' },
+    { 
+      name: 'Services', 
+      id: SERVICE_SECTION_ID,
+      dropdown: [
+        { name: 'Shoulder', id: 'shoulder-id' },
+        { name: 'Knee', id: 'knee-id' },
+        { name: 'Hip', id: 'hip-id' },
+        { name: 'Sports', id: 'sports-id' },
+        { name: 'Trauma', id: 'trauma-id' },
+      ]
+    },
+    { name: 'Gallery', id: TESTIMONIAL_SECTION_ID },
+    { name: 'FAQ' },
     { name: 'Contact Us', id: CONTACTUS_SECTION_ID }
   ];
 
   const [activeSection, setActiveSection] = useState("");
   const [scrolled, setScrolled] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   // Detect active section while scrolling
   useEffect(() => {
@@ -35,9 +47,11 @@ const Navbar = () => {
 
       // For active section detection
       navbarItems.forEach(({ id }) => {
-        const section = document.getElementById(id);
-        if (section && section.getBoundingClientRect().top <= 100) {
-          setActiveSection(id);
+        if (id) {
+          const section = document.getElementById(id);
+          if (section && section.getBoundingClientRect().top <= 100) {
+            setActiveSection(id);
+          }
         }
       });
     };
@@ -46,6 +60,29 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScrollEffect);
   }, [navbarItems]);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('.dropdown')) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
+  const handleDropdownToggle = (e) => {
+    e.stopPropagation();
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleDropdownItemClick = (itemId) => {
+    setDropdownOpen(false);
+    // You can handle navigation to specific service sections here
+    handleScroll(itemId);
+  };
+
   return (
     <div className={`main-nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="container">
@@ -53,12 +90,7 @@ const Navbar = () => {
           <div className="container-fluid">
             {/* Logo */}
             <Link className="navbar-brand">
-              <h1 className='ivory-title'>
-                IV
-                <img src={ivoryimg} alt='ivory logo' className='ivory-img' />
-                RY
-              </h1>
-              <p className='ivory-para'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Multispeciality <br></br> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dental Clinic </p>
+              <img src={ivoryimg} alt='ivory logo' className='karkamkarimg' />
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
               <span className="navbar-toggler-icon"></span>
@@ -66,21 +98,50 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               {/* Navbar Links */}
               <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-                {navbarItems.map(({ name, id }) => (
-                  <li key={id} className="nav-item">
-                    <button
-                      className={`nav-link ${activeSection === id ? "active" : ""}`}
-                      onClick={() => handleScroll(id)}
-                    >
-                      {name}
-                    </button>
+                {navbarItems.map(({ name, id, dropdown }) => (
+                  <li key={name} className={`nav-item ${dropdown ? 'dropdown' : ''}`}>
+                    {dropdown ? (
+                      <>
+                        <button
+                          className={`nav-link dropdown-toggle ${activeSection === id ? "active" : ""}`}
+                          onClick={handleDropdownToggle}
+                          style={{ 
+                            background: 'none', 
+                            border: 'none',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '5px'
+                          }}
+                        >
+                          {name}
+                          <span className={`dropdown-arrow ${dropdownOpen ? 'open' : ''}`}>▼</span>
+                        </button>
+                        <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
+                          {dropdown.map((item) => (
+                            <li key={item.id}>
+                              <button
+                                className="dropdown-item"
+                                onClick={() => handleDropdownItemClick(item.id)}
+                              >
+                                {item.name}
+                              </button>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    ) : (
+                      <button
+                        className={`nav-link ${activeSection === id ? "active" : ""}`}
+                        onClick={() => id && handleScroll(id)}
+                      >
+                        {name}
+                      </button>
+                    )}
                   </li>
                 ))}
               </ul>
-
-              {/* Navbar Button */}
-              <div className="theme-btn">
-                <Link onClick={() => handleScroll(CONTACTUS_SECTION_ID)}>Book an appointment</Link>
+              <div className='theme-btn'>
+                <Link>Get In Touch</Link>
               </div>
             </div>
           </div>
