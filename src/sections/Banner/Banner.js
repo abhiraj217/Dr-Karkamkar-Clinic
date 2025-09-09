@@ -1,5 +1,5 @@
 import React from "react";
-import "./Banner.scss";
+import "./Banner.css";
 import { Link } from "react-router-dom";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { handleScroll, whatsAppBotListener } from "../../utils/Utils";

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './AboutBanner.scss';
 import bannerOne from '../../assets/about/banner/banner_1.png'
 import bannerTwo from '../../assets/about/banner/banner_2.png'
-import pattern from '../../assets/banner/pattern.png'
+
 
 const AboutBanner = () => {
     return (
@@ -26,7 +26,7 @@ const AboutBanner = () => {
                                 <div className="about-banner-img">
                                     <img src={bannerOne} alt="about banner"/>
                                     <img src={bannerTwo} alt="about banner two"/>
-                                    <img className='pattern' src={pattern} alt="about banner two"/>
+                                    {/* <img className='pattern' src={pattern} alt="about banner two"/> */}
                                 </div>
                             </div>
                         </div>
