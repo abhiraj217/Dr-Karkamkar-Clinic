@@ -1,0 +1,121 @@
+/* Heading left-aligned */
+.service-header {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.service-subtitle {
+  color: #007b9e;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d0d2b;
+}
+
+/* Services layout with flexbox */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 43px;
+  column-gap: 90px;
+  justify-content: center; /* keeps rows centered */
+}
+
+/* Service card styling */
+.service-card {
+  flex: 0 1 calc(33.333% - 25px); /* 3 cards per row */
+  max-width: 351px;
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card:nth-child(4),
+.service-card:nth-child(5) {
+  flex: 0 1 calc(50% - 25px); /* 2 cards in second row */
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card content */
+.service-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.service-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-content p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Know More Button (hidden initially, no space reserved) */
+.know-more-btn {
+  opacity: 0;
+  display: none;
+  transform: translateY(10px);
+  padding: 10px 20px;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto; /* keeps button at bottom */
+}
+
+/* Show button on hover with fade+slide animation */
+.service-card:hover .know-more-btn {
+  opacity: 1;
+  display: inline-block;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .service-card {
+    flex: 0 1 calc(50% - 25px); /* 2 per row on tablet */
+  }
+
+  .service-card:nth-child(4),
+  .service-card:nth-child(5) {
+    flex: 0 1 calc(50% - 25px);
+  }
+}
+
+@media (max-width: 600px) {
+  .service-card {
+    flex: 0 1 100%; /* 1 per row on mobile */
+  }
+}

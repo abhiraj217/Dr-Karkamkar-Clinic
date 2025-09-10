@@ -1,0 +1,90 @@
+.achievements-section .achieve-container {
+  margin-bottom: 30px;
+}
+
+.achievements-section .achieve-container .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.achievements-section .achieve-container .section-title span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.achievements-section .achieve-container .section-title h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.achievements-section .achieve-container .achieve-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 992px) {
+  .achievements-section .achieve-container .achieve-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .achievements-section .achieve-container .achieve-div {
+    grid-template-columns: 1fr;
+  }
+}
+
+.achievements-section .achieve-container .achieve-div .achieve-inner-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievements-section .achieve-container .achieve-div .achieve-inner-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.achievements-section .achieve-container .achieve-div .achieve-inner-div h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.achievements-section .achieve-container .achieve-div .achieve-inner-div h3.counter-number {
+  position: relative;
+  display: inline-block;
+}
+
+.achievements-section .achieve-container .achieve-div .achieve-inner-div h3.counter-number::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background-color: #2596be; /* match your SCSS variable */
+}
+
+.achievements-section .achieve-container .achieve-div .achieve-inner-div p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.achievements-section .achieve-container .achieve-div .achieve-inner-div p span {
+  font-weight: 600;
+}
+
+.achievements-section{
+    padding: 72px 0px;
+}
