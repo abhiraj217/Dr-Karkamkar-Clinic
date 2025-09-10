@@ -7,6 +7,7 @@ import Footer from '../sections/Footer/Footer';
 import Services from '../sections/Services/Services';
 import Testimonial from '../sections/Testimonial/Testimonial';
 import AboutUs from '../components/AboutUs/AboutUs';
+import Achievements from '../sections/Achievements/Achievements';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
             <Banner/>
             <AboutUs />
             <Services/>
+            <Achievements />
             <Testimonial/>
             <Blogs/>
             <Appointment/>

@@ -1,38 +1,45 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import "./Services.scss";
-import ServicesData from "./ServiceData";
-import Service from "../../components/Service/Service";
+import "./Services.css";
+import kneeImage from '../../assets/banner/hipJoinImage.jpg';
+import shoulderImg from '../../assets/banner/legjointImage.jpg';
+import legJointImg from '../../assets/banner/skulljointImage.jpg';
+import traumaImg from '../../assets/banner/jointxrayImage.jpg';
+import sportsFootabaall from '../../assets/banner/footaballlimage.jpg';
 
 const Services = () => {
-  // Split services into chunks of 4
-  const chunkSize = 4;
-  const serviceChunks = [];
-  
-  for (let i = 0; i < ServicesData.length; i += chunkSize) {
-    serviceChunks.push(ServicesData.slice(i, i + chunkSize));
-  }
-
-  // State to track current slide
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  // Handle navigation 
-  const goToNextSlide = () => {
-    setCurrentSlide((prev) => (prev === serviceChunks.length - 1 ? 0 : prev + 1));
-    if (window.innerWidth <= 1024) {
-      // Scroll to the top of the cards section
-      document.getElementById('service-cards-top').scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const goToPrevSlide = () => {
-    setCurrentSlide((prev) => (prev === 0 ? serviceChunks.length - 1 : prev - 1));
-    // Only scroll on mobile devices
-    if (window.innerWidth <= 1024) {
-      // Scroll to the top of the cards section
-      document.getElementById('service-cards-top').scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const servicesData = [
+    {
+      id: 1,
+      title: "Knee Treatment",
+      description: "We provide comprehensive care for knee injuries, arthritis, and joint replacements. Our specialists focus on restoring strength, mobility, and long-term comfort with advanced surgical and non-surgical techniques.",
+      image: shoulderImg,
+    },
+    {
+      id: 2,
+      title: "Shoulder Treatment",
+      description: "Expert diagnosis and treatment for shoulder dislocations, rotator cuff injuries, and chronic pain. We use modern therapies and procedures to help you regain full motion and prevent future complications.",
+      image: kneeImage,
+    },
+    {
+      id: 3,
+      title: "Hip Treatment",
+      description: "Our hip care program includes advanced procedures for fractures, arthritis, and replacements. We emphasize personalized treatment plans to relieve pain, restore function, and enhance overall quality of life.",
+      image: legJointImg,
+    },
+    {
+      id: 4,
+      title: "Trauma Care",
+      description: "We provide emergency and long-term trauma care solutions, from fractures and joint injuries to complex orthopedic trauma cases. Our team ensures safe recovery with immediate attention and structured follow-up plans.",
+      image: traumaImg,
+    },
+    {
+      id: 5,
+      title: "Sports Medicine",
+      description: "Specialized care for sports-related injuries such as ligament tears, tendon damage, and overuse injuries. Our goal is to get athletes back to peak performance with safe, effective, and faster recovery methods.",
+      image: sportsFootabaall,
+    },
+  ];
 
   return (
     <section
@@ -41,61 +48,27 @@ const Services = () => {
       data-aos="fade-up"
       data-aos-duration="2000"
     >
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 col-sm-6">
-            <SectionTitle
-              title="Feel amazing about your oral health"
-              subTitle="Services"
-            />
-          </div>
-          <div className="col-lg-6 col-sm-6">
-            <p className="service-title-text">
-              We specialize in family dentistry, providing gentle and attentive
-              care for patients of all ages, from children to seniors, equipped
-              with advanced technology and techniques to deliver precise and
-              minimally invasive treatments.
-            </p>
-          </div>
+       <div className="container">
+        {/* Left-aligned heading */}
+        <div className="service-header">
+          <p className="service-subtitle">OUR SERVICES</p>
+          <h2 className="service-title">
+            We provide advanced orthopedic treatments and care
+          </h2>
         </div>
-        <div id="service-cards-top"></div>
-        <div className="carousel-container">
-          <div className="story-reel-div">
-            {serviceChunks[currentSlide].map((singleService, index) => (
-              <Service 
-                serviceList={singleService} 
-                key={`service-${currentSlide}-${index}`}
-              />
-            ))}
-          </div>
-          
-          {serviceChunks.length > 1 && (
-            <div className="carousel-controls">
-              <button 
-                className="carousel-control prev"
-                onClick={goToPrevSlide}
-              >
-                <span>&#10094;</span>
-              </button>
-              
-              <div className="carousel-indicators">
-                {serviceChunks.map((_, index) => (
-                  <span 
-                    key={`indicator-${index}`}
-                    className={`indicator ${currentSlide === index ? 'active' : ''}`}
-                    onClick={() => setCurrentSlide(index)}
-                  />
-                ))}
+
+        {/* Grid with fixed rows */}
+        <div className="services-grid">
+          {servicesData.map((service) => (
+            <div key={service.id} className="service-card">
+              <img src={service.image} alt={service.title} />
+              <div className="service-content">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <button className="know-more-btn">Know More</button>
               </div>
-              
-              <button 
-                className="carousel-control next"
-                onClick={goToNextSlide}
-              >
-                <span>&#10095;</span>
-              </button>
             </div>
-          )}
+          ))}
         </div>
       </div>
     </section>
