@@ -18,6 +18,13 @@
   color: #0d0d2b;
 }
 
+/* Section background */
+.service-section {
+  background: #f7f8fa; /* subtle light grey */
+  position: relative;
+  z-index: 1;
+}
+
 /* Services layout with flexbox */
 .services-grid {
   display: flex;
@@ -29,33 +36,33 @@
 
 /* Service card styling */
 .service-card {
-  flex: 0 1 calc(33.333% - 25px); /* 3 cards per row */
+  flex: 0 1 calc(33.333% - 25px); /* 3 per row */
   max-width: 351px;
-  position: relative;
   background: #fff;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05); /* soft shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .service-card:nth-child(4),
 .service-card:nth-child(5) {
-  flex: 0 1 calc(50% - 25px); /* 2 cards in second row */
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  flex: 0 1 calc(50% - 25px); /* 2 per row */
 }
 
 .service-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+/* Hover effect */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* glowing lift */
 }
 
 /* Card content */
@@ -77,35 +84,43 @@
   font-size: 15px;
   color: #555;
   margin-bottom: 20px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
-/* Know More Button (hidden initially, no space reserved) */
+/* Know More Button */
 .know-more-btn {
-  opacity: 0;
   display: none;
+  opacity: 0;
   transform: translateY(10px);
-  padding: 10px 20px;
+  padding: 10px 25px;
   border: none;
-  background: #0077ff;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
   color: #fff;
   border-radius: 25px;
   cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.5px;
   transition: all 0.3s ease;
-  margin-top: auto; /* keeps button at bottom */
+  margin-top: auto;
 }
 
-/* Show button on hover with fade+slide animation */
+/* Button hover */
+.know-more-btn:hover {
+  background: linear-gradient(135deg, #0062cc, #0096cc);
+  transform: scale(1.05);
+}
+
+/* Show button on hover */
 .service-card:hover .know-more-btn {
-  opacity: 1;
   display: inline-block;
+  opacity: 1;
   transform: translateY(0);
 }
 
 /* Responsive */
 @media (max-width: 992px) {
   .service-card {
-    flex: 0 1 calc(50% - 25px); /* 2 per row on tablet */
+    flex: 0 1 calc(50% - 25px); /* 2 per row */
   }
 
   .service-card:nth-child(4),
@@ -116,6 +131,6 @@
 
 @media (max-width: 600px) {
   .service-card {
-    flex: 0 1 100%; /* 1 per row on mobile */
+    flex: 0 1 100%; /* 1 per row */
   }
 }

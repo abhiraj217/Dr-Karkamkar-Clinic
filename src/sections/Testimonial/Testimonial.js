@@ -1,5 +1,5 @@
 import React from "react";
-import "./Testimonial.scss";
+import "./Testimonial.css";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import TestimoniCard from "../../components/TestimoniCard/TestimoniCard";
 import Slider from "react-slick";
@@ -179,7 +179,7 @@ const Testimonial = () => {
     return (
         <section
             id="testimonial-section"
-            className="section-bg pt-100 pb-70"
+            className="section-bg pt-100 pb-70 testimonial-section-bg"
             data-aos="fade-up"
             data-aos-duration="2000"
         >
