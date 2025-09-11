@@ -1,0 +1,155 @@
+footer {
+    background: black;
+}
+
+footer .footer-logo {
+    margin-bottom: 30px;
+}
+
+footer .footer-logo .ivory-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #2596be;
+    letter-spacing: 3px;
+}
+
+footer .footer-logo .ivory-title .ivory-img {
+    height: 36px;
+    width: 30px;
+}
+
+footer .footer-logo .footer-para {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: #2596be;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2rem;
+}
+
+footer .footer-text {
+    color: #fff;
+}
+
+footer .social-logo p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #2596be;
+}
+
+footer .social-logo ul {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+footer .social-logo ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer .social-logo ul li a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+footer .footer-link p {
+    text-transform: uppercase;
+    color: #2596be;
+}
+
+footer .footer-link ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer .footer-link ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer .footer-link ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+footer .footer-contact p {
+    text-transform: uppercase;
+    color: #2596be;
+}
+
+footer .contact-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    margin-top: 12px;
+}
+
+footer .contact-list .footer-icons {
+    color: #2596be;
+    margin-right: -17px;
+    margin-top: 16px;
+}
+
+footer .contact-list .contact-text {
+    margin-left: 30px;
+}
+
+footer .contact-list .contact-text p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    width: auto;
+}
+
+footer .contact-list .contact-text h5 {
+    color: #fff;
+    font-size: 16px;
+}
+
+footer .copyright-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+footer .copyright-area .copy-text p {
+    margin-bottom: 0;
+}
+
+footer .copyright-area .copy-links ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+footer .copyright-area .copy-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.clinic-img{
+    height: 62px;
+}
+/* Mobile Responsive */
+@media (max-width: 575px) {
+    footer .contact-list {
+        margin-bottom: 10px;
+    }
+
+    footer .contact-list .contact-icon {
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        border-radius: 10px;
+    }
+
+    footer .contact-list .contact-icon::before {
+        width: 60px;
+        height: 60px;
+        top: -8px;
+        left: -8px;
+        border-radius: 15px;
+    }
+}

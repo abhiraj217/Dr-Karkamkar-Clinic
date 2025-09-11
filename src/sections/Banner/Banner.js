@@ -4,10 +4,10 @@ import './Banner.css'
 
 import clinicIcon from '../../assets/ivory/ivory-img.jpg';
 import  cliniImage2 from '../../assets/banner/clinicImage.jpg';
-import hipImage from '../../assets/banner/hipJoinImage.jpg';
-import legImage from '../../assets/banner/legjointImage.jpg';
+import hipImage from '../../assets/banner/newhip.jpg';
+import legImage from '../../assets/banner/newkneew.jpg';
 import traumaImage from '../../assets/banner/jointxrayImage.jpg';
-import skullImage from '../../assets/banner/skulljointImage.jpg';
+import skullImage from '../../assets/banner/newshoulder.jpg';
 import football from '../../assets/banner/footaballlimage.jpg';
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
@@ -23,13 +23,13 @@ const Banner = () => {
             <img className="d-block w-100 carusalImg" src={cliniImage2} alt="First slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={hipImage} alt="Second slide" />
+            <img className="d-block w-100 carusalImg" src={skullImage} alt="Second slide" />
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100 carusalImg" src={legImage} alt="Fourth slide" />
           </Carousel.Item>
           <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={skullImage} alt="Fifth slide" />
+            <img className="d-block w-100 carusalImg" src={hipImage} alt="Fifth slide" />
           </Carousel.Item>
           <Carousel.Item>
             <img className="d-block w-100 carusalImg" src={traumaImage} alt="Sixth slide" />

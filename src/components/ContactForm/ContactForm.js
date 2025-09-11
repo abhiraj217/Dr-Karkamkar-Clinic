@@ -134,18 +134,16 @@ const ContactForm = () => {
                                     }`}
                                 >
                                     <option value="Root Canal">
-                                        Root Canal
+                                        Knee
                                     </option>
-                                    <option value="Dentures">Dentures</option>
-                                    <option value="Implants">Implants</option>
-                                    <option value="Whitening">Whitening</option>
+                                    <option value="Dentures">Hip</option>
+                                    <option value="Implants">Shoulder</option>
+                                    <option value="Whitening">Trauma</option>
 
                                     <option value="Extraction">
-                                        Extraction
+                                        Sports Issues
                                     </option>
-                                    <option value="Aligners">Aligners</option>
-                                    <option value="Braces">Braces</option>
-                                    <option value="Fillings">Fillings</option>
+                                    <option value="Aligners">Other</option>
                                 </Field>
                                 <ErrorMessage
                                     name="service"
@@ -177,7 +175,7 @@ const ContactForm = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-6">
+                        <div className="col-lg-12">
                             <button
                                 type="submit"
                                 className="btn appointment-btn"
@@ -187,17 +185,6 @@ const ContactForm = () => {
                                     ? "Submitting..."
                                     : "Book an appointment"}
                             </button>
-                        </div>
-                        <div className="col-lg-6">
-                            <div className="appointment-call">
-                                <div className="icon">
-                                    <FaPhoneAlt />
-                                </div>
-                                <div className="call-text">
-                                    <p>Open even on sunday</p>
-                                    <h6>{EMERGENCY_CONTACT_NUMBER}</h6>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </Form>
