@@ -28,27 +28,25 @@ const Footer = () => {
     },
   ];
 
-  const footerContacts = [
-    {
-      title: "Phone Number",
-      info: "+91 9607812684",
-      icon:<FaPhoneAlt />,
-    },
-    {
-      title: "Open Hour",
-      info: "10:00 AM - 09:00 PM",
-      icon: <FaClock />,
-    },
-    {
-      title: "Clinic Address",
-      info: "408A, City Center, Pune - Solapur Rd, Triveni Nagar, Hadapsar, Pune, Maharashtra 411013",
-      icon: <FaMapMarkerAlt />,
-    },
-    {
-      info: "SN 163, Bhosale Garden Rd, Laxmi Vihar, Hadapsar, Pune, Maharashtra 411028",
-      icon: <FaMapMarkerAlt />,
-    },
-  ];
+const footerContacts = [
+  {
+    title: "Phone Number",
+    info: "+91 9607812684",
+    icon: <FaPhoneAlt />,
+  },
+  {
+    title: "Clinic 1",
+    info: "408A, City Center, Pune - Solapur Rd, Triveni Nagar, Hadapsar, Pune, Maharashtra 411013",
+    icon: <FaMapMarkerAlt />,
+    timing: "Mon - Sat, 5:00 PM - 9:00 PM",
+  },
+  {
+    title: "Clinic 2",
+    info: "SN 163, Bhosale Garden Rd, Laxmi Vihar, Hadapsar, Pune, Maharashtra 411028",
+    icon: <FaMapMarkerAlt />,
+    timing: "Tue, Thu, Sat, 11:00 AM - 3:00 PM",
+  },
+];
 
   return (
     <footer className="pt-100 pb-70">
@@ -100,20 +98,20 @@ const Footer = () => {
             <div className="footer-contact">
               <p>Contact & Information</p>
 
-              {footerContacts.map((footerContact) => {
-                return (
-                  <div className="contact-list">
-                    <div className="footer-icons">
-                    {footerContact.icon} 
-                    </div>
-                    <div className="contact-text">
-                      <p>{footerContact.title}</p>
-                      <h5>{footerContact.info}</h5>
-                    </div>
+              {footerContacts.map((footerContact, index) => (
+                <div className="contact-list" key={index}>
+                  <div className="footer-icons">{footerContact.icon}</div>
+                  <div className="contact-text">
+                    <p>{footerContact.title}</p>
+                    <h5>{footerContact.info}</h5>
+                    {footerContact.timing && (
+                      <span className="timing-text">{footerContact.timing}</span>
+                    )}
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
+
           </div>
         </div>
 

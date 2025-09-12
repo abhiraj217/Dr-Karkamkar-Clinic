@@ -2,13 +2,13 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import './Banner.css'
 
-import clinicIcon from '../../assets/ivory/ivory-img.jpg';
 import  cliniImage2 from '../../assets/banner/clinicImage.jpg';
 import hipImage from '../../assets/banner/newhip.jpg';
 import legImage from '../../assets/banner/newkneew.jpg';
 import traumaImage from '../../assets/banner/jointxrayImage.jpg';
 import skullImage from '../../assets/banner/newshoulder.jpg';
 import football from '../../assets/banner/footaballlimage.jpg';
+import clinicAvatar from '../../assets/navbar/karkamkar-clinic-logo.png';
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { whatsAppBotListener } from "../../utils/Utils";
@@ -42,9 +42,9 @@ const Banner = () => {
 
       {/* WhatsApp bot section */}
       <FloatingWhatsApp
-        avatar={clinicIcon}
+        avatar={clinicAvatar}
         notification={false}
-        accountName="Dr. Simran Singh"
+        accountName="Dr. Karkamkar"
         phoneNumber={PHONE_NUMBER}
         onSubmit={(e) => {
           whatsAppBotListener(e.target[0].value);

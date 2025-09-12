@@ -1,5 +1,5 @@
-export const PHONE_NUMBER = "919607812684"
-export const EMERGENCY_CONTACT_NUMBER = "+91 9607812684"
+export const PHONE_NUMBER = "9145569693"
+export const EMERGENCY_CONTACT_NUMBER = "+91 +91-9145569693"
 
 // Section Id's
 export const HOME_SECTION_ID = "banner-section"

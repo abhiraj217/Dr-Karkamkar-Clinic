@@ -4,7 +4,7 @@ import doctorImg from "../../assets/banner/doctorImage.jpg"; // replace with you
 
 const AboutUs = () => {
   return (
-    <section id="about-us" className="aboutUsSection container">
+    <section id="about-us" className="aboutUsSection container aos-init" data-aos="fade-up" data-aos-duration="2000">
       <div className="row">
         
         {/* Left Content */}
