@@ -1,92 +1,130 @@
 .aboutUsSection {
-    padding: 21px 0;
-    padding-top: 100px;
+  padding: 100px 0;
+  position: relative;
 }
 
-.section-subtitle {
-  color: #007b9e; /* blue like the SERVICES text in your screenshot */
-     font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.section-title {
-  font-size: 32px;
+/* LEFT AREA */
+.subTitle {
+  color: #0087a8;
+  font-size: 18px;
   font-weight: 700;
-  color: #1d1d3a;
-  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
-.aboutUsText p {
-    margin-bottom: 23px;
-  line-height: 1.6;
-  color: #444;
+.mainTitle {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 15px 0;
+  color: #102a42;
 }
 
-.aboutUsText h4 {
-  font-size: 20px;
-  margin: 20px 0 10px;
-  color: #1d1d3a;
-}
-
-.aboutUsText ul {
-  list-style: disc;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.aboutUsImage .doctorImg {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-  margin-bottom: 20px;
-  height: 600px;
-  max-width: 600px;  
-}
-
-.doctorInfo h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #1d1d3a;
-}
-
-.doctorInfo p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #555;
-}
-
-/* CTA Button */
-.knowMoreBtn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 28px;
+.introText {
   font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Highlight Box */
+.highlightBox {
+  background: #fff;
+  padding: 22px;
+  border-radius: 15px;
+  border-left: 5px solid #009bbd;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.highlightBox ul {
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.highlightBox li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* RIGHT AREA */
+.doctorCard {
+  position: relative;
+  max-width: 430px;
+  margin-left: auto;
+}
+
+/* FIX: Image Smaller + Balanced */
+.doctorImg {
+  width: 100%;
+  height: 450px; /* reduced height (was too big earlier) */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Badge */
+.doctorBadge {
+  position: absolute;
+  bottom: -93px;
+  left: 20px;
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 14px;
+  width: 85%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e4eef2;
+}
+
+/* Doctor Name */
+.doctorBadge .docName {
+  font-size: 20px;
+  font-weight: 700;
+  color: #003b4f; /* premium dark teal */
+  margin-bottom: 8px;
+}
+
+/* All Text */
+.doctorBadge .docDetails p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #37474f;
+}
+
+/* Highlight the main designation */
+.doctorBadge .docDetails p:first-child {
   font-weight: 600;
-  color: #fff;
-  background: linear-gradient(90deg, #007b9e, #00bfa6);
+  color: #0097a7; /* blue-green accent */
+}
+
+/* Optional: subtle separator line */
+.doctorBadge::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #00a5b7;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.knowMoreBtn {
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #0087a8, #00c3ae);
+  border-radius: 28px;
+  color: white;
   border: none;
-  border-radius: 30px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 12px rgba(0, 123, 158, 0.3);
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .knowMoreBtn:hover {
-  background: linear-gradient(90deg, #00bfa6, #007b9e);
-  transform: scale(1.05);
-  box-shadow: 0 6px 18px rgba(0, 123, 158, 0.5);
+  transform: translateY(-3px);
 }
 
 /* Responsive */
 @media (max-width: 991px) {
-  .aboutUsSection {
-    text-align: center;
-  }
-  .aboutUsText {
-    margin-bottom: 40px;
+  .doctorCard {
+    margin: 50px auto 0;
   }
 }

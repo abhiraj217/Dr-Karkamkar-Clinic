@@ -4,9 +4,9 @@ import './Banner.css'
 
 import  cliniImage2 from '../../assets/banner/clinicImage.jpg';
 import hipImage from '../../assets/banner/newhip.jpg';
-import legImage from '../../assets/banner/newkneew.jpg';
+import legImage from '../../assets/banner/kneeImages.jpg';
 import traumaImage from '../../assets/banner/jointxrayImage.jpg';
-import skullImage from '../../assets/banner/newshoulder.jpg';
+import skullImage from '../../assets/banner/shoulderImage.jpg';
 import football from '../../assets/banner/footaballlimage.jpg';
 import clinicAvatar from '../../assets/navbar/karkamkar-clinic-logo.png';
 
