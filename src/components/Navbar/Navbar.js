@@ -1,20 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import ivoryimg from '../../assets/navbar/karkamkar-clinic-logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   BLOGS_SECTION_ID,
   CONTACTUS_SECTION_ID,
   HOME_SECTION_ID,
   SERVICE_SECTION_ID,
-  TESTIMONIAL_SECTION_ID
+  TESTIMONIAL_SECTION_ID,
+  ABOUTUS_SECTION_ID
 } from '../../utils/Constant';
 import { handleScroll } from '../../utils/Utils';
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   const navbarItems = [
-    { name: 'Home', id: HOME_SECTION_ID },
-    { name: 'About Us' },
+    { name: 'Home', path:'/'},
+
+    // FIXED → Now added path
+    { name: 'Know Your Doctor', id: ABOUTUS_SECTION_ID },
+
     { 
       name: 'Services', 
       id: SERVICE_SECTION_ID,
@@ -26,8 +33,9 @@ const Navbar = () => {
         { name: 'Trauma', id: 'trauma-id' },
       ]
     },
+
     { name: 'Gallery', id: TESTIMONIAL_SECTION_ID },
-    { name: 'FAQ' },
+    { name: 'FAQ', path: '/faq' },
     { name: 'Contact Us', id: CONTACTUS_SECTION_ID }
   ];
 
@@ -38,14 +46,10 @@ const Navbar = () => {
   // Detect active section while scrolling
   useEffect(() => {
     const handleScrollEffect = () => {
-      // Check scroll position to change navbar background
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      if (window.scrollY > 50) setScrolled(true);
+      else setScrolled(false);
 
-      // For active section detection
+      // Active section highlight
       navbarItems.forEach(({ id }) => {
         if (id) {
           const section = document.getElementById(id);
@@ -62,12 +66,11 @@ const Navbar = () => {
 
   // Close dropdown when clicking outside
   useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (!event.target.closest('.dropdown')) {
+    const handleClickOutside = (e) => {
+      if (!e.target.closest('.dropdown')) {
         setDropdownOpen(false);
       }
     };
-
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
@@ -79,7 +82,6 @@ const Navbar = () => {
 
   const handleDropdownItemClick = (itemId) => {
     setDropdownOpen(false);
-    // You can handle navigation to specific service sections here
     handleScroll(itemId);
   };
 
@@ -88,34 +90,34 @@ const Navbar = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            {/* Logo */}
-            <Link className="navbar-brand">
-              <img src={ivoryimg} alt='ivory logo' className='karkamkarimg' />
+
+            {/* LOGO */}
+            <Link to="/" className="navbar-brand">
+              <img src={ivoryimg} alt="logo" className='karkamkarimg' />
             </Link>
+
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
               <span className="navbar-toggler-icon"></span>
             </button>
+
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              {/* Navbar Links */}
               <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-                {navbarItems.map(({ name, id, dropdown }) => (
+
+                {navbarItems.map(({ name, id, dropdown, path }) => (
                   <li key={name} className={`nav-item ${dropdown ? 'dropdown' : ''}`}>
+
+                    {/* DROPDOWN HANDLING */}
                     {dropdown ? (
                       <>
                         <button
                           className={`nav-link dropdown-toggle ${activeSection === id ? "active" : ""}`}
                           onClick={handleDropdownToggle}
-                          style={{ 
-                            background: 'none', 
-                            border: 'none',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '5px'
-                          }}
+                          style={{ background: 'none', border: 'none' }}
                         >
                           {name}
                           <span className={`dropdown-arrow ${dropdownOpen ? 'open' : ''}`}>▼</span>
                         </button>
+
                         <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
                           {dropdown.map((item) => (
                             <li key={item.id}>
@@ -130,19 +132,37 @@ const Navbar = () => {
                         </ul>
                       </>
                     ) : (
-                      <button
-                        className={`nav-link ${activeSection === id ? "active" : ""}`}
-                        onClick={() => id && handleScroll(id)}
-                      >
-                        {name}
-                      </button>
+
+                      /* NORMAL NAV ITEMS: ROUTE + SCROLL SUPPORT */
+                    <button
+                      className={`nav-link ${activeSection === id ? "active" : ""}`}
+                      onClick={() => {
+                        if (path) {
+                          navigate(path);
+                        } 
+                        else if (id === ABOUTUS_SECTION_ID) {
+                          if (window.location.pathname === "/") {
+                          // Already on home → scroll
+                            handleScroll(id);
+                          } else {
+                            // Navigate to home and pass scroll target
+                            navigate("/", { state: { scrollTo: id } });
+                          }
+                        }
+                        else if (id) {
+                          handleScroll(id);
+                        }
+                      }}
+                    >
+                      {name}
+                    </button>
+
                     )}
+
                   </li>
                 ))}
+
               </ul>
-              <div className='theme-btn'>
-                <Link>Get In Touch</Link>
-              </div>
             </div>
           </div>
         </nav>

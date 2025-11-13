@@ -11,15 +11,15 @@ const Footer = () => {
       link: "/",
     },
     {
-      name: "Dental Services",
+      name: "Know Your Doctor",
       link: "/",
     },
     {
-      name: "Dentist",
+      name: "Services",
       link: "/",
     },
     {
-      name: "Blogs",
+      name: "Gallery",
       link: "/",
     },
     {

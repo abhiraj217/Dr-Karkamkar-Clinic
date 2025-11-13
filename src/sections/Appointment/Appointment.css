@@ -1,169 +1,163 @@
-/* Container general padding */
-.appointment-section .container {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 15px;
-        padding-top: 61px;
+/* Section Heading */
+.appointment-header {
+  margin-bottom: 40px;
+  text-align: left;
 }
 
-/* OR text styling - left aligned */
-.appointment-section > .container > div:first-child {
-    font-weight: 700;
-    font-size: 2rem;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #222;
+.sub {
+  color: #00a7c3;
+  font-size: 18px;
+  font-weight: 700;
 }
 
-/* SectionTitle custom alignment */
-.appointment-form-area .section-title,
-.appointment-form-area .section-title * {
-    text-align: left !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+.main-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0f2e45;
 }
 
-/* Input and label fields in the form */
-.appointment-form-area label,
-.appointment-form-area input,
-.appointment-form-area select,
-.appointment-form-area textarea {
-    text-align: left;
-}
-
-/* Button alignment */
-.appointment-form-area button,
-.appointment-form-area .btn {
-    display: block;
-    text-align: left;
-    margin-left: 0;
-    margin-right: auto;
-}
-
-.appointment-form-area {
-    padding-bottom: 30px;
-}
-
-/* Practice Locations heading */
-.practice-locations {
-    margin-top: 40px;
-    margin-bottom: 25px;
-}
-.practice-locations h4 {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: #222;
-    border-left: 5px solid #2596be; /* Highlight bar */
-    padding-left: 12px;
-    margin: 0;
-}
-
-/* Maps container to control layout */
+/* Grid */
 .maps-row {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
 }
 
-/* Wrapper for each map + timing */
+/* Map wrapper */
 .google-map-wrapper {
-    flex: 1 1 0;
-    max-width: 48%;
-    display: flex;
-    flex-direction: column;
+  flex: 1 1 calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-/* Timing text above each map */
-.map-timing {
-    font-weight: 600;
-    color: #2596be;
-    font-size: 1rem;
-    margin-bottom: 12px;
-    text-align: left;
-    font-style: italic;
+/* CALL CTA BOX */
+/* One Small Call Box */
+.single-call-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #00a5b5;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,150,160,0.25);
+  transition: 0.3s ease;
 }
 
-/* Each map box styling */
+.single-call-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,150,160,0.35);
+}
+
+.single-call-box svg {
+  background: white;
+  color: #00a5b5;
+  padding: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+/* Rest of your existing styles stay SAME */
+
+
+/* Timing Box */
+.map-timing-box {
+  background: #ffffff;
+  border-left: 5px solid #2596be;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+.map-timing-box h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f2e45;
+}
+
+.map-timing-box p {
+  margin: 4px 0 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Map */
 .google-map {
-    height: 600px;
-    position: relative;
-    margin-bottom: 30px;
+  height: 450px;
+  position: relative;
 }
 
 .google-map iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: none;
 }
 
-/* Location name and icons left aligned */
+/* Address Box */
 .location-name {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: 15px;
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgb(0 0 0 / 0.1);
-    justify-content: flex-start;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 85%;
+  padding: 15px 18px;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.12);
 }
 
 .location-name svg {
-    background: #2596be;
-    color: white;
-    width: 60px;
-    height: 50px;
-    padding: 10px;
-    line-height: 50px;
-    border-radius: 15px;
-    border: 5px solid #DBDEFA;
-    flex-shrink: 0;
+  background: #2596be;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  width: 50px;
+  height: 50px;
 }
 
 .location-name p {
-    margin-left: 20px;
-    margin-bottom: 0;
-    font-weight: 600;
-    color: #222;
+  margin: 0;
+  font-weight: 600;
+  color: #1d3a4b;
+}
+/* Equal top & bottom padding for section */
+.appointment-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #f7fafc;
 }
 
-/* Responsive Adjustments */
+/* Good Catch heading */
+.good-catch {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f3d4a;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive */
 @media (max-width: 992px) {
-    .appointment-form-area {
-        padding-left: 0;
-    }
-    .google-map {
-        height: 300px;
+      .google-map {
+        height: 450px;
     }
 }
 
 @media (max-width: 768px) {
-    /* Stack maps vertically on tablets and below */
-    .maps-row {
-        flex-direction: column;
-    }
-    .google-map-wrapper {
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
-    .google-map {
-        height: 350px;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 575px) {
-    .appointment-section > .container > div:first-child {
-        font-size: 1.5rem;
-    }
-    .google-map {
-        height: 250px;
-        margin-bottom: 15px;
-    }
+  .google-map-wrapper {
+    flex: 1 1 100%;
+  }
 }
