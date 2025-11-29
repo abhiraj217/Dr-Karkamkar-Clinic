@@ -20,7 +20,6 @@ const Services = () => {
           <h2 className="service-title">
             We provide advanced orthopedic treatments and care
           </h2>
-          <h4>Some text</h4>
         </div>
 
         {/* Grid with fixed rows */}
