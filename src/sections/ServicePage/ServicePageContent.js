@@ -28,43 +28,44 @@ return (
   <div className="container service-wrapper fade-in">
     <h1 className="serviceKnee-title slide-up">{data.title}</h1>
 
-    {selected === "knee-arthoscopy-id" ? (
-      <TabsPill sections={data.sections} />
-    ) : (
-      // existing renderer for other pages
-      data.sections?.map((section, index) => {
-        if (section.type === "text") {
-          return (
-            <div
-              key={index}
-              className="serviceknee-text fade-in"
-              dangerouslySetInnerHTML={{ __html: section.content }}
-            ></div>
-          );
-        }
-        if (section.type === "image") {
-          return (
-            <div key={index} className="service-image-block fade-in">
-              <img src={section.img} alt="" />
-              {section.caption && <p className="img-caption">{section.caption}</p>}
+{selected === "knee-arthoscopy-id" || selected === "knee-replacement-id" ? (
+  <TabsPill sections={data.sections} />
+) : (
+  // existing renderer
+  data.sections?.map((section, index) => {
+    if (section.type === "text") {
+      return (
+        <div
+          key={index}
+          className="serviceknee-text fade-in"
+          dangerouslySetInnerHTML={{ __html: section.content }}
+        ></div>
+      );
+    }
+    if (section.type === "image") {
+      return (
+        <div key={index} className="service-image-block fade-in">
+          <img src={section.img} alt="" />
+          {section.caption && <p className="img-caption">{section.caption}</p>}
+        </div>
+      );
+    }
+    if (section.type === "image-row") {
+      return (
+        <div key={index} className="service-image-row fade-in">
+          {section.images.map((item, i) => (
+            <div className="image-col" key={i}>
+              <img src={item.img} alt="" />
+              {item.caption && <p className="img-caption">{item.caption}</p>}
             </div>
-          );
-        }
-        if (section.type === "image-row") {
-          return (
-            <div key={index} className="service-image-row fade-in">
-              {section.images.map((item, i) => (
-                <div className="image-col" key={i}>
-                  <img src={item.img} alt="" />
-                  {item.caption && <p className="img-caption">{item.caption}</p>}
-                </div>
-              ))}
-            </div>
-          );
-        }
-        return null;
-      })
-    )}
+          ))}
+        </div>
+      );
+    }
+    return null;
+  })
+)}
+
   </div>
 );
 

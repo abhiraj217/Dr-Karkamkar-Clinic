@@ -19,7 +19,7 @@ import kneemeniscusImage4 from "../../assets/ServicesPageImages/kneetearmisclino
 
 
 const kneeContent = {
-  "knee-normal-id": {
+    "knee-normal-id": {
   title: "How is a Normal Knee Joint?",
   sections: [
     {
@@ -198,364 +198,439 @@ const kneeContent = {
       </p>`
     }
   ]
-},
-"knee-pain-id": {
-  title: "Why Does Knee Pain?",
-  sections: [
-    {
-      type: "text",
-      content: `
-        <p>
-        Knee pain is a very common complaint and can happen due to age, injury, inflammation, or underlying medical conditions. 
-        Understanding the causes of knee pain helps in early diagnosis and better treatment outcomes.
-        </p>
-        <h4 class="kneePartsTitle">Causes of Knee Pain</h4>
-        <ul>
-          <li>Arthritis</li>
-          <li>Injuries – Fractures, Ligament Tear, Torn Meniscus, Patellar Dislocation</li>
-          <li>Infections</li>
-          <li>Bursitis</li>
-          <li>Tendonitis</li>
-          <li>Sprained/Strained Muscles or Ligaments</li>
-          <li>Referred Hip/Foot Pain</li>
-        </ul>
-      `
-    },
-    {
-      type:"image",
-      img:kneepainImage,
-      title:"Knee Pain Image"
     },
 
-    {
-      type: "text",
-      content: `
-        <h4 class="kneePartsTitle">Arthritis</h4>
-        <p>
-        If your knee is severely damaged by arthritis, it may be hard for you to perform simple activities, 
-        such as walking or climbing stairs. You may even begin to feel pain while sitting or lying down.
-        </p>
-        <p>
-        If nonsurgical treatments like medications and walking supports are no longer effective, total knee replacement surgery 
-        may be required. 
-        </p>
-        <p>Joint replacement is a safe and effective procedure to relieve pain, correct deformity, 
-        and restore normal function.</p>       
-      `
-    },
-
-    {
-      type: "text",
-      content: `
-        <h4 class="kneePartsTitle">Types of Arthritis Causing Knee Pain</h4>
-        <ul>
-          <li>
-            <strong>Osteoarthritis</strong>
+    "knee-pain-id": {
+    title: "Why Does Knee Pain?",
+    sections: [
+        {
+        type: "text",
+        content: `
+            <p>
+            Knee pain is a very common complaint and can happen due to age, injury, inflammation, or underlying medical conditions. 
+            Understanding the causes of knee pain helps in early diagnosis and better treatment outcomes.
+            </p>
+            <h4 class="kneePartsTitle">Causes of Knee Pain</h4>
             <ul>
-              <li>Primary – Degenerative (Age-related wear and tear)</li>
-              <li>Secondary – Trauma, Infection</li>
+            <li>Arthritis</li>
+            <li>Injuries – Fractures, Ligament Tear, Torn Meniscus, Patellar Dislocation</li>
+            <li>Infections</li>
+            <li>Bursitis</li>
+            <li>Tendonitis</li>
+            <li>Sprained/Strained Muscles or Ligaments</li>
+            <li>Referred Hip/Foot Pain</li>
             </ul>
-          </li>
+        `
+        },
+        {
+        type:"image",
+        img:kneepainImage,
+        title:"Knee Pain Image"
+        },
 
-          <li>
-            <strong>Inflammatory Arthritis</strong>
+        {
+        type: "text",
+        content: `
+            <h4 class="kneePartsTitle">Arthritis</h4>
+            <p>
+            If your knee is severely damaged by arthritis, it may be hard for you to perform simple activities, 
+            such as walking or climbing stairs. You may even begin to feel pain while sitting or lying down.
+            </p>
+            <p>
+            If nonsurgical treatments like medications and walking supports are no longer effective, total knee replacement surgery 
+            may be required. 
+            </p>
+            <p>Joint replacement is a safe and effective procedure to relieve pain, correct deformity, 
+            and restore normal function.</p>       
+        `
+        },
+
+        {
+        type: "text",
+        content: `
+            <h4 class="kneePartsTitle">Types of Arthritis Causing Knee Pain</h4>
             <ul>
-              <li>Inflammation causes progressive cartilage damage</li>
-              <li>Rheumatoid Arthritis</li>
-              <li>Gout</li>
+            <li>
+                <strong>Osteoarthritis</strong>
+                <ul>
+                <li>Primary – Degenerative (Age-related wear and tear)</li>
+                <li>Secondary – Trauma, Infection</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Inflammatory Arthritis</strong>
+                <ul>
+                <li>Inflammation causes progressive cartilage damage</li>
+                <li>Rheumatoid Arthritis</li>
+                <li>Gout</li>
+                </ul>
+            </li>
             </ul>
-          </li>
-        </ul>
-      `
-    },
-    {
-      type: "image",
-      img: pathologicalViewImage,  // replace with your actual import
-      caption: "Pathological View"
-    },
+        `
+        },
+        {
+        type: "image",
+        img: pathologicalViewImage,  // replace with your actual import
+        caption: "Pathological View"
+        },
 
-    {
-      type: "text",
-      content: `
-        <h4 class="kneePartsTitle">Age-Related Osteoarthritis</h4>
-        <p>
-        The most common cause of chronic knee pain and disability is Osteoarthritis. 
-        It is an age-related <strong>“wear and tear”</strong> arthritis typically seen in people above 50 years.
-        </p>
+        {
+        type: "text",
+        content: `
+            <h4 class="kneePartsTitle">Age-Related Osteoarthritis</h4>
+            <p>
+            The most common cause of chronic knee pain and disability is Osteoarthritis. 
+            It is an age-related <strong>“wear and tear”</strong> arthritis typically seen in people above 50 years.
+            </p>
 
-        <ul>
-          <li>
-            Aging decreases the ability of chondrocytes to maintain and repair articular cartilage.
-          </li>
-          <li>
-            This increases the risk of degeneration of the cartilage surface.
-          </li>
-          <li>
-            Progressive cartilage loss leads to knee pain, stiffness, swelling, and reduced joint function.
-          </li>
-        </ul>
+            <ul>
+            <li>
+                Aging decreases the ability of chondrocytes to maintain and repair articular cartilage.
+            </li>
+            <li>
+                This increases the risk of degeneration of the cartilage surface.
+            </li>
+            <li>
+                Progressive cartilage loss leads to knee pain, stiffness, swelling, and reduced joint function.
+            </li>
+            </ul>
 
-        <p><strong>Important:</strong> Articular cartilage cannot regenerate. Once lost, it is a permanent loss.</p>
-      `
-    },
+            <p><strong>Important:</strong> Articular cartilage cannot regenerate. Once lost, it is a permanent loss.</p>
+        `
+        },
 
-    {
-      type: "image",
-      img: xrayKneePainImage, // replace with your actual import
-      caption: "X-ray View"
-    },
-    {
-      type:"text",
-      content:` <p>Get to know in detail by <strong>Dr. Sachin Karkamkar @ Hadapsar, Pune</strong>.</p>`
-    }
-  ]
-},
-"knee-arthoscopy-id": {
-  title: "Knee Arthroscopy",
-  sections: [
-     {
-      id: "what-is",
-      tabTitle: "What is Knee Arthroscopy",
-      type: "text",
-      content: `
-        <h4 class="kneePartsTitle">Knee Arthroscopy</h4>
-
-        <p>
-        Knee arthroscopy is an effective tool in diagnosing your joint condition and for confirming treatment for knee 
-        problems such as meniscus tears and cartilage wear. An arthroscopy can ultimately provide relief from knee pain 
-        and improve mobility. Maintaining a normal and active lifestyle with greater comfort is a key benefit of this procedure.
-        </p>
-
-        <!-- IMAGE 1 PLACE -->
-        <div class="arthroscopy-img-2">
-        <img src=${arthoscoopyimageknee1} alt="arthoscopyImage" />
-        </div>
-
-        <p>
-        A minimally invasive surgical procedure used by orthopaedic surgeons to visualize, diagnose, and treat 
-        problems within a joint.
-        </p>
-
-        <h4 class="kneePartsTitle">Method</h4>
-        <ul>
-          <li>Arthroscope is used to see inside a joint using an arthroscope, which is a thin tube with a camera and light source.</li>
-          <li>It is minimally invasive — it involves smaller incisions compared to traditional open surgery.</li>
-          <li>Therefore there is less pain, less scarring, and faster recovery.</li>
-        </ul>
-
-        <!-- IMAGE 2 PLACE -->
-        <div class="arthroscopy-img-2">
-        <img src=${arthoscoopyimageknee2} alt="arthoscopyImage" />
-        </div>
-
-        <h4 class="kneePartsTitle">What is an arthroscopy of the knee?</h4>
-
-        <p>
-        Two points of entry are necessary, one on each side of the patellar tendon. These are closed with the aid of a 
-        thread or a steristrip at the end of the operation.
-        </p>
-
-        <p>
-        The inside of the knee is filmed and checked on a video screen. Photographs are taken of the key moments 
-        of the arthroscopy. Under the control of the video, the instruments enable the palpation, examination, repairing 
-        or removal of certain intra-articular elements of the knee.
-        </p>
-
-        <ul>
-          <li>The menisci are repaired or partially removed.</li>
-          <li>The cartilage can be filed down to look smoother.</li>
-          <li>The cruciate ligaments are inspected, palpated, and whenever indicated reconstructed.</li>
-          <li>Certain foreign bodies can be easily removed.</li>
-          <li>The synovial tissue can be removed for cleaning or histological analysis.</li>
-        </ul>
-      `
+        {
+        type: "image",
+        img: xrayKneePainImage, // replace with your actual import
+        caption: "X-ray View"
+        },
+        {
+        type:"text",
+        content:` <p>Get to know in detail by <strong>Dr. Sachin Karkamkar @ Hadapsar, Pune</strong>.</p>`
+        }
+    ]
     },
 
-{
-  id: "indications",
-  tabTitle: "Indications",
-  type: "text",
-  content: `
-    <h4 class="kneePartsTitle">Indications</h4>
-    <p>
-      Arthroscopy of the knee is a technique combining two advantages:
-    </p>
+    "knee-arthoscopy-id": {
+        title: "Knee Arthroscopy",
+        sections: [
+            {
+            id: "what-is",
+            tabTitle: "What is Knee Arthroscopy",
+            type: "text",
+            content: `
+                <h4 class="kneePartsTitle">Knee Arthroscopy</h4>
 
-    <ul>
-      <li><strong>Diagnostic:</strong> by visualising the menisci, the cruciate ligaments, the cartilage and the synovial.</li>
-      <li><strong>Therapeutic:</strong> since most of the intra-articular lesions are accessible for treatment under arthroscopy.</li>
-    </ul>
+                <p>
+                Knee arthroscopy is an effective tool in diagnosing your joint condition and for confirming treatment for knee 
+                problems such as meniscus tears and cartilage wear. An arthroscopy can ultimately provide relief from knee pain 
+                and improve mobility. Maintaining a normal and active lifestyle with greater comfort is a key benefit of this procedure.
+                </p>
 
-    <p>
-      Knee arthroscopy is an effective tool in diagnosing your joint condition and for confirming treatment of knee problems. 
-      An arthroscopy can ultimately provide relief from knee pain and improve mobility.
-    </p>
-
-    <h4 class="kneePartsTitle">Arthroscopy for the knee is commonly used for:</h4>
-
-    <ul>
-      <li>Removal or repair of torn meniscal cartilage</li>
-      <li>Reconstruction of a torn ligaments</li>
-      <li>Trimming of torn pieces of articular cartilage</li>
-      <li>Removal of loose fragments of bone or cartilage</li>
-      <li>Removal of inflamed synovial tissue</li>
-      <li>Examination of movements of knee cap bone (patella)</li>
-    </ul>
-
-    <p>
-      More complex operations can be undertaken under arthroscopy, such as ligament reconstruction of the anterior and posterior cruciate, 
-      meniscal sutures, cartilage grafts and the osteosynthesis of certain articular fractures of the tibia.
-    </p>
-
-    <p>
-      Sometimes, still rarely, arthroscopy has to be transformed into mini-open surgery. 
-      This happens in specific scenarios where visualization of pathology and execution of surgical procedure become difficult by arthroscopy.
-    </p>
-  `
-},
-
-
-{
-  id: "procedure",
-  tabTitle: "Procedure",
-  type: "text",
-  content: `
-    <h4 class="kneePartsTitle">Knee Arthroscopy Procedure</h4>
-        <div class="arthroscopy-img-2">
+                <!-- IMAGE 1 PLACE -->
+                <div class="arthroscopy-img-2">
                 <img src=${arthoscoopyimageknee1} alt="arthoscopyImage" />
-        </div>
-    <h4 class="kneePartsTitle">Preparing for surgery</h4>
+                </div>
 
-    <p>1. Evaluation and tests</p>
+                <p>
+                A minimally invasive surgical procedure used by orthopaedic surgeons to visualize, diagnose, and treat 
+                problems within a joint.
+                </p>
 
-    <p>2. Anaesthesia</p>
+                <h4 class="kneePartsTitle">Method</h4>
+                <ul>
+                <li>Arthroscope is used to see inside a joint using an arthroscope, which is a thin tube with a camera and light source.</li>
+                <li>It is minimally invasive — it involves smaller incisions compared to traditional open surgery.</li>
+                <li>Therefore there is less pain, less scarring, and faster recovery.</li>
+                </ul>
 
-    <p>
-      Arthroscopy of the knee is usually carried out under a spinal anaesthsia.
-      A full anaesthetia of the lower limb is necessary for an effective operation.
-    </p>
-
-    <h4 class="kneePartsTitle">3. Surgical Procedure</h4>
-
-    <p>
-      Knee is cleaned with antiseptic solution for couple of minutes to reduce risk of infection .
-      Knee is stabilized on specific supports and made more ergonomic in position.
-      Small incision is made over and arthroscope is inserted. Arthroscope has a camera on the other end.
-    </p>
-        <div class="arthroscopy-img-2">
+                <!-- IMAGE 2 PLACE -->
+                <div class="arthroscopy-img-2">
                 <img src=${arthoscoopyimageknee2} alt="arthoscopyImage" />
-        </div>
-    <p>
-      The camera displays pictures on a video monitor, and your surgeon uses these images to guide miniature surgical instruments.
-      +This surgical technique is conducted in the operating block in a room reserved for orthopaedic surgery,
-      where the most rigorous aseptic condition is maintained.
-    </p>
+                </div>
 
-    <p>
-      Two to three points of entry are necessary, one on each side of the patellar tendon.
-      These are closed with the aid of a thread or a steristrip at the end of the operation.
-    </p>
+                <h4 class="kneePartsTitle">What is an arthroscopy of the knee?</h4>
 
-    <p>
-      The inside of the knee is filmed and checked on a colour video screen.
-      Under the control of the video, the instruments enable the palpation, examination,
-      repairing or removal of certain intra-articular elements of the knee.
-    </p>
+                <p>
+                Two points of entry are necessary, one on each side of the patellar tendon. These are closed with the aid of a 
+                thread or a steristrip at the end of the operation.
+                </p>
 
-    <ul>
-      <li>The menisci are repaired or partially removed, this depends on tissue quality</li>
-      <li>The cartilage can be filed down to look smoother,</li>
-      <li>The cruciate ligaments are inspected, palpated and reconstructed</li>
-      <li>Certain foreign bodies can be easily removed,</li>
-      <li>Finally, the synovial can be taken out for cleaning or histological analysis if needed..</li>
-    </ul>
-        <div class="arthroscopy-img-2">
-                <img src=${kneemeniscusImage} alt="arthoscopyImage" />
-        </div>
-    <p>
-      The orthopaedic surgeon through the small incisions made in your knee, pass a sterile solution to fill the knee joint and rinse away any cloudy fluid. This helps your orthopaedic surgeon to see your knee clearly and in great detail.
-    </p>
+                <p>
+                The inside of the knee is filmed and checked on a video screen. Photographs are taken of the key moments 
+                of the arthroscopy. Under the control of the video, the instruments enable the palpation, examination, repairing 
+                or removal of certain intra-articular elements of the knee.
+                </p>
 
-    <p>
-      Your surgeon's first task is to properly diagnose your problem. He or she will insert the arthroscope and use the image projected on the screen to guide it. If surgical treatment is needed, your surgeon will insert tiny instruments through another small incision. These instruments might be scissors, motorized shavers, or lasers. This part of the procedure usually lasts 30 minutes to over an hour. How long it takes depends upon the findings and the treatment necessary
-    </p>
+                <ul>
+                <li>The menisci are repaired or partially removed.</li>
+                <li>The cartilage can be filed down to look smoother.</li>
+                <li>The cruciate ligaments are inspected, palpated, and whenever indicated reconstructed.</li>
+                <li>Certain foreign bodies can be easily removed.</li>
+                <li>The synovial tissue can be removed for cleaning or histological analysis.</li>
+                </ul>
+            `
+            },
 
-    <div class ="repairImageDiv">
-        <div class="arthroscopy-img-2 repairImageInnerDiv">
-                <img src=${kneemeniscusImage2} alt="arthoscopyImage" />
-                 <p class="kneePartsTitle centerAlignedknee ">Meniscus repair</p>
-        </div>
-        <div class="arthroscopy-img-2 repairImageInnerDiv">
-                <img src=${kneemeniscusImage3} alt="arthoscopyImage" />
-                 <p class="kneePartsTitle centerAlignedknee">ACL Reconstruction</p>
-        </div>
-    </div>
-  `
-},
+            {
+            id: "indications",
+            tabTitle: "Indications",
+            type: "text",
+            content: `
+                <h4 class="kneePartsTitle">Indications</h4>
+                <p>
+                Arthroscopy of the knee is a technique combining two advantages:
+                </p>
 
-    {
-      id: "preparing",
-      tabTitle: "Preparing for Arthroscopy",
-      type: "text",
-      content: `
-        <h4 class="kneePartsTitle">Preparing for Knee Arthroscopy</h4>
-        <ul>
-          <li>Pre-op evaluation including blood tests and an anesthetic assessment.</li>
-          <li>Stop certain medications (e.g., blood thinners) as advised by the surgeon.</li>
-          <li>Arrange transport home; do not drive the same day.</li>
-          <li>Follow fasting instructions if general anaesthesia is planned.</li>
-          <li>Wear comfortable loose clothing and remove jewelry before surgery.</li>
-        </ul>
-        <p>Dr. Sachin Karkamkar will provide a personalized checklist before your operation.</p>`
+                <ul>
+                <li><strong>Diagnostic:</strong> by visualising the menisci, the cruciate ligaments, the cartilage and the synovial.</li>
+                <li><strong>Therapeutic:</strong> since most of the intra-articular lesions are accessible for treatment under arthroscopy.</li>
+                </ul>
+
+                <p>
+                Knee arthroscopy is an effective tool in diagnosing your joint condition and for confirming treatment of knee problems. 
+                An arthroscopy can ultimately provide relief from knee pain and improve mobility.
+                </p>
+
+                <h4 class="kneePartsTitle">Arthroscopy for the knee is commonly used for:</h4>
+
+                <ul>
+                <li>Removal or repair of torn meniscal cartilage</li>
+                <li>Reconstruction of a torn ligaments</li>
+                <li>Trimming of torn pieces of articular cartilage</li>
+                <li>Removal of loose fragments of bone or cartilage</li>
+                <li>Removal of inflamed synovial tissue</li>
+                <li>Examination of movements of knee cap bone (patella)</li>
+                </ul>
+
+                <p>
+                More complex operations can be undertaken under arthroscopy, such as ligament reconstruction of the anterior and posterior cruciate, 
+                meniscal sutures, cartilage grafts and the osteosynthesis of certain articular fractures of the tibia.
+                </p>
+
+                <p>
+                Sometimes, still rarely, arthroscopy has to be transformed into mini-open surgery. 
+                This happens in specific scenarios where visualization of pathology and execution of surgical procedure become difficult by arthroscopy.
+                </p>
+            `
+            },
+            {
+            id: "procedure",
+            tabTitle: "Procedure",
+            type: "text",
+            content: `
+                <h4 class="kneePartsTitle">Knee Arthroscopy Procedure</h4>
+
+                <h4 class="kneePartsTitle">Preparing for surgery</h4>
+
+                <p>1. Evaluation and tests</p>
+
+                <p>2. Anaesthesia</p>
+
+                <p>
+                Arthroscopy of the knee is usually carried out under a spinal anaesthsia.
+                A full anaesthetia of the lower limb is necessary for an effective operation.
+                </p>
+                        <div class="arthroscopy-img-2">
+                            <img src=${arthoscoopyimageknee1} alt="arthoscopyImage" />
+                    </div>
+
+                <h4 class="kneePartsTitle">3. Surgical Procedure</h4>
+
+                <p>
+                Knee is cleaned with antiseptic solution for couple of minutes to reduce risk of infection .
+                Knee is stabilized on specific supports and made more ergonomic in position.
+                Small incision is made over and arthroscope is inserted. Arthroscope has a camera on the other end.
+                </p>
+
+                <p>
+                The camera displays pictures on a video monitor, and your surgeon uses these images to guide miniature surgical instruments.
+                +This surgical technique is conducted in the operating block in a room reserved for orthopaedic surgery,
+                where the most rigorous aseptic condition is maintained.
+                </p>
+
+                <p>
+                Two to three points of entry are necessary, one on each side of the patellar tendon.
+                These are closed with the aid of a thread or a steristrip at the end of the operation.
+                </p>
+                    <div class="arthroscopy-img-2">
+                            <img src=${arthoscoopyimageknee2} alt="arthoscopyImage" />
+                    </div>
+                <p>
+                The inside of the knee is filmed and checked on a colour video screen.
+                Under the control of the video, the instruments enable the palpation, examination,
+                repairing or removal of certain intra-articular elements of the knee.
+                </p>
+
+                <ul>
+                <li>The menisci are repaired or partially removed, this depends on tissue quality</li>
+                <li>The cartilage can be filed down to look smoother,</li>
+                <li>The cruciate ligaments are inspected, palpated and reconstructed</li>
+                <li>Certain foreign bodies can be easily removed,</li>
+                <li>Finally, the synovial can be taken out for cleaning or histological analysis if needed..</li>
+                </ul>
+                    <div class="arthroscopy-img-2">
+                            <img src=${kneemeniscusImage} alt="arthoscopyImage" />
+                    </div>
+                <p>
+                The orthopaedic surgeon through the small incisions made in your knee, pass a sterile solution to fill the knee joint and rinse away any cloudy fluid. This helps your orthopaedic surgeon to see your knee clearly and in great detail.
+                </p>
+
+                <p>
+                Your surgeon's first task is to properly diagnose your problem. He or she will insert the arthroscope and use the image projected on the screen to guide it. If surgical treatment is needed, your surgeon will insert tiny instruments through another small incision. These instruments might be scissors, motorized shavers, or lasers. This part of the procedure usually lasts 30 minutes to over an hour. How long it takes depends upon the findings and the treatment necessary
+                </p>
+
+                <div class ="repairImageDiv">
+                    <div class="arthroscopy-img-2 repairImageInnerDiv">
+                            <img src=${kneemeniscusImage2} alt="arthoscopyImage" />
+                            <p class="kneePartsTitle centerAlignedknee ">Meniscus repair</p>
+                    </div>
+                    <div class="arthroscopy-img-2 repairImageInnerDiv">
+                            <img src=${kneemeniscusImage3} alt="arthoscopyImage" />
+                            <p class="kneePartsTitle centerAlignedknee">ACL Reconstruction</p>
+                    </div>
+                </div>
+            `
+            },
+
+            {
+            id: "preparing",
+            tabTitle: "Preparing for Surgery",
+            type: "text",
+            content: `
+                <h4 class="kneePartsTitle">Planning for Surgery</h4>
+
+                <h4 class="kneePartsTitle">Orthopaedic Evaluation</h4>
+
+                <ul>
+                <li>A medical history</li>
+                <li>A physical examination<br>
+                <span style="margin-left:10px;">This will assess knee motion, stability, strength, and overall leg alignment.</span>
+                </li>
+                <li>X-rays<br>
+                <span style="margin-left:10px;">These images help to determine the extent of damage and deformity in your bones.</span>
+                </li>
+                <li>Other tests<br>
+                <span style="margin-left:10px;">Advanced imaging such as a magnetic resonance imaging (MRI) scan, and occasionally CT ,may be needed to determine the condition of the bone and soft tissues of your knee.</span>
+                </li>
+                </ul>
+
+                <h4 class="kneePartsTitle">Tests For operative fitness:</h4>
+
+                <p>
+                Several tests, such as blood and urine samples, and an electrocardiogram, may be needed to help your orthopaedic surgeon and Anaesthtist to plan ,so that your surgery happen well planned and relatively more safer.
+                </p>
+
+                <h4 class="kneePartsTitle">Medications:</h4>
+
+                <p>
+                Tell your orthopedic surgeon about the medications you are consuming.
+                Certain medication like blood thinners and immunosuppressive need to stopped before surgery.
+                </p>
+            `
+            },
+
+            {
+            id: "recovery",
+            tabTitle: "Recovery",
+            type: "text",
+            content: `
+                <h4 class="kneePartsTitle">Recovery</h4>
+
+                <p>
+                Recovery from knee arthroscopy is much faster than recovery from traditional open knee surgery. 
+                Still, it is important to follow your orthopaedic surgeon's instructions carefully after you return home.
+                </p>
+
+                <h4 class="kneePartsTitle">Swelling:</h4>
+                <p>
+                Keep your leg elevated as possible for the first few days after surgery. 
+                Apply ice as recommended by your doctor to relieve swelling and pain.
+                </p>
+
+                <h4 class="kneePartsTitle">Dressing Care :</h4>
+                <p>
+                You will leave the hospital with a dressing covering your knee. 
+                Keep your incisions clean and dry. Do not make it wet during shower or bath.
+                Surgeon will guide you about change of dressing. Your surgeon will see you in the office a few days after surgery to check your progress, review the surgical findings, and begin your postoperative treatment program.
+                </p>
+
+                <h4 class="kneePartsTitle">Bearing Weight :</h4>
+                <p>
+                Most patients need walker or crutches or other assistance after arthroscopic surgery. 
+                Your surgeon will tell you when it is safe to put weight on your foot and leg. 
+                If you have any questions about bearing weight, talk to your surgeon.
+                </p>
+
+                <h4 class="kneePartsTitle">Driving :</h4>
+                <p>
+                Can be started usually after 3mths.But this may vary based on your pathology  
+                </p>
+
+                <h4 class="kneePartsTitle">Medications</h4>
+                <p>
+                Your doctor will prescribe pain medication and antibiotics to help relieve discomfort following your surgery. 
+                </p>
+
+                <h4 class="kneePartsTitle">Result</h4>
+                <p>
+                You should be able to return to most physical activities after few weeks, or sometimes much sooner. 
+                Ligament reconstruction and meniscus Rrepair takes around 3 months for basic recovery .Higher impact activities may need to be avoided for a longer time. 
+                You will need to talk with your doctor before returning to intense physical activities.
+                </p>
+
+                <p>
+                If your job involves heavy work, it may be longer before you can return to your job. 
+                Discuss when you can safely return to work with your doctor.
+                </p>
+
+                <p>
+                The final outcome of your surgery will likely be determined by the degree of damage to your knee. 
+                For example, if the articular cartilage in your knee has worn away completely, then recovery happen to be partial or near complete . .
+                You may need to change your lifestyle. This might mean limiting your activities and finding low-impact exercise alternative.
+                </p>
+            `
+            },
+
+            {
+            id: "complications",
+            tabTitle: "Complications",
+            type: "text",
+            content: `
+                <h4 class="kneePartsTitle">Complications</h4>
+                <ul>
+                <li>Infection (rare)</li>
+                <li>Bleeding or haemarthrosis</li>
+                <li>Deep vein thrombosis (DVT) — prevention measures are used</li>
+                <li>Nerve or blood vessel injury (very rare)</li>
+                <li>Persistent pain or stiffness requiring further management</li>
+                </ul>
+                <p>
+                Overall complication rates are low, and most problems are treatable. Discuss risks and preventive measures with your surgeon.
+                </p>`
+            },
+
+            // {
+            //   id: "images",
+            //   tabTitle: "Images",
+            //   type: "images",
+            //   images: [
+            //     { img: kneepainImage, caption: "Arthroscopic view of knee" },
+            //     { img: kneepainImage, caption: "Arthroscopic instruments" }
+            //   ]
+            // }
+        ]
     },
 
-    {
-      id: "recovery",
-      tabTitle: "Recovery",
-      type: "text",
-      content: `
-        <h4 class="kneePartsTitle">Recovery After Arthroscopy</h4>
-        <ul>
-          <li>Most patients walk with crutches for a few days depending on procedure.</li>
-          <li>Pain is usually moderate and controlled with oral analgesics.</li>
-          <li>Physiotherapy starts early to regain motion and strength.</li>
-          <li>Return to light daily activities: days to 2 weeks (varies).</li>
-          <li>Return to sports/work depending on the procedure (6 weeks to several months).</li>
-        </ul>
-        <p>
-          Wound care, follow-up, and a rehabilitation plan will be provided at discharge.
-        </p>`
-    },
-
-    {
-      id: "complications",
-      tabTitle: "Complications",
-      type: "text",
-      content: `
-        <h4 class="kneePartsTitle">Complications</h4>
-        <ul>
-          <li>Infection (rare)</li>
-          <li>Bleeding or haemarthrosis</li>
-          <li>Deep vein thrombosis (DVT) — prevention measures are used</li>
-          <li>Nerve or blood vessel injury (very rare)</li>
-          <li>Persistent pain or stiffness requiring further management</li>
-        </ul>
-        <p>
-          Overall complication rates are low, and most problems are treatable. Discuss risks and preventive measures with your surgeon.
-        </p>`
-    },
-
-    {
-      id: "images",
-      tabTitle: "Images",
-      type: "images",
-      images: [
-        { img: kneepainImage, caption: "Arthroscopic view of knee" },
-        { img: kneepainImage, caption: "Arthroscopic instruments" }
-      ]
+    "knee-replacement-id":{
+        title: "Knee Replacement",
+        sections: [
+            { id: "what-is", tabTitle: "What is Knee Replacement", type: "text", content: `...`},
+            { id: "indications", tabTitle: "Indications", type: "text", content: `...`},
+            { id: "procedure", tabTitle: "Procedure", type: "text", content: `...`},
+        ]
     }
-  ]
-}
 
 };
 
