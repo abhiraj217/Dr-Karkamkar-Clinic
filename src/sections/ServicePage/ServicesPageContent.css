@@ -199,6 +199,9 @@
 .centerAlignedknee{
   align-self: center;
 }
+.kneeReplacementLabelText{
+  text-align: center;
+}
 /* =======================
    RESPONSIVE DESIGN
 ======================== */

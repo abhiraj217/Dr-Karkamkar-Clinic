@@ -16,7 +16,11 @@ import kneemeniscusImage from "../../assets/ServicesPageImages/kneetearmisclinou
 import kneemeniscusImage2 from "../../assets/ServicesPageImages/kneeMicslineousimage2.png";
 import kneemeniscusImage3 from "../../assets/ServicesPageImages/musilineausRepair.png";
 import kneemeniscusImage4 from "../../assets/ServicesPageImages/kneetearmisclinoutypesImage.png";
-
+import kneeReplacementImage from "../../assets/ServicesPageImages/kneeReplacementImage.png";
+import kneeReplacementXrayImage from "../../assets/ServicesPageImages/kneeReplacementXray.png";
+import kneeReplacementArthhiticsImage from "../../assets/ServicesPageImages/kneeReplacementXrayArthitics.png";
+import kneeIndicationsImage1 from "../../assets/ServicesPageImages/kneeIndicationsImage1.png";
+import kneeIndicationsImage2 from "../../assets/ServicesPageImages/kneeIndicationsImage2.png";
 
 const kneeContent = {
     "knee-normal-id": {
@@ -626,9 +630,495 @@ const kneeContent = {
     "knee-replacement-id":{
         title: "Knee Replacement",
         sections: [
-            { id: "what-is", tabTitle: "What is Knee Replacement", type: "text", content: `...`},
-            { id: "indications", tabTitle: "Indications", type: "text", content: `...`},
-            { id: "procedure", tabTitle: "Procedure", type: "text", content: `...`},
+            { 
+                id: "what-is", 
+                tabTitle: "What is Knee Replacement", 
+                type: "text", 
+                content: `
+                <div class="knee-wrapper">
+
+                <h4 class="kneePartsTitle">What is Knee Replacement?</h4>
+                <p>
+                    A knee replacement (also called knee arthroplasty) might be more accurately termed a knee 
+                    "resurfacing" because only the surface of the bones are actually replaced.
+                </p>
+
+                <h4 class="kneePartsTitle">Arthritic Knee and Replaced Knee</h4>
+
+                <div class="arthroscopy-img-2">
+                    <!-- Add your image URLs -->
+                    <img src=${kneeReplacementImage} alt="Arthritic Knee and Replaced Knee" />
+                                        
+                </div>
+                <p class="kneeReplacementLabelText"><strong>Fig:</strong> Arthritic knee [Left] and knee with implants [Right]</p>
+                <p>
+                    (Left) Severe osteoarthritis. (Right) The arthritic cartilage and underlying bone has been removed 
+                    and resurfaced with metal implants on the femur and tibia. A plastic spacer has been placed in 
+                    between the implants. The patellar component is not shown for clarity.
+                </p>
+
+                <div class="arthroscopy-img-2">
+
+                    <img src=${kneeReplacementXrayImage} alt="Replaced Knee X-ray" />
+                </div>
+                    <p class="kneeReplacementLabelText"><strong>Fig:</strong> Replaced Knee X-ray</p>
+                <h4 class="kneePartsTitle" >Realistic Expectations</h4>
+
+                <p>
+                    More than 90% of people who have total knee replacement surgery experience a dramatic reduction 
+                    of knee pain and a significant improvement in the ability to perform common activities of 
+                    daily living.
+                </p>
+
+                <p>
+                    Still, recovery depends on age, fitness level and nature of procedure. There is a gradual return 
+                    to normal activities.
+                </p>
+
+                <p>
+                    Most surgeons advise against high-impact activities such as running, jogging, jumping, or 
+                    other high-impact sports for the rest of your life after surgery.
+                </p>
+
+                <p>
+                    Realistic activities following total knee replacement include unlimited walking, swimming, 
+                    driving, light hiking, biking, ballroom and other low-impact sports.
+                </p>
+
+                <h4 class="kneePartsTitle">Recent Advances in Knee Replacement Surgery</h4>
+
+                <ul>
+                    <li>Minimally invasive</li>
+                    <li>Robotic surgery</li>
+                </ul>
+
+                <p>You will most likely be admitted to the hospital evening before the day of your surgery.</p>
+
+                <h4 class="kneePartsTitle">Anesthesia</h4>
+                <p>
+                    After admission, you will be evaluated by a member of the anesthesia team. The most common are 
+                    spinal, epidural, or regional nerve block anesthesia (you are awake but your body is numb from 
+                    the waist down). The anesthesia team, with your input, will determine which type of anesthesia 
+                    will be best for you.
+                </p>
+
+                <h4 class="kneePartsTitle">Procedure</h4>
+                <p>
+                    The procedure itself takes approximately 1 to 2 hours. Your orthopaedic surgeon will remove the 
+                    damaged cartilage and bone, and then position the new metal and plastic implants to restore the 
+                    alignment and function of your knee.
+                </p>
+
+                <p>Different types of knee implants are used to meet each patient's individual needs.</p>
+
+                <div class="arthroscopy-img-2">
+                  
+                    <img src=${kneeReplacementArthhiticsImage} alt="Arthritic and Replaced Knee X-ray" />
+                </div>
+                <p class="kneeReplacementLabelText"><strong>Fig:</strong> Arthritic knee [Left] and knee with implants [Right]</p>
+                <p>
+                    (Left) An x-ray of a severely arthritic knee. (Right) The x-ray appearance of a total knee 
+                    replacement. Note that the plastic spacer between the bones does not show up in an x-ray.
+                </p>
+
+                <p>
+                    After surgery, you will be moved to the recovery room, where you will remain for 1 to 2 hours 
+                    for recovery from anesthesia. After you wake up, you will be taken to your hospital room.
+                </p>
+
+                <h4 class="kneePartsTitle">Robotic Knee Replacement</h4>
+
+                <p>
+                    The term “robotic surgery” refers to the use of programmable devices to perform a wide variety 
+                    of surgical tasks. These are not intended to replace the surgeon but rather to provide assistance.
+                </p>
+
+
+
+                <ul>
+                    <li>Reduces duration of hospital stay</li>
+                    <li>Lowers complication rates</li>
+                    <li>Improves perioperative outcomes</li>
+                    <li>Reduces blood loss</li>
+                    <li>Reduced pain</li>
+                    <li>Faster recovery</li>
+                </ul>
+                <p><strong>Dr Sachin Karkamkar </strong> can provide detailed guidance.</p>
+                </div>
+                `},
+            { 
+                id: "indications", 
+                tabTitle: "Is knee replacement for you", 
+                type: "text", 
+                content: `
+                <div class="knee-wrapper">
+
+                    <h4 class="kneePartsTitle">Is Knee Replacement for You?</h4>
+
+                    <p>
+                        Knee replacement surgery is generally recommended when knee pain, stiffness, or deformity 
+                        starts limiting daily activities and does not improve with conservative treatments such as 
+                        rest, physiotherapy, medications, or injections.
+                    </p>
+
+                    <h4 class="kneePartsTitle">Indications of Surgery</h4>
+
+                    <ul>
+                        <li>Severe knee pain or stiffness that limits everyday activities like walking, climbing stairs, or sitting/standing</li>
+                        <li>Chronic knee inflammation and swelling that does not improve with rest or medication</li>
+                        <li>Knee deformity such as bow-leg or knock-knee appearance</li>
+                        <li>Failure of other non-surgical treatments such as physiotherapy, injections, braces, or medications</li>
+                        <li>Increased dependence on pain killers for daily functioning</li>
+                        <li>Difficulty sleeping due to persistent knee pain</li>
+                        <li>Pain even at rest or during night</li>
+                    </ul>
+
+                    <!-- IMAGE SLOT 01 -->
+                    <div class="arthroscopy-img-2">
+                        <img src=${kneeIndicationsImage1} alt="Indications of knee replacement" />
+                    </div>
+                    <p class="kneeReplacementLabelText"><strong>Fig:</strong> Common symptoms indicating need for knee replacement</p>
+
+                    <h4 class="kneePartsTitle">Treatment Goals</h4>
+
+                    <ul>
+                        <li>Control knee pain</li>
+                        <li>Maintain joint function and mobility</li>
+                        <li>Prevent further deformity</li>
+                        <li>Prevent long-term disability</li>
+                        <li>Improve ability to perform daily activities comfortably</li>
+                        <li>Enhance overall quality of life</li>
+                    </ul>
+
+                    <!-- IMAGE SLOT 02 -->
+                    <div class="arthroscopy-img-2">
+                        <img src=${kneeIndicationsImage2} alt="Knee treatment goals" />
+                    </div>
+
+                    <p>
+                        If non-operative measures fail to provide long-term relief and symptoms continue to worsen, 
+                        your orthopedic surgeon may recommend total knee replacement as the most effective option 
+                        to restore mobility and reduce pain.
+                    </p>
+
+                </div>
+                `},
+            { 
+                id: "Preparing-for-knee-Replacement", 
+                tabTitle: "Preparing for knee Replacement", 
+                type: "text", 
+                content: `
+                    <div class="knee-wrapper">
+
+                        <h4 class="kneePartsTitle">Post-operative Recovery</h4>
+
+                        <ul>
+                            <li>You will most likely stay in the hospital for 4 days.</li>
+                            <li>Physiotherapy is started immediately as advised</li>
+                            <li>Range of movement should improve progressively over first 4 weeks</li>
+                            <li>Strengthening improves progressively in next 8 weeks</li>
+                            <li>Walking with walker first 2 weeks</li>
+                            <li>Followed by walking with stick for next 2 weeks</li>
+                            <li>Followed by walking without walking aids</li>
+                        </ul>
+
+                        <p>
+                            *All above mentioned time spans are in general and may varies with each patient. Post surgery 
+                            evaluation is needed for each patient @Dr Sachin Karkamkar *
+                        </p>
+
+                        <h4 class="kneePartsTitle">Pain Management</h4>
+
+                        <p>
+                            After surgery, you will feel some pain, but your surgeon and nurses will provide medication to make 
+                            you feel as comfortable as possible. Different routes are utilized for this. Intravenous, skin 
+                            patches, local infiltration and regional blocks help to ease out pain of patient. Pain management is 
+                            an important part of your recovery.
+                        </p>
+
+                        <p>
+                            Walking and knee movement will begin soon after surgery, and when you feel less pain, you can 
+                            start moving sooner and get your strength back more quickly. Talk with your surgeon if 
+                            postoperative pain becomes a problem.
+                        </p>
+
+                        <h4 class="kneePartsTitle">Blood Clot Prevention</h4>
+
+                        <p>
+                            Your orthopaedic surgeon may prescribe one or more measures to prevent blood clots and decrease 
+                            leg swelling. These may include special support hose, inflatable leg coverings (compression boots), 
+                            and blood thinners.
+                        </p>
+
+                        <p>
+                            Foot and ankle movement also is encouraged immediately following surgery to increase blood flow in 
+                            your leg muscles to help prevent leg swelling and blood clots.
+                        </p>
+
+                        <h4 class="kneePartsTitle">Physical Therapy</h4>
+
+                        <p>
+                            A continuous passive motion machine can help prevent postoperative knee stiffness in the early 
+                            postoperative period. Most patients begin exercising their knee the day after surgery. 
+                        </p>
+
+                        <p>
+                            A physical therapist will teach you specific exercises to strengthen your leg and restore knee 
+                            movement to allow walking and other normal daily activities soon after your surgery.
+                        </p>
+
+                        <h4 class="kneePartsTitle">Your Recovery at Home</h4>
+
+                        <h4 class="kneePartsTitle">Wound Care</h4>
+
+                        <p>
+                            You will have stitches or staples running along your wound or a suture beneath your skin on the 
+                            front of your knee. The stitches or staples over skin will be removed two weeks after surgery. 
+                            Sutures in deeper muscles dissolve on their own and don’t need removal.
+                        </p>
+
+                        <p>
+                            Avoid soaking the wound in water until it has thoroughly sealed and dried. You may continue to 
+                            bandage the wound to prevent irritation from clothing or support stockings.
+                        </p>
+
+                        <h4 class="kneePartsTitle">Diet</h4>
+
+                        <p>
+                            Some loss of appetite is common for several weeks after surgery. Take light, small, and frequent 
+                            meals. High protein diet helps in faster wound and muscle strength recovery.
+                        </p>
+
+                        <h4 class="kneePartsTitle">Activity</h4>
+
+                        <p>
+                            Exercise is a critical component of home care, particularly during the first few weeks after 
+                            surgery. You should be able to resume most normal activities of daily living within 3 to 6 weeks 
+                            following surgery.
+                        </p>
+
+                        <p>
+                            Some pain with activity and at night is common for several weeks after surgery.
+                        </p>
+
+                        <p>Your activity program should include:</p>
+
+                        <ul>
+                            <li>A graduated walking program to slowly increase your mobility, initially in your home and later outside</li>
+                            <li>Resuming other normal household activities, such as sitting, standing, and climbing stairs</li>
+                            <li>
+                                Specific exercises several times a day to restore movement and strengthen your knee. You 
+                                probably will be able to perform the exercises without help, but you may have a physical 
+                                therapist help you at home or in a therapy center the first few weeks after surgery. 
+                                Involving a physiotherapist fastens your progress.
+                            </li>
+                        </ul>
+
+                        <h4 class="kneePartsTitle">Outcomes</h4>
+
+                        <h4 class="kneePartsTitle">How Your New Knee Is Different</h4>
+
+                        <p>
+                            Improvement of knee motion is a goal of total knee replacement, but restoration of full motion 
+                            depends on preoperative stage. The motion of your knee replacement after surgery can be predicted 
+                            by the range of motion you have before surgery.
+                        </p>
+
+                        <p>
+                            Most patients can expect to be able to almost fully straighten the replaced knee and to bend to 
+                            near normal range. Movements of knee are more than sufficient to climb stairs and get in and out 
+                            of a car, and sit comfortably on a chair or stool.
+                        </p>
+
+                        <p>This is normal:</p>
+
+                        <ul>
+                            <li>Most people feel some numbness in the skin around your incision.</li>
+                            <li>You also may feel some stiffness, particularly with excessive bending activities.</li>
+                            <li>Most people also feel or hear some clicking of the metal and plastic with knee bending or walking.</li>
+                        </ul>
+
+                        <p>
+                            These differences often diminish with time and most patients find them to be tolerable when compared 
+                            with the pain and limited function they experienced prior to surgery.
+                        </p>
+
+                        <p>
+                            Your new knee may activate metal detectors required for security in airports and some buildings. Tell 
+                            the security agent about your knee replacement if the alarm is activated.
+                        </p>
+
+                        <h4 class="kneePartsTitle">Protecting Your Knee Replacement</h4>
+
+                        <ul>
+                            <li>Participate in regular light exercise programs to maintain proper strength and mobility of your new knee</li>
+                            <li>Take special precautions to avoid falls and injuries; a fracture may require more surgery</li>
+                            <li>Make sure your dentist knows that you have a knee replacement; antibiotics are required before dental surgery</li>
+                            <li>See your orthopedic surgeon periodically for routine follow-up examination and x-rays, usually once a year</li>
+                        </ul>
+
+                        <h4 class="kneePartsTitle">Extending the Life of Your Knee Implant</h4>
+
+                        <p>
+                            Currently, more than 90% of modern total knee replacements are still functioning well 20 years after 
+                            the surgery. Following your orthopedic surgeon's instructions after surgery and taking care to protect 
+                            your knee replacement and general health are important ways you can contribute to the final success 
+                            of your surgery.
+                        </p>
+
+                    </div>
+
+
+                `},
+                { 
+                id: "Post-operative", 
+                tabTitle: "Recovery", 
+                type: "text", 
+                content: `
+                <div class="knee-wrapper">
+
+                    <h4 class="kneePartsTitle">Preparing for Knee Replacement Surgery</h4>
+
+                    <h4 class="kneePartsTitle">Orthopaedic Evaluation</h4>
+
+                    <ul>
+                        <li>A medical history</li>
+                        <li>A physical examination — This will assess knee motion, stability, strength, and overall leg alignment.</li>
+                        <li>X-rays — These images help to determine the extent of damage and deformity in your knee.</li>
+                        <li>Other tests — Occasionally advanced imaging such as a magnetic resonance imaging (MRI) scan may be needed to determine the condition of the bone and soft tissues of your knee.</li>
+                    </ul>
+
+                    <h4 class="kneePartsTitle">Tests For Operative Fitness</h4>
+
+                    <p>
+                        Several tests, such as blood and urine samples, and an electrocardiogram, may be needed to help 
+                        your orthopaedic surgeon and Anaesthetist to plan, so that your surgery happens well planned 
+                        and relatively more safer.
+                    </p>
+
+                    <h4 class="kneePartsTitle">Medications</h4>
+
+                    <p>
+                        Tell your orthopedic surgeon about the medications you are consuming. Certain medications like 
+                        blood thinners and immunosuppressives need to be stopped before surgery.
+                    </p>
+
+                    <h4 class="kneePartsTitle">Dental Evaluation</h4>
+
+                    <p>
+                        Although the incidence of infection after knee replacement is very low, an infection can occur 
+                        if bacteria enter your bloodstream. To reduce the risk of infection, major dental procedures 
+                        (such as tooth extractions and periodontal work) should be completed before your total knee 
+                        replacement surgery.
+                    </p>
+
+                    <h4 class="kneePartsTitle">Urinary Evaluations</h4>
+
+                    <p>
+                        People with a history of recent or frequent urinary infections should have a urological 
+                        evaluation before surgery. Older men with prostate disease should consider completing 
+                        required treatment before undertaking knee replacement surgery.
+                    </p>
+
+                    <h4 class="kneePartsTitle">Social Planning</h4>
+
+                    <p>
+                        Although you will be able to walk on crutches or a walker soon after surgery, you will need help 
+                        for several weeks with such tasks as cooking, shopping, bathing, and doing laundry.
+                    </p>
+
+                    <h4 class="kneePartsTitle">Home Planning</h4>
+
+                    <p>Several modifications can make your home easier to navigate during your recovery. The following items may help with daily activities:</p>
+
+                    <ul>
+                        <li>Safety bars or a secure handrail in your shower or bath</li>
+                        <li>Secure handrails along your stairways</li>
+                        <li>
+                            A stable chair for your early recovery with a firm seat cushion, a firm back, two arms, and 
+                            a footstool for intermittent leg elevation
+                        </li>
+                        <li>A toilet seat riser with arms, if you have a low toilet</li>
+                        <li>A stable shower bench or chair for bathing</li>
+                        <li>Removing all loose carpets and cords</li>
+                        <li>
+                            A temporary living space on the same floor because walking up or down stairs will be more 
+                            difficult during your early recovery
+                        </li>
+                    </ul>
+
+                    <p>
+                        The instructions for tests and other care are basic, please discuss with 
+                        <strong>Dr. Sachin Karkamkar</strong> for detailed evaluation.
+                    </p>
+
+                </div>
+
+                `},
+                {
+                    id:"possible-complication",
+                tabTitle: "Possible Complications", 
+                type: "text", 
+                content: `<div class="knee-wrapper">
+
+                <h4 class="kneePartsTitle">Possible Complications of Surgery</h4>
+
+                <p>
+                    The complication rate following total knee replacement is low. Serious complications, such as a 
+                    knee joint infection, occur in fewer than 2% of patients. Major medical complications such as 
+                    heart attack or stroke occur even less frequently.
+                </p>
+
+                <h4 class="kneePartsTitle">Infection</h4>
+
+                <p>
+                    Infection may occur in the wound or deep around the prosthesis. It may happen while in the hospital 
+                    or after you go home. Any infection in your body can spread to your joint replacement. It may even 
+                    occur years later. Minor infections in the wound area are generally treated with antibiotics. 
+                    Major or deep infections may require more surgery and removal of the prosthesis.
+                </p>
+
+                <h4 class="kneePartsTitle">Blood Clots</h4>
+
+                <p>
+                    Blood clots in the leg veins are the uncommon complication of knee replacement surgery. These clots 
+                    can be life-threatening if they break free and travel to your lungs. Your orthopedic surgeon will 
+                    outline a prevention program, which may include periodic elevation of your legs, lower leg exercises 
+                    to increase circulation, support stockings, and medication to thin your blood.
+                </p>
+
+                <h4 class="kneePartsTitle">Implant Problems</h4>
+
+                <p>
+                    Although implant designs and materials, as well as surgical techniques, continue to advance, implant 
+                    surfaces may wear down and the components may loosen. Additionally, although an average of 115° of 
+                    motion is generally anticipated after surgery, scarring of the knee can occasionally occur, and motion 
+                    may be more limited, particularly in patients with limited motion before surgery.
+                </p>
+
+                <h4 class="kneePartsTitle">Continued Pain</h4>
+
+                <p>
+                    A small number of patients continue to have pain after a knee replacement. This complication is rare, 
+                    however, and the vast majority of patients experience excellent pain relief following knee replacement.
+                </p>
+
+                <h4 class="kneePartsTitle">Neurovascular Injury</h4>
+
+                <p>
+                    While very rare, injury to the nerves or blood vessels around the knee can occur during surgery.
+                </p>
+
+                <p>
+                    <em>
+                    All above mentioned complications are in general and may varies with each patient. 
+                    Post surgery evaluation is needed for each patient @Dr Sachin Karkamkar 
+                    </em>
+                </p>
+
+            </div>
+            `
+                }
         ]
     }
 
