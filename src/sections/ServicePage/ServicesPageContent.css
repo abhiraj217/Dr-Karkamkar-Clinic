@@ -217,6 +217,10 @@
   .image-col img {
     height: 260px;
   }
+  .tabs-pill-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
