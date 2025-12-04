@@ -43,7 +43,15 @@ const Navbar = () => {
           ]
         },
 
-        { name: "Hip", id: "hip-id" },
+        { 
+          name: "Hip", 
+          id: "hip-id",
+          subDropdown: [
+            { name: "How is normal Hip", id: "hip-normal-id" },
+            { name: "Why does Hip pain", id: "hip-pain-id" },
+            { name: "Hip Replacement", id: "hip-replacement-id" },
+          ]
+        },
         { name: "Sports", id: "sports-id" },
         { name: "Trauma", id: "trauma-id" }
       ]

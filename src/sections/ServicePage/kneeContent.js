@@ -804,8 +804,8 @@ const kneeContent = {
                 </div>
                 `},
             { 
-                id: "Preparing-for-knee-Replacement", 
-                tabTitle: "Preparing for knee Replacement", 
+                id: "Recovery", 
+                tabTitle: "Recovery", 
                 type: "text", 
                 content: `
                     <div class="knee-wrapper">
@@ -971,8 +971,8 @@ const kneeContent = {
 
                 `},
                 { 
-                id: "Post-operative", 
-                tabTitle: "Recovery", 
+                id: "Preparing-for-knee-Replacement" ,
+                tabTitle: "knee Replacement Surgery", 
                 type: "text", 
                 content: `
                 <div class="knee-wrapper">
