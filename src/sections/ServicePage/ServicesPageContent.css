@@ -202,6 +202,31 @@
 .kneeReplacementLabelText{
   text-align: center;
 }
+.hipFaqLink {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  background: #0059b3; /* Medical blue */
+  color: white !important;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 89, 179, 0.25);
+}
+
+.hipFaqLink:hover {
+  background: #003d80;    /* Darker shade */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 89, 179, 0.35);
+  text-decoration: none;
+}
+
+.hipFaqLink:active {
+  transform: scale(0.97);
+}
+
 /* =======================
    RESPONSIVE DESIGN
 ======================== */
