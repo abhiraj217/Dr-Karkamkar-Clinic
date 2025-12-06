@@ -227,6 +227,20 @@
   transform: scale(0.97);
 }
 
+.service-shoulder-image img{
+  max-width: 400px;
+  height: auto;
+}
+
+.shulderarthoscopyimageDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.shulderarthoscopyimage{
+    max-width: 400px;
+    height: auto;
+}
 /* =======================
    RESPONSIVE DESIGN
 ======================== */
@@ -265,6 +279,10 @@
     height: auto;
     max-height: 260px;
   }
+  .shulderarthoscopyimage{
+    height: auto;
+    max-height: 260px;
+}
 
   .tab-pill {
     padding: 8px 14px;
@@ -290,6 +308,11 @@
   }
 
   .arthroscopy-img-2 img {
+    height: auto;
+    max-height: 220px;
+  }
+
+  .shulderarthoscopyimage{
     height: auto;
     max-height: 220px;
   }

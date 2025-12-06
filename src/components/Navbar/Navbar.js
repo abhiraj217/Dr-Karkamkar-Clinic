@@ -30,7 +30,15 @@ const Navbar = () => {
       name: "Services",
       id: SERVICE_SECTION_ID,
       dropdown: [
-        { name: "Shoulder", id: "shoulder-id" },
+        { 
+          name: "Shoulder", 
+          id: "shoulder-id",
+          subDropdown: [
+            { name: "How is normal Shoulder", id: "shoulder-normal-id" },
+            { name: "Why does Shoulder pain", id: "shoulder-pain-id" },
+            { name: "Shoulder Arthroscopy", id: "shoulder-arthroscopy-id" },
+            { name: "Shoulder Replacement", id: "shoulder-replacement-id" },
+          ] },
 
         {
           name: "Knee",
