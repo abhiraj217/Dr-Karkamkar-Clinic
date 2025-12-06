@@ -17,7 +17,6 @@ import { handleScroll } from "../../utils/Utils";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  // Dropdown states
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [scrolled, setScrolled] = useState(false);
@@ -30,15 +29,16 @@ const Navbar = () => {
       name: "Services",
       id: SERVICE_SECTION_ID,
       dropdown: [
-        { 
-          name: "Shoulder", 
+        {
+          name: "Shoulder",
           id: "shoulder-id",
           subDropdown: [
             { name: "How is normal Shoulder", id: "shoulder-normal-id" },
             { name: "Why does Shoulder pain", id: "shoulder-pain-id" },
             { name: "Shoulder Arthroscopy", id: "shoulder-arthroscopy-id" },
-            { name: "Shoulder Replacement", id: "shoulder-replacement-id" },
-          ] },
+            { name: "Shoulder Replacement", id: "shoulder-replacement-id" }
+          ]
+        },
 
         {
           name: "Knee",
@@ -51,15 +51,16 @@ const Navbar = () => {
           ]
         },
 
-        { 
-          name: "Hip", 
+        {
+          name: "Hip",
           id: "hip-id",
           subDropdown: [
             { name: "How is normal Hip", id: "hip-normal-id" },
             { name: "Why does Hip pain", id: "hip-pain-id" },
-            { name: "Hip Replacement", id: "hip-replacement-id" },
+            { name: "Hip Replacement", id: "hip-replacement-id" }
           ]
         },
+
         { name: "Sports", id: "sports-id" },
         { name: "Trauma", id: "trauma-id" }
       ]
@@ -71,19 +72,16 @@ const Navbar = () => {
   ];
 
   /* ---------------------------------------------
-      SCROLL DETECTION
+        SCROLL EFFECT
   ----------------------------------------------*/
   useEffect(() => {
-    const handleScrollEffect = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
+    const handleScrollEffect = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScrollEffect);
     return () => window.removeEventListener("scroll", handleScrollEffect);
   }, []);
 
   /* ---------------------------------------------
-      CLICK OUTSIDE TO CLOSE DROPDOWNS
+        CLOSE DROPDOWNS ON OUTSIDE CLICK
   ----------------------------------------------*/
   useEffect(() => {
     const closeAll = (e) => {
@@ -98,7 +96,7 @@ const Navbar = () => {
   }, []);
 
   /* ---------------------------------------------
-      MAIN DROPDOWN TOGGLE
+        TOGGLE MAIN DROPDOWN
   ----------------------------------------------*/
   const toggleMainDropdown = (e) => {
     e.stopPropagation();
@@ -107,7 +105,7 @@ const Navbar = () => {
   };
 
   /* ---------------------------------------------
-      ROUTING & SCROLL LOGIC
+        NORMAL ITEM CLICK
   ----------------------------------------------*/
   const handleItemClick = (id, path) => {
     setDropdownOpen(false);
@@ -128,19 +126,20 @@ const Navbar = () => {
   };
 
   /* ---------------------------------------------
-      RENDER COMPONENT
+                        RENDER NAVBAR
   ----------------------------------------------*/
   return (
     <div className={`main-nav ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
+
             {/* LOGO */}
             <Link to="/" className="navbar-brand">
               <img src={ivoryimg} alt="logo" className="karkamkarimg" />
             </Link>
 
-            {/* MOBILE HAMBURGER */}
+            {/* MOBILE MENU TOGGLER */}
             <button
               className="navbar-toggler"
               type="button"
@@ -150,14 +149,14 @@ const Navbar = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
 
+            {/* NAVBAR LINKS */}
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav m-auto mb-2 mb-lg-0">
+
                 {navbarItems.map(({ name, id, dropdown, path }) => (
-                  <li
-                    key={name}
-                    className={`nav-item ${dropdown ? "dropdown" : ""}`}
-                  >
-                    {/* Services Main Dropdown */}
+                  <li key={name} className={`nav-item ${dropdown ? "dropdown" : ""}`}>
+
+                    {/* ---------------- SERVICES DROPDOWN ---------------- */}
                     {dropdown ? (
                       <>
                         <button
@@ -165,30 +164,26 @@ const Navbar = () => {
                           onClick={toggleMainDropdown}
                         >
                           {name}
-                          <span
-                            className={`dropdown-arrow ${
-                              dropdownOpen ? "open" : ""
-                            }`}
-                          >
+                          <span className={`dropdown-arrow ${dropdownOpen ? "open" : ""}`}>
                             ▼
                           </span>
                         </button>
 
-                        {/* MAIN DROPDOWN MENU */}
+                        {/* MAIN DROPDOWN */}
                         <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
                           <div className="services-row">
+
                             {dropdown.map((item) => (
                               <div key={item.name} className="dropdown-submenu">
-                                {/* If item has sub menu (KNEE) */}
+
+                                {/* ---- ITEMS WITH SUBMENU (Shoulder, Knee, Hip) ---- */}
                                 {item.subDropdown ? (
                                   <>
                                     <button
                                       className="submenu-toggle"
                                       onClick={(e) => {
                                         e.stopPropagation();
-                                        setOpenSubmenu(
-                                          openSubmenu === item.id ? null : item.id
-                                        );
+                                        setOpenSubmenu(openSubmenu === item.id ? null : item.id);
                                       }}
                                     >
                                       {item.name}
@@ -201,21 +196,21 @@ const Navbar = () => {
                                       </span>
                                     </button>
 
-                                    {/* SECOND LEVEL SUBMENU */}
-                                    <ul
-                                      className={`submenu ${
-                                        openSubmenu === item.id ? "show" : ""
-                                      }`}
-                                    >
+                                    {/* SUBMENU LIST */}
+                                    <ul className={`submenu ${openSubmenu === item.id ? "show" : ""}`}>
                                       {item.subDropdown.map((sub) => (
                                         <li key={sub.id}>
                                           <button
                                             className="dropdown-item"
-                                            onClick={() =>
-                                              navigate("/services", {
-                                                state: { kneeSection: sub.id }
-                                              })
-                                            }
+                                            onClick={() => {
+                                              if (item.id === "shoulder-id") {
+                                                navigate("/services", { state: { shoulderSection: sub.id } });
+                                              } else if (item.id === "knee-id") {
+                                                navigate("/services", { state: { kneeSection: sub.id } });
+                                              } else if (item.id === "hip-id") {
+                                                navigate("/services", { state: { hipSection: sub.id } });
+                                              }
+                                            }}
                                           >
                                             {sub.name}
                                           </button>
@@ -224,9 +219,18 @@ const Navbar = () => {
                                     </ul>
                                   </>
                                 ) : (
+                                  /* ---- NON SUBMENU ITEMS (Sports, Trauma) ---- */
                                   <button
                                     className="dropdown-item"
-                                    onClick={() => handleItemClick(item.id)}
+                                    onClick={() => {
+                                      if (item.id === "trauma-id") {
+                                        navigate("/services", { state: { traumaSection: "trauma-id" } });
+                                      } else if (item.id === "sports-id") {
+                                        navigate("/services", { state: { sportsSection: "sports-id" } });
+                                      } else {
+                                        handleItemClick(item.id);
+                                      }
+                                    }}
                                   >
                                     {item.name}
                                   </button>
@@ -237,7 +241,7 @@ const Navbar = () => {
                         </ul>
                       </>
                     ) : (
-                      /* Normal links */
+                      /* ---------------- NORMAL LINKS ---------------- */
                       <button
                         className="nav-link"
                         onClick={() => handleItemClick(id, path)}
@@ -247,8 +251,10 @@ const Navbar = () => {
                     )}
                   </li>
                 ))}
+
               </ul>
             </div>
+
           </div>
         </nav>
       </div>
