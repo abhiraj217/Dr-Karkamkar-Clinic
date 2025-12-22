@@ -3,9 +3,8 @@ import Home from './pages/Home';
 import {Routes, Route} from 'react-router-dom';
 import KnowYourDr from './pages/KnowYourDr';
 import ServicesPage from './pages/ServicesPage';
-import BlogsPage from './pages/BlogsPage';
-import SingleBlog from './pages/SingleBlog/SingleBlog';
 import Contactus from './pages/Contact/Contactus';
+import FaqPage from './pages/FaqPage';
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/aboutUs" element={<KnowYourDr />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/blogs" element={<BlogsPage />} />
-      <Route path="/blog/:url" element={<SingleBlog />} />
+      <Route path='/Faq' element={<FaqPage />} />
       <Route path="/contact" element={<Contactus />} />
     </Routes>
   );

@@ -10,6 +10,10 @@ import sportsContent from "./sportsContent";
 import TabsPill from "./TabsPill";
 
 const ServicePageContent = () => {
+  useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
+      
   const location = useLocation();
 
   /* ---------------------------------------------
