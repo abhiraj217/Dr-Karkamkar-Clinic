@@ -35,7 +35,7 @@
 
 .nav-link:hover,
 .nav-link.active {
-    color: #2596be !important;
+    color: #0c6a6a !important;
 }
 
 /* =========================================================
@@ -120,7 +120,7 @@
 
 .services-row button:hover {
     background: #eef3f6;
-    color: #2596be;
+    color: #0c6a6a;
 }
 
 /* =========================================================
@@ -144,7 +144,7 @@
 
 .submenu-arrow.open {
     transform: rotate(90deg);
-    color: #2596be;
+    color: #0c6a6a;
 }
 
 .submenu {
@@ -170,7 +170,7 @@
 
 .submenu .dropdown-item:hover {
     background: #eef3f6;
-    color: #2596be;
+    color: #0c6a6a;
 }
 
 .submenu li {

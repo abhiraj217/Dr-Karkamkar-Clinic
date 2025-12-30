@@ -119,7 +119,7 @@ const faqData = {
 ],
 shoulderReplacement: [
   {
-    q: "Do shoulder also become arthritic like knee?",
+    q: "Does shoulder also become arthritic like knee?",
     a: "Yes\nArthritis means ‘wear and tear’ of joint cartilage. It can happen with any joint. Only the pathology[reason] can be different depending on age, joint involved and history.\nLink Shoulder pain"
   },
   {
@@ -140,7 +140,7 @@ shoulderReplacement: [
   },
   {
     q: "For how much period I need to wear sling?",
-    a: "Approximately 3wks"
+    a: "Approximately for 3wks it is necessary to wear the sling."
   },
   {
     q: "When can I start active movements?",
@@ -148,7 +148,7 @@ shoulderReplacement: [
   },
   {
     q: "How much time required to return normal range of motion?",
-    a: "Approximately after 3-6wks\nThis may vary depending on individual conditions."
+    a: "Active assisted movement with sling 6-9weeks\nActive movements without sling 9-12weeks, can be done further with thera [resistant] band to improve movement and strength"
   },
   {
     q: "When is physiotherapy started after surgery?",
@@ -156,7 +156,7 @@ shoulderReplacement: [
   },
   {
     q: "When can I returned to work?",
-    a: "You can return back to work as per Dr Suggestions"
+    a: "Work from home is permitted after 2 weeks after surgery. And most of patients are able to join office for sedentary work after 4 to 6 weeks."
   },
   {
     q: "When can I resume driving after shoulder replacement surgery?",
@@ -245,8 +245,83 @@ shoulderReplacement: [
     q: "When can I return to work?",
     a: "It depends on occupation. Sedentary job may allow return after 14 days. Jobs requiring arm use need more time. Discuss with doctor prior to surgery for planning."
   }
+],
+hipReplacement: [
+  {
+    q: "Do all types of pain in gluteal or buttock area are connected with hip joint?",
+    a: "No.\nPain in the gluteal/buttock region is due to spine. Pain in groin region is usually because of hip joint."
+  },
+  {
+    q: "Does the replaced hip sustain as anormal hip during activity?",
+    a: "Yes, they are as good as normal God given hip joint, provided it is done by a well experienced hip replacement surgeons and you have done a physiotherapy after that."
+  },
+  {
+    q: "Can I sit cross legged or use Indian toilets after hip replacement surgery?",
+    a: "Many can manage to sit cross legged or use Indian toilets but it is not safe. Even if you can do, it puts excessive load on hip joint that causes early arthritis or early loosening of implant and decreases the shelf life of new replaced joint. So preferable to avoid."
+  },
+  {
+    q: "Is prolonged sitting painful after hip Replacement?",
+    a: "No, but it is advisable to take frequent breaks in between as muscles do not become fatigued or stiff after prolonged sitting."
+  }
+],
+kneeArthroscopy: [
+  {
+    q: "Knee is loosened while walking. Is it ligament tear?",
+    a: "In absence of injury/trauma, it may be due to muscle weakness. You need to focus on Physiotherapy. Make the muscles strong.\nIf you have a injury or trauma then you have to investigate [MRI] and confirm that you do not have ligament tear."
+  },
+  {
+    q: "If Ligament is torn, is it possible to reform it as original?",
+    a: "Certain ligaments in body like MCL and LCL may have capacity to regenerate. If other ligaments like ACL and PCL that are within the joint [intraarticular] get torn with Grade 3 that is complete tear then they do not unite. It requires arthroscopic repair."
+  },
+  {
+    q: "Do knee work normally if meniscus is removed for any reason?",
+    a: "Yes, you can walk normally, knee can work normally if meniscus is removed. But meniscus act as cushion in knee joint so it is removed, risk of early arthritis increases. So to prevent it, you need to maintain diet, weight and do regular exercises."
+  },
+  {
+    q: "Can I play again or climbed stairs or do trekking after ligament/meniscus repair?",
+    a: "Yes, after ligament/meniscus surgery, after couple of months when your rehabilitation program is done, you have done a good physiotherapy, your muscles are good, then you can think to restart your sport or trekking. This usually take one to one and half yr after index surgery."
+  },
+  {
+    q: "Can I sit cross legged or use Indian toilet after ligament/meniscus repair?",
+    a: "Yes, after 9mths to 1yr. If it is done before that it can cause twisting of repaired structure and does not seem to be safe, as getting up from these positions are actions against gravity and puts excessive weight on joint, so not advisable before 9mths to 1yr. [Duration may get prolonged depending on individual condition]."
+  },
+  {
+    q: "Can I sit for a long or travel long distance after ligament/meniscus repair?",
+    a: "Yes. Safe way is to keep leg in straight position, have a frequent breaks during travel, take vehicle walk for couple of minutes and then again continue travelling."
+  }
+],
+sportsMedicine: [
+  {
+    q: "Any specific physiotherapy or training is there as per specific sports?",
+    a: "Yes, each sports have a different mechanism of joint movement so different joints at risk. So, each sport has individualised rehabilitation program that physiotherapist will advise you."
+  },
+  {
+    q: "After any surgery/ligament/meniscus repair can I play the sport again?",
+    a: "Yes, you are able to play after the index problem is healed and you have gained enough strength and balance after that operative procedure."
+  }
+],
+trauma: [
+  {
+    q: "When to use ice packs and when to do hot fomentation?",
+    a: "Ice : Pain or disability after any injury\nHot fomentation : Aging pain/ overactivity pain/ Mechanical overloading"
+  },
+  {
+    q: "What is cast and what is slab?",
+    a: "Slab : A plaster slab is applied immediately after a fracture as a temporary splint to immobilize the limb.\nLocal swelling may increase in 48-72hrs, slab encircle only 2/3 rd of limb thus preventing neurovascular compression.\nSlab material is hard plastic or foam.\nCast : A plaster cast is applied for longer duration.\nIt is applied after swelling and inflammation subsides.\nCast material is a rigid fiberglass or POP."
+  },
+  {
+    q: "Which type of cast to be used Fiberglass or POP?",
+    a: "Fiberglass material : It is light, stronger and radiolucent [can take xray through cast]. Good for children.\nPOP : It is a traditional type of cast. Its use has been reduced. It is heavy, less strong and require longer time for setting."
+  },
+  {
+    q: "What is to be done if plaster loosen up?",
+    a: "Report to doctor and apply new. As if it is too loose it may not support the fracture adequately so fracture may be at risk of displacement."
+  },
+  {
+    q: "If itching is experienced at plaster site?",
+    a: "As skin is not in contact with air and water it causes accumulation of dead skin. This causes itching.\nKeep the site dry and clean."
+  }
 ]
-
 };
 
 export default faqData;

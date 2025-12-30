@@ -61,26 +61,6 @@ const footerContacts = [
             Trusted by the community for expert orthopedic and sports injury care. Committed to personalized treatment and your speedy recovery with compassion and advanced solutions.
             </p>
 
-            <div className="social-logo">
-              <p>Follow us on</p>
-              <ul>
-                <li>
-                  <a href="/">
-                    <FaFacebookF />
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <FaTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a href="/">
-                    <FaInstagram />
-                  </a>
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="col-lg-2 col-md-2">
             <div className="footer-link">

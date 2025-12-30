@@ -26,38 +26,39 @@ const videoList = [
   {
     id: 1,
     url: "https://www.youtube.com/embed/-P_qkzxTAME",
-    title: "Clinic Walkthrough"
   },
   {
     id: 2,
     url: "https://www.youtube.com/embed/krxjrMZgZbs",
-    title: "Patient Experience"
   },
    {
     id: 3,
     url: "https://www.youtube.com/embed/6kVKTxypqyI",
-    title: "Patient Experience"
   },
   {
     id: 4,
     url: "https://www.youtube.com/embed/mvFhP0pC85E",
-    title: "Clinic Walkthrough"
   },
   {
     id: 5,
     url: "https://www.youtube.com/embed/hDEwNBrwESc",
-    title: "Patient Experience"
   },
    {
     id: 6,
-    url: "https://www.youtube.com/embed/6kVKTxypqyI",
-    title: "Patient Experience"
+    url: "https://www.youtube.com/embed/es1TNw19y2M",
+  },
+  {
+    id: 7,
+    url: "https://www.youtube.com/embed/xlbISqBihEw",
+  },
+  {
+    id: 8,
+    url: "https://www.youtube.com/embed/CQg6ZZlruZ4",
   }
 ];
 
 const clinicImages = [
   { id: 1, url: drKrakamkarownImg },
-  { id: 2, url: drKrakamkarownImg2 },
   { id: 3, url: drKrakamkarClinicImg },
   { id: 4, url: drKrakamkarOfficeImg },
   { id: 5, url: drKrakamkarStandingImg },
@@ -103,7 +104,6 @@ const GalleryContent = () => {
             {clinicImages.map((img) => (
               <div key={img.id} className="gallery-card">
                 <img src={img.url} alt="clinic" />
-                <div className="overlay">View</div>
               </div>
             ))}
           </div>
@@ -120,7 +120,7 @@ const GalleryContent = () => {
                   height="220px"
                   controls
                 />
-                <p>{video.title}</p>
+                {/* <p>{video.title}</p> */}
               </div>
             ))}
           </div>

@@ -11,7 +11,7 @@ footer .footer-logo {
 footer .footer-logo .ivory-title {
     font-size: 38px;
     font-weight: 700;
-    color: #2596be;
+    color: #0c6a6a;
     letter-spacing: 3px;
 }
 
@@ -23,7 +23,7 @@ footer .footer-logo .ivory-title .ivory-img {
 footer .footer-logo .footer-para {
     text-transform: uppercase;
     margin-bottom: 0px;
-    color: #2596be;
+    color: #0c6a6a;
     font-size: 10px;
     font-weight: 700;
     line-height: 1.2rem;
@@ -40,7 +40,7 @@ footer .social-logo p {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #2596be;
+    color: #0c6a6a;
     margin-bottom: 10px;
 }
 
@@ -62,12 +62,12 @@ footer .social-logo ul li a {
 }
 
 footer .social-logo ul li a:hover {
-    color: #2596be;
+    color: #0c6a6a;
 }
 
 footer .footer-link p {
     text-transform: uppercase;
-    color: #2596be;
+    color: #0c6a6a;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -90,12 +90,12 @@ footer .footer-link ul li a {
 }
 
 footer .footer-link ul li a:hover {
-    color: #2596be;
+    color: #0c6a6a;
 }
 
 footer .footer-contact p {
     text-transform: uppercase;
-    color: #2596be;
+    color: #0c6a6a;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -107,7 +107,7 @@ footer .contact-list {
 }
 
 footer .contact-list .footer-icons {
-    color: #2596be;
+    color: #0c6a6a;
     margin-right: 15px;
     margin-top: 5px;
     font-size: 18px;
@@ -135,7 +135,7 @@ footer .contact-list .contact-text h5 {
 /* Timings below address */
 footer .contact-list .contact-text .timing {
     font-size: 13px;
-    color: #2596be;
+    color: #0c6a6a;
     font-weight: 500;
     margin-top: 2px;
     display: block;
@@ -174,7 +174,7 @@ footer .copyright-area .copy-links ul li a {
 }
 
 footer .copyright-area .copy-links ul li a:hover {
-    color: #2596be;
+    color: #0c6a6a;
 }
 
 .clinic-img {

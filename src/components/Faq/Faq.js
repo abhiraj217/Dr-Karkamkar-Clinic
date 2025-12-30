@@ -23,37 +23,77 @@ const Faq = () => {
     <div className="faq-wrapper container">
       <h1 className="faq-title">Frequently Asked Questions</h1>
 
-      <div className="faq-tabs">
-        <button
-          className={`faq-tab ${activeTab === "kneeReplacement" ? "active" : ""}`}
-          onClick={() => {
-            setActiveTab("kneeReplacement");
-            setOpenIndex(null);
-          }}
-        >
-          Knee Replacement
-        </button>
+<div className="faq-tabs">
+  <button
+    className={`faq-tab ${activeTab === "kneeReplacement" ? "active" : ""}`}
+    onClick={() => {
+      setActiveTab("kneeReplacement");
+      setOpenIndex(null);
+    }}
+  >
+    Knee Replacement
+  </button>
 
-        <button
-          className={`faq-tab ${activeTab === "shoulderArthroscopy" ? "active" : ""}`}
-          onClick={() => {
-            setActiveTab("shoulderArthroscopy");
-            setOpenIndex(null);
-          }}
-        >
-          Shoulder Arthroscopy
-        </button>
+  <button
+    className={`faq-tab ${activeTab === "hipReplacement" ? "active" : ""}`}
+    onClick={() => {
+      setActiveTab("hipReplacement");
+      setOpenIndex(null);
+    }}
+  >
+    Hip Replacement
+  </button>
 
-        <button
-          className={`faq-tab ${activeTab === "shoulderReplacement" ? "active" : ""}`}
-          onClick={() => {
-            setActiveTab("shoulderReplacement");
-            setOpenIndex(null);
-          }}
-        >
-          Shoulder Replacement
-        </button>
-      </div>
+  <button
+    className={`faq-tab ${activeTab === "shoulderArthroscopy" ? "active" : ""}`}
+    onClick={() => {
+      setActiveTab("shoulderArthroscopy");
+      setOpenIndex(null);
+    }}
+  >
+    Shoulder Arthroscopy
+  </button>
+
+  <button
+    className={`faq-tab ${activeTab === "shoulderReplacement" ? "active" : ""}`}
+    onClick={() => {
+      setActiveTab("shoulderReplacement");
+      setOpenIndex(null);
+    }}
+  >
+    Shoulder Replacement
+  </button>
+  <button
+  className={`faq-tab ${activeTab === "kneeArthroscopy" ? "active" : ""}`}
+  onClick={() => {
+    setActiveTab("kneeArthroscopy");
+    setOpenIndex(null);
+  }}
+>
+  Knee Arthroscopy
+</button>
+<button
+  className={`faq-tab ${activeTab === "sportsMedicine" ? "active" : ""}`}
+  onClick={() => {
+    setActiveTab("sportsMedicine");
+    setOpenIndex(null);
+  }}
+>
+  Sports Medicinetrauma
+</button>
+<button
+  className={`faq-tab ${activeTab === "trauma" ? "active" : ""}`}
+  onClick={() => {
+    setActiveTab("trauma");
+    setOpenIndex(null);
+  }}
+>
+  trauma
+</button>
+
+</div>
+
+
 
       <div className="faq-list">
         {activeFaqs.map((item, index) => (
