@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import ivoryimg from "../../assets/navbar/karkamkar-clinic-logo.png";
 import { Link, useNavigate } from "react-router-dom";
@@ -17,9 +17,11 @@ import { handleScroll } from "../../utils/Utils";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [galleryDropdownOpen, setGalleryDropdownOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navbarItems = [
     { name: "Home", path: "/" },
@@ -28,15 +30,16 @@ const Navbar = () => {
     {
       name: "Services",
       id: SERVICE_SECTION_ID,
+      dropdownType: "services",
       dropdown: [
         {
           name: "Shoulder",
           id: "shoulder-id",
           subDropdown: [
-            { name: "How is normal Shoulder", id: "shoulder-normal-id" },
-            { name: "Why does Shoulder pain", id: "shoulder-pain-id" },
-            { name: "Shoulder Arthroscopy", id: "shoulder-arthroscopy-id" },
-            { name: "Shoulder Replacement", id: "shoulder-replacement-id" }
+            { name: "How is normal Shoulder", slug: "shoulder-normal" },
+            { name: "Why does Shoulder pain", slug: "shoulder-pain" },
+            { name: "Shoulder Arthroscopy", slug: "shoulder-arthroscopy" },
+            { name: "Shoulder Replacement", slug: "shoulder-replacement" }
           ]
         },
 
@@ -44,10 +47,10 @@ const Navbar = () => {
           name: "Knee",
           id: "knee-id",
           subDropdown: [
-            { name: "How is Normal Knee", id: "knee-normal-id" },
-            { name: "Why Does Knee Pain", id: "knee-pain-id" },
-            { name: "Knee Arthroscopy", id: "knee-arthoscopy-id" },
-            { name: "Knee Replacement", id: "knee-replacement-id" }
+            { name: "How is Normal Knee", slug: "knee-normal" },
+            { name: "Why Does Knee Pain", slug: "knee-pain" },
+            { name: "Knee Arthroscopy", slug: "knee-arthroscopy" },
+            { name: "Knee Replacement", slug: "knee-replacement" }
           ]
         },
 
@@ -55,21 +58,35 @@ const Navbar = () => {
           name: "Hip",
           id: "hip-id",
           subDropdown: [
-            { name: "How is normal Hip", id: "hip-normal-id" },
-            { name: "Why does Hip pain", id: "hip-pain-id" },
-            { name: "Hip Replacement", id: "hip-replacement-id" }
+            { name: "How is normal Hip", slug: "hip-normal" },
+            { name: "Why does Hip pain", slug: "hip-pain" },
+            { name: "Hip Replacement", slug: "hip-replacement" }
           ]
         },
 
-        { name: "Sports", id: "sports-id" },
-        { name: "Trauma", id: "trauma-id" }
+        { name: "Sports", slug: "sports" },
+        { name: "Trauma", slug: "trauma" }
       ]
     },
 
-    { name: "Gallery", id: TESTIMONIAL_SECTION_ID },
+    {
+      name: "Gallery",
+      dropdownType: "gallery",
+      dropdown: [
+        { name: "Clinic Images", path: "/gallery/clinic" },
+        { name: "Videos", path: "/gallery/videos" }
+      ]
+    },
+
     { name: "FAQ", path: "/faq" },
     { name: "Contact Us", id: CONTACTUS_SECTION_ID }
   ];
+
+  const handleGalleryNavigation = (path) => {
+    setGalleryDropdownOpen(false);
+    setMobileMenuOpen(false);
+    navigate(path);
+  };
 
   /* ---------------------------------------------
         SCROLL EFFECT
@@ -86,7 +103,8 @@ const Navbar = () => {
   useEffect(() => {
     const closeAll = (e) => {
       if (!e.target.closest(".dropdown")) {
-        setDropdownOpen(false);
+        setServicesDropdownOpen(false);
+        setGalleryDropdownOpen(false);
         setOpenSubmenu(null);
       }
     };
@@ -96,20 +114,37 @@ const Navbar = () => {
   }, []);
 
   /* ---------------------------------------------
-        TOGGLE MAIN DROPDOWN
+        TOGGLE MOBILE MENU
   ----------------------------------------------*/
-  const toggleMainDropdown = (e) => {
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  /* ---------------------------------------------
+        TOGGLE DROPDOWN (Services or Gallery)
+  ----------------------------------------------*/
+  const toggleDropdown = (e, dropdownType) => {
     e.stopPropagation();
-    setDropdownOpen(!dropdownOpen);
-    setOpenSubmenu(null);
+    
+    if (dropdownType === "services") {
+      setServicesDropdownOpen(!servicesDropdownOpen);
+      setGalleryDropdownOpen(false);
+      setOpenSubmenu(null);
+    } else if (dropdownType === "gallery") {
+      setGalleryDropdownOpen(!galleryDropdownOpen);
+      setServicesDropdownOpen(false);
+      setOpenSubmenu(null);
+    }
   };
 
   /* ---------------------------------------------
         NORMAL ITEM CLICK
   ----------------------------------------------*/
   const handleItemClick = (id, path) => {
-    setDropdownOpen(false);
+    setServicesDropdownOpen(false);
+    setGalleryDropdownOpen(false);
     setOpenSubmenu(null);
+    setMobileMenuOpen(false);
 
     if (path) return navigate(path);
 
@@ -123,6 +158,17 @@ const Navbar = () => {
     }
 
     if (id) handleScroll(id);
+  };
+
+  /* ---------------------------------------------
+        HANDLE SERVICE NAVIGATION
+  ----------------------------------------------*/
+  const handleServiceNavigation = (slug) => {
+    setServicesDropdownOpen(false);
+    setGalleryDropdownOpen(false);
+    setOpenSubmenu(null);
+    setMobileMenuOpen(false);
+    navigate(`/services/${slug}`);
   };
 
   /* ---------------------------------------------
@@ -143,102 +189,109 @@ const Navbar = () => {
             <button
               className="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
+              onClick={toggleMobileMenu}
+              aria-expanded={mobileMenuOpen}
+              aria-label="Toggle navigation"
             >
               <span className="navbar-toggler-icon"></span>
             </button>
 
             {/* NAVBAR LINKS */}
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className={`collapse navbar-collapse ${mobileMenuOpen ? "show" : ""}`} id="navbarNav">
               <ul className="navbar-nav m-auto mb-2 mb-lg-0">
 
-                {navbarItems.map(({ name, id, dropdown, path }) => (
+                {navbarItems.map(({ name, id, dropdown, dropdownType, path }) => (
                   <li key={name} className={`nav-item ${dropdown ? "dropdown" : ""}`}>
 
-                    {/* ---------------- SERVICES DROPDOWN ---------------- */}
+                    {/* ---------------- DROPDOWNS (Services & Gallery) ---------------- */}
                     {dropdown ? (
                       <>
                         <button
                           className="nav-link dropdown-toggle"
-                          onClick={toggleMainDropdown}
+                          onClick={(e) => toggleDropdown(e, dropdownType)}
                         >
                           {name}
-                          <span className={`dropdown-arrow ${dropdownOpen ? "open" : ""}`}>
+                          <span className={`dropdown-arrow ${
+                            (dropdownType === "services" && servicesDropdownOpen) ||
+                            (dropdownType === "gallery" && galleryDropdownOpen)
+                              ? "open"
+                              : ""
+                          }`}>
                             ▼
                           </span>
                         </button>
 
-                        {/* MAIN DROPDOWN */}
-                        <ul className={`dropdown-menu ${dropdownOpen ? "show" : ""}`}>
-                          <div className="services-row">
+                        {/* SERVICES DROPDOWN */}
+                        {dropdownType === "services" && (
+                          <ul className={`dropdown-menu ${servicesDropdownOpen ? "show" : ""}`}>
+                            <div className="services-row">
+                              {dropdown.map((item) => (
+                                <div key={item.name} className="dropdown-submenu">
 
-                            {dropdown.map((item) => (
-                              <div key={item.name} className="dropdown-submenu">
+                                  {/* ---- ITEMS WITH SUBMENU (Shoulder, Knee, Hip) ---- */}
+                                  {item.subDropdown ? (
+                                    <>
+                                      <button
+                                        className="submenu-toggle"
+                                        onClick={(e) => {
+                                          e.stopPropagation();
+                                          setOpenSubmenu(openSubmenu === item.id ? null : item.id);
+                                        }}
+                                      >
+                                        {item.name}
+                                        <span
+                                          className={`submenu-arrow ${
+                                            openSubmenu === item.id ? "open" : ""
+                                          }`}
+                                        >
+                                          ▸
+                                        </span>
+                                      </button>
 
-                                {/* ---- ITEMS WITH SUBMENU (Shoulder, Knee, Hip) ---- */}
-                                {item.subDropdown ? (
-                                  <>
+                                      {/* SUBMENU LIST */}
+                                      <ul className={`submenu ${openSubmenu === item.id ? "show" : ""}`}>
+                                        {item.subDropdown.map((sub) => (
+                                          <li key={sub.slug}>
+                                            <button
+                                              className="dropdown-item"
+                                              onClick={() => handleServiceNavigation(sub.slug)}
+                                            >
+                                              {sub.name}
+                                            </button>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </>
+                                  ) : (
+                                    /* ---- NON SUBMENU ITEMS (Sports, Trauma) ---- */
                                     <button
-                                      className="submenu-toggle"
-                                      onClick={(e) => {
-                                        e.stopPropagation();
-                                        setOpenSubmenu(openSubmenu === item.id ? null : item.id);
-                                      }}
+                                      className="dropdown-item"
+                                      onClick={() => handleServiceNavigation(item.slug)}
                                     >
                                       {item.name}
-                                      <span
-                                        className={`submenu-arrow ${
-                                          openSubmenu === item.id ? "open" : ""
-                                        }`}
-                                      >
-                                        ▸
-                                      </span>
                                     </button>
+                                  )}
+                                </div>
+                              ))}
+                            </div>
+                          </ul>
+                        )}
 
-                                    {/* SUBMENU LIST */}
-                                    <ul className={`submenu ${openSubmenu === item.id ? "show" : ""}`}>
-                                      {item.subDropdown.map((sub) => (
-                                        <li key={sub.id}>
-                                          <button
-                                            className="dropdown-item"
-                                            onClick={() => {
-                                              if (item.id === "shoulder-id") {
-                                                navigate("/services", { state: { shoulderSection: sub.id } });
-                                              } else if (item.id === "knee-id") {
-                                                navigate("/services", { state: { kneeSection: sub.id } });
-                                              } else if (item.id === "hip-id") {
-                                                navigate("/services", { state: { hipSection: sub.id } });
-                                              }
-                                            }}
-                                          >
-                                            {sub.name}
-                                          </button>
-                                        </li>
-                                      ))}
-                                    </ul>
-                                  </>
-                                ) : (
-                                  /* ---- NON SUBMENU ITEMS (Sports, Trauma) ---- */
-                                  <button
-                                    className="dropdown-item"
-                                    onClick={() => {
-                                      if (item.id === "trauma-id") {
-                                        navigate("/services", { state: { traumaSection: "trauma-id" } });
-                                      } else if (item.id === "sports-id") {
-                                        navigate("/services", { state: { sportsSection: "sports-id" } });
-                                      } else {
-                                        handleItemClick(item.id);
-                                      }
-                                    }}
-                                  >
-                                    {item.name}
-                                  </button>
-                                )}
-                              </div>
+                        {/* GALLERY DROPDOWN */}
+                        {dropdownType === "gallery" && (
+                          <ul className={`dropdown-menu ${galleryDropdownOpen ? "show" : ""}`}>
+                            {dropdown.map((item) => (
+                              <li key={item.name}>
+                                <button
+                                  className="dropdown-item"
+                                  onClick={() => handleGalleryNavigation(item.path)}
+                                >
+                                  {item.name}
+                                </button>
+                              </li>
                             ))}
-                          </div>
-                        </ul>
+                          </ul>
+                        )}
                       </>
                     ) : (
                       /* ---------------- NORMAL LINKS ---------------- */

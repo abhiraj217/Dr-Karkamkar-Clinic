@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import "./ServicesPageContent.css";
 
 import kneeContent from "./kneeContent";
@@ -10,60 +10,70 @@ import sportsContent from "./sportsContent";
 import TabsPill from "./TabsPill";
 
 const ServicePageContent = () => {
+  const { slug } = useParams();
+  const navigate = useNavigate();
+
+  // Scroll to top when slug changes
   useEffect(() => {
-          window.scrollTo(0, 0);
-      }, []);
-      
-  const location = useLocation();
+    window.scrollTo(0, 0);
+  }, [slug]);
 
-  /* ---------------------------------------------
-        DEFAULT SECTION (ON DIRECT NAVIGATION)
-  ----------------------------------------------*/
-  const defaultSection =
-    location.state?.kneeSection ||
-    location.state?.hipSection ||
-    location.state?.shoulderSection ||
-    location.state?.traumaSection ||
-    location.state?.sportsSection ||   // ✅ SPORTS SUPPORT
-    "knee-arthoscopy-id";
+  // Map slugs to content IDs
+  const slugToId = {
+    // Knee
+    "knee-normal": "knee-normal-id",
+    "knee-pain": "knee-pain-id",
+    "knee-arthroscopy": "knee-arthoscopy-id",
+    "knee-replacement": "knee-replacement-id",
 
-  const [selected, setSelected] = useState(defaultSection);
+    // Shoulder
+    "shoulder-normal": "shoulder-normal-id",
+    "shoulder-pain": "shoulder-pain-id",
+    "shoulder-arthroscopy": "shoulder-arthroscopy-id",
+    "shoulder-replacement": "shoulder-replacement-id",
 
-  /* ---------------------------------------------
-        UPDATE SELECTED WHEN NAVIGATING
-  ----------------------------------------------*/
+    // Hip
+    "hip-normal": "hip-normal-id",
+    "hip-pain": "hip-pain-id",
+    "hip-replacement": "hip-replacement-id",
+
+    // Others
+    "sports": "sports-id",
+    "trauma": "trauma-id"
+  };
+
+  // Redirect if invalid slug
   useEffect(() => {
-    if (location.state?.kneeSection) {
-      setSelected(location.state.kneeSection);
+    if (!slug || !slugToId[slug]) {
+      navigate("/services/knee-arthroscopy", { replace: true });
     }
-    if (location.state?.hipSection) {
-      setSelected(location.state.hipSection);
-    }
-    if (location.state?.shoulderSection) {
-      setSelected(location.state.shoulderSection);
-    }
-    if (location.state?.traumaSection) {
-      setSelected(location.state.traumaSection);
-    }
-    if (location.state?.sportsSection) {   // ✅ Missing previously
-      setSelected(location.state.sportsSection);
-    }
-  }, [location.state]);
+  }, [slug, navigate]);
 
-  /* ---------------------------------------------
-        LOAD THE CORRECT CONTENT OBJECT
-  ----------------------------------------------*/
+  // Get content ID from slug
+  const contentId = slugToId[slug];
+
+  // If no valid contentId, return null (will redirect via useEffect)
+  if (!contentId) return null;
+
+  // Load the correct content object
   const data =
-    kneeContent[selected] ||
-    hipContent[selected] ||
-    shoulderContent[selected] ||
-    traumaContent[selected] ||
-    sportsContent[selected] ||   // ✅ SPORTS CONTENT
-    kneeContent["knee-arthoscopy-id"]; // fallback
+    kneeContent[contentId] ||
+    hipContent[contentId] ||
+    shoulderContent[contentId] ||
+    traumaContent[contentId] ||
+    sportsContent[contentId];
 
-  /* ---------------------------------------------
-        SECTIONS THAT NEED TAB VIEW
-  ----------------------------------------------*/
+  // If no data found, return error message
+  if (!data) {
+    return (
+      <div className="container service-wrapper fade-in">
+        <h1>Content not found</h1>
+        <p>The requested service page could not be loaded.</p>
+      </div>
+    );
+  }
+
+  // Sections that need tab view
   const tabSections = [
     "knee-arthoscopy-id",
     "knee-replacement-id",
@@ -80,7 +90,7 @@ const ServicePageContent = () => {
       <h1 className="serviceKnee-title slide-up">{data.title}</h1>
 
       {/* If section has tabs */}
-      {tabSections.includes(selected) ? (
+      {tabSections.includes(contentId) ? (
         <TabsPill sections={data.sections} />
       ) : (
         data.sections?.map((section, index) => {
@@ -105,7 +115,7 @@ const ServicePageContent = () => {
               >
                 <img
                   src={section.img}
-                  alt=""
+                  alt={section.caption || ""}
                   className={section.className || ""}
                 />
                 {section.caption && (
@@ -121,7 +131,7 @@ const ServicePageContent = () => {
               <div key={index} className="service-image-row fade-in">
                 {section.images.map((item, i) => (
                   <div className="image-col" key={i}>
-                    <img src={item.img} alt="" />
+                    <img src={item.img} alt={item.caption || ""} />
                     {item.caption && (
                       <p className="img-caption">{item.caption}</p>
                     )}
