@@ -2,91 +2,52 @@
 .banner-section {
   position: relative;
   width: 100%;
-  overflow: hidden;
   height: 800px;
+  padding-top: 137px;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+    url("../../assets/banner/clinicImage.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Carousel Container */
-.carusalContainer {
-  width: 100%;
-  height: 800px; /* Desktop height */
-}
-
-/* Carousel inner items */
-.carousel-inner,
-.carousel-item {
-  width: 100%;
-  height: 100%;
-}
-
-/* Make image cover but fully visible */
-.carusalImg {
+/* Optional overlay wrapper */
+.banner-overlay {
   width: 100%;
   height: 100%;
-  object-fit: fill;;  /* <-- show full image without cutting */
-  object-position: center;
-  background-color: #000; /* optional: gives a background when image doesn’t fill */
 }
 
-/* Custom Arrows */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-size: 100% 100%;
-  background-image: none;
-  border: solid white;  /* White visible arrows */
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 10px;
-}
-
-.carousel-control-prev-icon {
-  transform: rotate(135deg);  /* Left arrow */
-}
-
-.carousel-control-next-icon {
-  transform: rotate(-45deg);  /* Right arrow */
-}
-
-.homePageCarousalDiv .carousel{
-    height: 100%;
-}
-
-/* Overlay effect */
-.carousel-item {
-  position: relative;
-}
-
-.carousel-item::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1); /* 👈 Adjust darkness */
-  z-index: 1;
-}
-
-/* Ensure images are below overlay */
-.carousel-item img {
-  position: relative;
-  z-index: 0;
-}
-
-
-/* Responsive Heights */
+/* ---------- Responsive Heights ---------- */
 @media (max-width: 575px) {
-  .carusalContainer { height: 400px; }
+  .banner-section {
+    height: 400px;
+    padding-top: 120px;
+  }
 }
+
 @media (min-width: 576px) and (max-width: 767px) {
-  .carusalContainer { height: 500px; }
+  .banner-section {
+    height: 500px;
+  }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
-  .carusalContainer { height: 600px; }
+  .banner-section {
+    height: 600px;
+  }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
-  .carusalContainer { height: 700px; }
+  .banner-section {
+    height: 700px;
+  }
 }
+
 @media (min-width: 1200px) {
-  .carusalContainer { height: 800px; }
+  .banner-section {
+    height: 800px;
+  }
 }

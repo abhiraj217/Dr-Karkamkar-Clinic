@@ -7,10 +7,11 @@ const Achievements = () => {
   
   // Initial and target values for counters
   const counters = [
-    { id: 1, start: 5, end: 2000, duration: 2000, suffix: '+', label: 'Happy', sublabel: 'Patients' },
-    { id: 3, start: 5, end: 1252, duration: 2500, suffix: '+', label: 'Patients', sublabel: 'Operated' },
-    { id: 2, start: 5, end: 20, duration: 1500, suffix: '+', label: 'Years', sublabel: 'of Experience' },
-  ];
+  { id: 1, start: 0, end: 15, duration: 2000, suffix: ' Lakh+', divider: 10, label: 'Happy', sublabel: 'Patients' },
+  { id: 2, start: 0, end: 10, duration: 1800, suffix: 'k+', label: 'Surgeries', sublabel: 'Done' },
+  { id: 3, start: 0, end: 20, duration: 1500, suffix: '+', label: 'Years', sublabel: 'of Experience' },
+];
+
 
   // Values to display during animation
   const [counterValues, setCounterValues] = useState(counters.map(counter => 0));
@@ -86,12 +87,17 @@ const Achievements = () => {
       <div className='container achieve-container'>
         <div className='section-title'>
           <span>Our Achievements</span>
-          <h2>Please look at our Achievements!</h2>
+          <h2 className='subtitileColor'>Please look at our Achievements!</h2>
         </div>
         <div className='achieve-div'>
           {counters.map((counter, index) => (
             <div className='achieve-inner-div' key={counter.id}>
-              <h3 className="counter-number">{counterValues[index]}{counter.suffix}</h3>
+              <h3 className="counter-number">
+              {counter.divider
+                ? (counterValues[index] / counter.divider).toFixed(1)
+                : counterValues[index]}
+              {counter.suffix}
+            </h3>
               <p><span>{counter.label}</span> {counter.sublabel}</p>
             </div>
           ))}

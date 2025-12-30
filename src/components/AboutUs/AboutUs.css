@@ -5,7 +5,7 @@
 
 /* LEFT AREA */
 .subTitle {
-  color: #0087a8;
+  color: #0c6a6a;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -30,7 +30,7 @@
   background: #fff;
   padding: 22px;
   border-radius: 15px;
-  border-left: 5px solid #009bbd;
+  border-left: 5px solid #0c6a6a;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
 }
@@ -92,7 +92,7 @@
 /* Highlight the main designation */
 .doctorBadge .docDetails p:first-child {
   font-weight: 600;
-  color: #0097a7; /* blue-green accent */
+  color: #0c6a6a; /* blue-green accent */
 }
 
 /* Optional: subtle separator line */
@@ -101,14 +101,14 @@
   display: block;
   width: 40px;
   height: 3px;
-  background: #00a5b7;
+  background: #0c6a6a;
   border-radius: 2px;
   margin-bottom: 10px;
 }
 
 .knowMoreBtn {
   padding: 12px 30px;
-  background: linear-gradient(90deg, #0087a8, #00c3ae);
+  background: #0c6a6a;
   border-radius: 28px;
   color: white;
   border: none;
@@ -116,6 +116,7 @@
   font-size: 15px;
   font-weight: 600;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .knowMoreBtn:hover {

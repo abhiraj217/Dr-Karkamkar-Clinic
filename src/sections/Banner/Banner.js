@@ -1,46 +1,21 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
-import './Banner.css'
-
-import  cliniImage2 from '../../assets/banner/clinicImage.jpg';
-import hipImage from '../../assets/banner/newhip.jpg';
-import legImage from '../../assets/banner/kneeImages.jpg';
-import traumaImage from '../../assets/banner/jointxrayImage.jpg';
-import skullImage from '../../assets/banner/shoulderImage.jpg';
-import football from '../../assets/banner/footaballlimage.jpg';
-import clinicAvatar from '../../assets/navbar/karkamkar-clinic-logo.png';
-
+import "./Banner.css";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { whatsAppBotListener } from "../../utils/Utils";
 import { PHONE_NUMBER } from "../../utils/Constant";
+import clinicAvatar from "../../assets/navbar/karkamkar-clinic-logo.png";
 
 const Banner = () => {
   return (
-    <section id="banner-section" className="section-bg home-bg banner-section">
-      <div className="carusalContainer homePageCarousalDiv">
-        <Carousel interval={2500} controls={true} indicators={true} fade={false}>
-          <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={cliniImage2} alt="First slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={skullImage} alt="Second slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={legImage} alt="Fourth slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={hipImage} alt="Fifth slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={traumaImage} alt="Sixth slide" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-100 carusalImg" src={football} alt="Seventh slide" />
-          </Carousel.Item>
-        </Carousel>
+    <section
+      id="banner-section"
+      className="section-bg home-bg banner-section"
+    >
+      <div className="banner-overlay">
+        {/* Optional content can go here later */}
       </div>
 
-      {/* WhatsApp bot section */}
+      {/* WhatsApp bot */}
       <FloatingWhatsApp
         avatar={clinicAvatar}
         notification={false}

@@ -104,13 +104,3 @@ h1, h2, h3, h4, h5, h6 {
         padding-bottom: 40px;
     }
 }
-@media (max-width:768px){
-    .home-bg{
-        background-image:linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../public/clinic-tab-img.jpg');
-        height: 100vh;
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-
-}

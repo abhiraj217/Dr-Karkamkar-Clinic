@@ -24,6 +24,10 @@
   gap: 30px;
 }
 
+.subtitileColor{
+ color:  #103254;
+}
+
 @media (max-width: 992px) {
   .achievements-section .achieve-container .achieve-div {
     grid-template-columns: repeat(2, 1fr);
