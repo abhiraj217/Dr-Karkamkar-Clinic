@@ -1,0 +1,30 @@
+#testimonial-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('../../assets/GalleryImages/testimonialImagebg2.png');
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimoni-slider {
+    /* Your existing styles */
+}
+
+.testimoni-slider .slick-dots {
+    bottom: -35px;
+}
+
+.testimoni-slider .slick-dots li {
+    margin: 0 5px;
+}
+
+.testimoni-slider .slick-dots li button:before {
+    font-size: 10px;
+    color: white;
+    opacity: 0.5;
+}
+
+.testimoni-slider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: white;
+}

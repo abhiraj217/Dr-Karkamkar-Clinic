@@ -1,0 +1,428 @@
+/* =========================================================
+   MAIN WRAPPER
+========================================================= */
+.doctorProfileSection {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #ffffff; /* clean white to start */
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Alternate background sections */
+.section-bg-light {
+  background: #f4fbfc; /* light teal tint */
+  padding: 80px 0;
+}
+
+.section-bg-white {
+  background: #ffffff;
+  padding: 80px 0;
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.doctorHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.heroLabel {
+  color: #00a9b5;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.doctorName {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: #063742;
+  line-height: 1.2;
+}
+
+.doctorDesignation {
+  font-size: 18px;
+  font-weight: 600;
+  color: #4d707a;
+  margin-bottom: 20px;
+}
+
+.credentialsRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.credential {
+  background: #d9f7f9;
+  color: #007c85;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.doctorIntro {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.doctorImageWrapper {
+  position: relative;
+}
+
+.doctorImg {
+  width: 360px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0px 10px 25px rgba(0, 120, 130, 0.25);
+}
+
+.imageDecoration {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 18px;
+  border: 3px solid #08b8bf;
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.sectionTitle {
+  font-size: 30px;
+  font-weight: 800;
+  color: #073d4a;
+  margin-bottom: 25px;
+}
+
+/* =========================================================
+   SPECIALIZATION CARDS
+========================================================= */
+
+.expertiseGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.expertiseCard {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 150, 150, 0.08);
+  border: 1px solid #d8f4f6;
+}
+
+.expertiseCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 150, 150, 0.18);
+}
+
+.expertiseIcon {
+  color: #00aab0;
+  margin-bottom: 10px;
+}
+
+.expertiseTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.expertiseDesc {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   SPECIAL EXPERTISE SECTION (NEW ADDED)
+========================================================= */
+
+.specialExpertise {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 28px;
+  margin-top: 18px;
+}
+
+.expertiseItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1px solid #e0f4f5;
+  box-shadow: 0 6px 18px rgba(0,160,170,0.06);
+  transition: all 0.25s ease;
+}
+
+.expertiseItem:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,140,150,0.12);
+}
+
+.expertiseIcon {
+  background: #e6fbfc;
+  color: #008b93;
+  padding: 10px;
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expertiseBody h4 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #073d4a;
+}
+
+.expertiseBody p {
+  color: #475e64;
+  font-size: 14px;
+}
+
+/* =========================================================
+   PREMIUM ALTERNATING TIMELINE
+========================================================= */
+
+.doctor-journey-section {
+  position: relative;
+}
+
+.journey-timeline {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.journey-timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #0097a7; /* teal */
+  transform: translateX(-50%);
+  border-radius: 8px;
+}
+
+.journey-item {
+  width: 50%;
+  position: relative;
+  margin: 40px 0;
+}
+
+.journey-item.left {
+  padding-right: 40px;
+  text-align: right;
+}
+
+.journey-item.right {
+  margin-left: 50%;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.journey-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid #c9f0f2; /* updated border color */
+}
+
+.journey-tag {
+  background: #007c85;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.journey-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #063742;
+}
+
+.journey-desc {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Timeline dots */
+.journey-dot {
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 4px solid #00a8b5;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+/* =========================================================
+   FELLOWSHIP / ACHIEVEMENTS / PUBLICATIONS (CARDS)
+========================================================= */
+
+.infoCardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.infoCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px 22px;
+  display: flex;
+  gap: 12px;
+  border: 1px solid #e1f4f5;
+  box-shadow: 0 6px 18px rgba(0, 130, 140, 0.08);
+  transition: 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 120, 130, 0.20);
+}
+
+.infoIcon {
+  color: #00a8b5;
+  margin-top: 4px;
+}
+
+.infoCard p {
+  margin: 0;
+  font-size: 15px;
+  color: #355159;
+}
+
+/* =========================================================
+   MEMBERSHIP BADGES
+========================================================= */
+
+.membershipBadgeGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.membershipBadge {
+  background: #e8fafb;
+  border: 1px solid #b6eef1;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #006770;
+  box-shadow: 0 3px 8px rgba(0, 110, 120, 0.15);
+  transition: 0.2s ease;
+}
+
+.membershipBadge:hover {
+  background: #c9f4f6;
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   SPACERS
+========================================================= */
+
+.mt-80 { margin-top: 80px; }
+.mb-80 { margin-bottom: 80px; }
+.mt-60 { margin-top: 60px; }
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+  .doctorHero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageDecoration {
+    top: 10px;
+    left: 10px;
+  }
+
+  .expertiseGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specialExpertise {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .journey-item {
+    width: 100%;
+    text-align: left !important;
+    padding: 0 !important;
+  }
+
+  .journey-item.right {
+    margin-left: 0;
+  }
+
+  .journey-timeline::before {
+    left: 25px;
+  }
+
+  .journey-dot {
+    left: 25px;
+  }
+
+  .journey-card {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .doctorImg {
+    width: 260px;
+    height: 350px;
+  }
+
+  .expertiseGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctorName {
+    font-size: 32px;
+  }
+}

@@ -1,21 +1,31 @@
-import './App.scss';
 import Home from './pages/Home';
-import {Routes, Route} from 'react-router-dom';
-import About from './pages/About';
-import Services from './pages/Services';
-import BlogsPage from './pages/BlogsPage';
-import SingleBlog from './pages/SingleBlog/SingleBlog';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import KnowYourDr from './pages/KnowYourDr';
+import ServicesPage from './pages/ServicesPage';
 import Contactus from './pages/Contact/Contactus';
+import FaqPage from './pages/FaqPage';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/singleservice" element={<Services />} />
-      <Route path="/blogs" element={<BlogsPage />} />
-      <Route path="/blog/:url" element={<SingleBlog />} />
+      <Route path="/aboutUs" element={<KnowYourDr />} />
+
+      {/* Services */}
+      <Route path="/services/:slug" element={<ServicesPage />} />
+      <Route path="/services" element={<Navigate to="/services/knee-arthroscopy" replace />} />
+
+      {/* ✅ GALLERY ROUTES */}
+      <Route path="/gallery" element={<GalleryPage />}>
+        <Route path="clinic" element={<GalleryPage />} />
+        <Route path="videos" element={<GalleryPage />} />
+      </Route>
+
+      <Route path="/faq" element={<FaqPage />} />
       <Route path="/contact" element={<Contactus />} />
+
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 }

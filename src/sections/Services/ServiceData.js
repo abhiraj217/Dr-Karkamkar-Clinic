@@ -1,54 +1,45 @@
+ import kneeImage from '../../assets/banner/hipJoinImage.jpg';
+import shoulderImg from '../../assets/banner/legjointImage.jpg';
+import legJointImg from '../../assets/banner/skulljointImage.jpg';
+import traumaImg from '../../assets/banner/jointxrayImage.jpg';
+import sportsFootabaall from '../../assets/banner/footaballlimage.jpg';
 
+ const servicesData = [
+    {
+      id: 1,
+      title: "Knee Treatment",
+      description: "We provide comprehensive care for knee injuries, arthritis, and joint replacements. Our specialists focus on restoring strength, mobility, and long-term comfort with advanced surgical and non-surgical techniques.",
+      image: shoulderImg,
+      path:"/services/knee-replacement"
+    },
+    {
+      id: 2,
+      title: "Shoulder Treatment",
+      description: "Expert diagnosis and treatment for shoulder dislocations, rotator cuff injuries, and chronic pain. We use modern therapies and procedures to help you regain full motion and prevent future complications.",
+      image: kneeImage,
+      path:"/services/shoulder-replacement"
+    },
+    {
+      id: 3,
+      title: "Hip Treatment",
+      description: "Our hip care program includes advanced procedures for fractures, arthritis, and replacements. We emphasize personalized treatment plans to relieve pain, restore function, and enhance overall quality of life.",
+      image: legJointImg,
+      path:"/services/hip-replacement"
+    },
+    {
+      id: 4,
+      title: "Trauma Care",
+      description: "We provide emergency and long-term trauma care solutions, from fractures and joint injuries to complex orthopedic trauma cases. Our team ensures safe recovery with immediate attention and structured follow-up plans.",
+      image: traumaImg,
+      path:"/services/trauma"
+    },
+    {
+      id: 5,
+      title: "Sports Medicine",
+      description: "Specialized care for sports-related injuries such as ligament tears, tendon damage, and overuse injuries. Our goal is to get athletes back to peak performance with safe, effective, and faster recovery methods.",
+      image: sportsFootabaall,
+      path:"/services/sports"
+    },
+  ];
 
-const ServicesData = [
-    {
-        'urlLink': 'https://youtube.com/shorts/14z8m0lnUog?si=AEMXQnJeQw0rSoOx',
-        'title': 'Root Canal',
-        'description':'A root canal treats infection or damage to the tooth’s pulp, saving the tooth from extraction.',
-    
-    },
-    {
-        'urlLink': 'https://youtube.com/shorts/6hXBY1LhXBU?si=oOwJBBJ-S8-A_TNJ',
-        'title': 'Dentures',
-        'description':'Dentures are removable devices that replace missing teeth and restore smile appearance and function.',
-        
-    },
-    {
-        'urlLink': 'https://youtube.com/shorts/VbaZTPsUVto?si=c3O_1FDxxICF6XYO',
-        'title': 'Implants',
-        'description':'Dental implants are titanium posts placed in the jaw to permanently replace missing teeth.',
-       
-    },
-    {
-        'urlLink': 'https://www.youtube.com/shorts/HjnHS_rdoY8',
-        'title': 'Whitening',
-        'description':'Tooth whitening is a cosmetic treatment that brightens teeth by removing stains and discoloration',
-        
-    },
-    {
-        'urlLink': 'https://youtube.com/shorts/xqvwreikcXk?si=DkldkY6KqnjjJIxy',
-        'title': 'Extraction',
-        'description':'Safe removal of problematic teeth to relieve pain and prevent complications.',
-    
-    },
-    {
-        'urlLink': 'https://youtube.com/shorts/lM5njl4u8_A?si=8FCMIpO5C4NpVMKZ',
-        'title': 'Aligners',
-        'description':'Clear, removable trays that gradually straighten teeth for a more confident smile.',
-        
-    },
-    {
-        'urlLink': 'https://youtube.com/shorts/BKDnhjySK4w?si=APJTiFPoi4l-n4g1',
-        'title': 'Braces',
-        'description':'Traditional orthodontic treatment that realigns teeth and corrects bite issues.',
-       
-    },
-    {
-        'urlLink': 'https://youtube.com/shorts/-msC69Y5vM0?si=DkYOg4e_Lf__jWVT',
-        'title': 'Filling',
-        'description':'Quick restoration of decayed teeth using durable materials to match your natural smile.',
-        
-    }
-]
-
-export default ServicesData;
+  export default servicesData;

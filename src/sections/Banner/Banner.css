@@ -1,0 +1,53 @@
+/* Banner Section */
+.banner-section {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  padding-top: 137px;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+    url("../../assets/banner/clinicImage.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Optional overlay wrapper */
+.banner-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------- Responsive Heights ---------- */
+@media (max-width: 575px) {
+  .banner-section {
+    height: 400px;
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .banner-section {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .banner-section {
+    height: 600px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .banner-section {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-section {
+    height: 800px;
+  }
+}

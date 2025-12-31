@@ -1,0 +1,134 @@
+.aboutUsSection {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* LEFT AREA */
+.subTitle {
+  color: #0c6a6a;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.mainTitle {
+  font-size: 34px;
+  font-weight: 800;
+  margin: 15px 0;
+  color: #102a42;
+}
+
+.introText {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Highlight Box */
+.highlightBox {
+  background: #fff;
+  padding: 22px;
+  border-radius: 15px;
+  border-left: 5px solid #0c6a6a;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.highlightBox ul {
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.highlightBox li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* RIGHT AREA */
+.doctorCard {
+  position: relative;
+  max-width: 430px;
+  margin-left: auto;
+}
+
+/* FIX: Image Smaller + Balanced */
+.doctorImg {
+  width: 100%;
+  height: 450px; /* reduced height (was too big earlier) */
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* Badge */
+.doctorBadge {
+  position: absolute;
+  bottom: -93px;
+  left: 20px;
+  background: #ffffff;
+  padding: 18px 22px;
+  border-radius: 14px;
+  width: 85%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e4eef2;
+}
+
+/* Doctor Name */
+.doctorBadge .docName {
+  font-size: 20px;
+  font-weight: 700;
+  color: #003b4f; /* premium dark teal */
+  margin-bottom: 8px;
+}
+
+/* All Text */
+.doctorBadge .docDetails p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #37474f;
+}
+
+/* Highlight the main designation */
+.doctorBadge .docDetails p:first-child {
+  font-weight: 600;
+  color: #0c6a6a; /* blue-green accent */
+}
+
+/* Optional: subtle separator line */
+.doctorBadge::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0c6a6a;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.knowMoreBtn {
+  padding: 12px 30px;
+  background: #0c6a6a;
+  border-radius: 28px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.knowMoreBtn:hover {
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .doctorCard {
+    margin: 50px auto 0;
+  }
+  .aboutUsSection {
+  padding: 56px 0;
+}
+}
