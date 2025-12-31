@@ -308,7 +308,7 @@ const kneeContent = {
         },
         {
         type:"text",
-        content:` <p>Get to know in detail by <strong>Dr. Sachin Karkamkar @ Hadapsar, Pune</strong>.</p>`
+        content:` <p>Get to know in detail by <a href="/" class="DrSachinName">Dr. Sachin Karkamkar </a> @ Hadapsar, Pune.</p>`
         }
     ]
     },
@@ -437,7 +437,7 @@ const kneeContent = {
                             <img src=${arthoscoopyimageknee1} alt="arthoscopyImage" />
                     </div>
 
-                <h4 class="kneePartsTitle">3. Surgical Procedure</h4>
+                <p>3. Surgical Procedure</p>
 
                 <p>
                 Knee is cleaned with antiseptic solution for couple of minutes to reduce risk of infection .
@@ -544,37 +544,37 @@ const kneeContent = {
                 Still, it is important to follow your orthopaedic surgeon's instructions carefully after you return home.
                 </p>
 
-                <h4 class="kneePartsTitle">Swelling:</h4>
+                <p>Swelling:</p>
                 <p>
                 Keep your leg elevated as possible for the first few days after surgery. 
                 Apply ice as recommended by your doctor to relieve swelling and pain.
                 </p>
 
-                <h4 class="kneePartsTitle">Dressing Care :</h4>
+                <p>Dressing Care :</p>
                 <p>
                 You will leave the hospital with a dressing covering your knee. 
                 Keep your incisions clean and dry. Do not make it wet during shower or bath.
                 Surgeon will guide you about change of dressing. Your surgeon will see you in the office a few days after surgery to check your progress, review the surgical findings, and begin your postoperative treatment program.
                 </p>
 
-                <h4 class="kneePartsTitle">Bearing Weight :</h4>
+                <p>Bearing Weight :</p>
                 <p>
                 Most patients need walker or crutches or other assistance after arthroscopic surgery. 
                 Your surgeon will tell you when it is safe to put weight on your foot and leg. 
                 If you have any questions about bearing weight, talk to your surgeon.
                 </p>
 
-                <h4 class="kneePartsTitle">Driving :</h4>
+                <p>Driving :</p>
                 <p>
                 Can be started usually after 3mths.But this may vary based on your pathology  
                 </p>
 
-                <h4 class="kneePartsTitle">Medications</h4>
+                <p>Medications</p>
                 <p>
                 Your doctor will prescribe pain medication and antibiotics to help relieve discomfort following your surgery. 
                 </p>
 
-                <h4 class="kneePartsTitle">Result</h4>
+                <p>Result</p>
                 <p>
                 You should be able to return to most physical activities after few weeks, or sometimes much sooner. 
                 Ligament reconstruction and meniscus Rrepair takes around 3 months for basic recovery .Higher impact activities may need to be avoided for a longer time. 
@@ -1046,7 +1046,7 @@ const kneeContent = {
 
                     <p>
                         The instructions for tests and other care are basic, please discuss with 
-                        <strong>Dr. Sachin Karkamkar</strong> for detailed evaluation.
+                        <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a> for detailed evaluation.
                     </p>
 
                 </div>

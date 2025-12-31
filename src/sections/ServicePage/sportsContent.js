@@ -53,7 +53,7 @@ const sportsContent = {
 
           <p>
             Early diagnosis improves long-term outcomes and helps athletes return to sport safely.  
-            Talk to <strong>Dr. Sachin Karkamkar, Hadapsar, Pune</strong> for complete evaluation.
+            Talk to <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>, Hadapsar, Punefor complete evaluation.
           </p>
         `
       }

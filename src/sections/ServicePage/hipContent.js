@@ -112,7 +112,7 @@ const hipContent = {
             </p>
 
             <p>
-            To maintain the fitness of all components, get to know your joint — by Dr. Sachin Karkamkar.
+            To maintain the fitness of all components, get to know your joint — by <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>
             </p>
         `,
       },
@@ -254,7 +254,7 @@ const hipContent = {
         </p>
 
         <p>
-          <a href="#" class="hipFaqLink">Click here to know more FAQs</a>
+          
           
         </p>
       `
