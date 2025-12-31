@@ -1,7 +1,5 @@
 import normalKneeImage from "../../assets/ServicesPageImages/normalkneeImage.png";
 import xrayimageknee from "../../assets/ServicesPageImages/xrayimageknee2.png";
-import kneeJointImage1 from '../../assets/ServicesPageImages/kneeJointActual1.png';
-import kneeJointImage2 from "../../assets/ServicesPageImages/kneeJointActual2.png";
 import kneeCartilage from "../../assets/ServicesPageImages/articularCartilageImage.png";
 import kneeligsment from "../../assets/ServicesPageImages/kneeligamentImage.png";
 import kneeBurseImage from "../../assets/ServicesPageImages/kneeBurseImage.png";
@@ -15,7 +13,6 @@ import arthoscoopyimageknee2 from "../../assets/ServicesPageImages/kneArthoscopy
 import kneemeniscusImage from "../../assets/ServicesPageImages/kneetearmisclinoutypesImage.png";
 import kneemeniscusImage2 from "../../assets/ServicesPageImages/kneeMicslineousimage2.png";
 import kneemeniscusImage3 from "../../assets/ServicesPageImages/musilineausRepair.png";
-import kneemeniscusImage4 from "../../assets/ServicesPageImages/kneetearmisclinoutypesImage.png";
 import kneeReplacementImage from "../../assets/ServicesPageImages/kneeReplacementImage.png";
 import kneeReplacementXrayImage from "../../assets/ServicesPageImages/kneeReplacementXray.png";
 import kneeReplacementArthhiticsImage from "../../assets/ServicesPageImages/kneeReplacementXrayArthitics.png";

@@ -1,30 +1,26 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF, FaInstagram, FaTwitter,FaPhoneAlt, FaClock, FaMapMarkerAlt } from "react-icons/fa";
+import {FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ivoryimg from "../../assets/navbar/karkamkar-clinic-logo.png";
 
 const Footer = () => {
   const footerMenu = [
     {
-      name: "About Us",
-      link: "/",
-    },
-    {
       name: "Know Your Doctor",
-      link: "/",
+      link: "/aboutUs",
     },
     {
       name: "Services",
-      link: "/",
+      link: "/services/shoulder-replacement",
     },
     {
       name: "Gallery",
-      link: "/",
+      link: "/gallery/clinic",
     },
     {
       name: "FAQs",
-      link: "/",
+      link: "/faq",
     },
   ];
 

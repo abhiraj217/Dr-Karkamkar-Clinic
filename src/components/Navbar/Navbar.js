@@ -1,14 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import ivoryimg from "../../assets/navbar/karkamkar-clinic-logo.png";
 import { Link, useNavigate } from "react-router-dom";
 
 import {
-  BLOGS_SECTION_ID,
   CONTACTUS_SECTION_ID,
-  HOME_SECTION_ID,
   SERVICE_SECTION_ID,
-  TESTIMONIAL_SECTION_ID,
   ABOUTUS_SECTION_ID
 } from "../../utils/Constant";
 
@@ -148,7 +145,8 @@ const Navbar = () => {
 
     if (path) return navigate(path);
 
-    if (id === ABOUTUS_SECTION_ID) {
+    // Handle sections that need to scroll on home page
+    if (id === ABOUTUS_SECTION_ID || id === CONTACTUS_SECTION_ID) {
       if (window.location.pathname === "/") {
         handleScroll(id);
       } else {

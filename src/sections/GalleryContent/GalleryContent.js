@@ -5,7 +5,6 @@ import "./GalleryContent.css";
 
 // ---- IMAGES ----
 import drKrakamkarownImg from "../../assets/GalleryImages/drKrakamkarImg.jpeg";
-import drKrakamkarownImg2 from "../../assets/GalleryImages/drKrakamkarImg.jpeg";
 import drKrakamkarClinicImg from "../../assets/GalleryImages/clinicImage.jpeg";
 import drKrakamkarOfficeImg from "../../assets/GalleryImages/drKarkamkarOfficeImg.jpeg";
 import drKrakamkarStandingImg from "../../assets/GalleryImages/drKarkamkarStandImg.jpeg";

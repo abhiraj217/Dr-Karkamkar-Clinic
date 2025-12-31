@@ -86,6 +86,7 @@ const ServicePageContent = () => {
                       RENDER
   ----------------------------------------------*/
   return (
+    <div className="bgColor">
     <div className="container service-wrapper fade-in">
       <h1 className="serviceKnee-title slide-up">{data.title}</h1>
 
@@ -144,6 +145,7 @@ const ServicePageContent = () => {
           return null;
         })
       )}
+    </div>
     </div>
   );
 };
