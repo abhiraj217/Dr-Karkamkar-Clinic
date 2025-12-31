@@ -79,7 +79,7 @@ const Faq = () => {
     setOpenIndex(null);
   }}
 >
-  Sports Medicinetrauma
+  Sports Medicine
 </button>
 <button
   className={`faq-tab ${activeTab === "trauma" ? "active" : ""}`}

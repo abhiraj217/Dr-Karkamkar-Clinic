@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./DoctorProfile.css";
 
-import doctorImg from "../../assets/about/banner/banner_1.png";
+import doctorImg from "../../assets/GalleryImages/drKrakamkarImg.jpeg";
 
 import {
   Stethoscope,

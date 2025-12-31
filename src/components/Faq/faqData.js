@@ -167,7 +167,7 @@ shoulderReplacement: [
   {
     q: "HOW DOES THE SURGEON SEE AND PERFORM WORK IN THE SHOULDER ARTHROSCOPY?",
     a: "What is shoulder arthroscopy",
-    link: "/services"
+    link: "/services/shoulder-arthroscopy"
   },
   {
     q: "HOW MANY DAYS I NEED TO STAY IN HOSPITAL AFTER SURGERY?",
