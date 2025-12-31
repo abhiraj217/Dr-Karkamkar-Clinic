@@ -2,6 +2,11 @@ import React, { useState , useEffect} from "react";
 import "./Faq.css";
 import faqData from "./faqData";
 
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { whatsAppBotListener } from "../../utils/Utils";
+import { PHONE_NUMBER } from "../../utils/Constant";
+import clinicAvatar from "../../assets/navbar/karkamkar-clinic-logo.png";
+
 /* ✅ ADD THIS */
 const toSentenceCase = (text = "") => {
   if (!text) return "";
@@ -129,6 +134,16 @@ const Faq = () => {
           </div>
         ))}
       </div>
+     {/* WhatsApp bot */}
+      <FloatingWhatsApp
+        avatar={clinicAvatar}
+        notification={false}
+        accountName="Dr. Karkamkar"
+        phoneNumber={PHONE_NUMBER}
+        onSubmit={(e) => {
+          whatsAppBotListener(e.target[0].value);
+        }}
+      />
     </div>
   );
 };

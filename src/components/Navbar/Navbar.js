@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const navbarItems = [
     { name: "Home", path: "/" },
-    { name: "Know Your Doctor", id: ABOUTUS_SECTION_ID },
+    { name: "Know Your Doctor", path: "/aboutUs" },
 
     {
       name: "Services",
@@ -70,7 +70,7 @@ const Navbar = () => {
       name: "Gallery",
       dropdownType: "gallery",
       dropdown: [
-        { name: "Clinic Images", path: "/gallery/clinic" },
+        { name: "Images", path: "/gallery/clinic" },
         { name: "Videos", path: "/gallery/videos" }
       ]
     },

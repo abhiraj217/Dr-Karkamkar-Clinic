@@ -21,6 +21,11 @@
   color: #0c6a6a;
 }
 
+.DrSachinName{
+  text-decoration: none;
+  color: #0c6a6a;
+  font-weight: 700;
+}
 /* TEXT BLOCK */
 .serviceknee-text {
   font-size: 17px;

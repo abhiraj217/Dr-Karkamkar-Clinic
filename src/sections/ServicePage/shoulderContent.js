@@ -202,7 +202,7 @@ const shoulderContent = {
 
             <p>
             To maintain the fitness of all components, get to know your joint by 
-            <strong>Dr. Sachin Karkamkar</strong>.
+            <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>.
             </p>
         `
         }
@@ -259,7 +259,7 @@ const shoulderContent = {
           effective procedure to relieve pain and help you resume normal activities.
         </p>
         <p>
-          Get to know in detail by <strong>Dr. Sachin Karkamkar, Hadapsar, Pune.</strong>
+          Get to know in detail by <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>, Hadapsar, Pune.
         </p>
 
         <h4 class="kneePartsTitle">Osteoarthritis</h4>
@@ -378,7 +378,7 @@ const shoulderContent = {
 
             <p>
             For personalized evaluation and treatment planning, consult  
-            <strong>Dr. Sachin Karkamkar</strong>.
+            <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>.
             </p>
         `
 },
@@ -423,7 +423,7 @@ const shoulderContent = {
 
             <p>
             For accurate diagnosis and personalized surgical planning, consult  
-            <strong>Dr. Sachin Karkamkar</strong>.
+            <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>.
             </p>
         `
     },
@@ -785,7 +785,7 @@ const shoulderContent = {
             </p>
 
             <p>
-            A detailed evaluation with <strong>Dr. Sachin Karkamkar</strong> will help determine whether 
+            A detailed evaluation with <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a> will help determine whether 
             shoulder replacement is the best treatment for your condition.
             </p>
         `
@@ -1013,7 +1013,7 @@ const shoulderContent = {
             <p>
             These instructions provide basic guidance.  
             For a detailed and personalized evaluation, please consult  
-            <strong>Dr. Sachin Karkamkar</strong>.
+            <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>.
             </p>
         `
 },
@@ -1073,7 +1073,7 @@ const shoulderContent = {
     <p class="note">
       *All mentioned time spans are general estimates and may vary for each patient.  
       Post-surgery evaluation is needed for every patient by  
-      <strong>Dr. Sachin Karkamkar</strong>.*
+      <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>.*
     </p>
 
     <h4 class="kneePartsTitle">Pain Management</h4>
@@ -1259,7 +1259,7 @@ const shoulderContent = {
     <p class="note">
       All above mentioned complications are general and may vary with each patient.  
       Post-surgery evaluation is essential for every patient by  
-      <strong>Dr. Sachin Karkamkar</strong>.
+      <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>.
     </p>
 
     <p>

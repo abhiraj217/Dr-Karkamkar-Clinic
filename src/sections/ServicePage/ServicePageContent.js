@@ -9,6 +9,11 @@ import traumaContent from "./traumaContent";
 import sportsContent from "./sportsContent";
 import TabsPill from "./TabsPill";
 
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { whatsAppBotListener } from "../../utils/Utils";
+import { PHONE_NUMBER } from "../../utils/Constant";
+import clinicAvatar from "../../assets/navbar/karkamkar-clinic-logo.png";
+
 const ServicePageContent = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
@@ -146,6 +151,16 @@ const ServicePageContent = () => {
         })
       )}
     </div>
+      {/* WhatsApp bot */}
+      <FloatingWhatsApp
+        avatar={clinicAvatar}
+        notification={false}
+        accountName="Dr. Karkamkar"
+        phoneNumber={PHONE_NUMBER}
+        onSubmit={(e) => {
+          whatsAppBotListener(e.target[0].value);
+        }}
+      />
     </div>
   );
 };

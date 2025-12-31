@@ -19,7 +19,10 @@ import drKrakamkarTeachingImg2 from "../../assets/GalleryImages/drKarkamkarTeach
 import drKrakamkarAcademyImg from "../../assets/GalleryImages/drKarkamkarAcademyImg.jpeg";
 import drKrakamkarAcademyCertificateImg from "../../assets/GalleryImages/drKarkamkarCertfiacate.jpeg";
 
-
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import { whatsAppBotListener } from "../../utils/Utils";
+import { PHONE_NUMBER } from "../../utils/Constant";
+import clinicAvatar from "../../assets/navbar/karkamkar-clinic-logo.png";
 // ---- VIDEO DATA ----
 const videoList = [
   {
@@ -126,6 +129,16 @@ const GalleryContent = () => {
         )}
 
       </div>
+            {/* WhatsApp bot */}
+      <FloatingWhatsApp
+        avatar={clinicAvatar}
+        notification={false}
+        accountName="Dr. Karkamkar"
+        phoneNumber={PHONE_NUMBER}
+        onSubmit={(e) => {
+          whatsAppBotListener(e.target[0].value);
+        }}
+      />
     </section>
   );
 };
