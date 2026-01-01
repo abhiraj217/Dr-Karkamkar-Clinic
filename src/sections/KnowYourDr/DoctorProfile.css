@@ -72,7 +72,7 @@
 
 .doctorIntro {
   font-size: 16px;
-  color: #444;
+  color: #333;
   line-height: 1.7;
   max-width: 650px;
 }
@@ -150,7 +150,7 @@
 
 .expertiseDesc {
   font-size: 15px;
-  color: #555;
+  color: #333;
   line-height: 1.6;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .expertiseBody p {
-  color: #475e64;
+  color: #333;
   font-size: 14px;
 }
 
@@ -276,7 +276,7 @@
 
 .journey-desc {
   font-size: 15px;
-  color: #555;
+  color: #333;
 }
 
 /* Timeline dots */
@@ -326,7 +326,7 @@
 .infoCard p {
   margin: 0;
   font-size: 15px;
-  color: #355159;
+  color: #333;
 }
 
 /* =========================================================
