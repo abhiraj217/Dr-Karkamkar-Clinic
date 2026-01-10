@@ -27,7 +27,7 @@ const Footer = () => {
 const footerContacts = [
   {
     title: "Phone Number",
-    info: "+91 9607812684",
+    info: "+91 9145569693",
     icon: <FaPhoneAlt />,
   },
   {

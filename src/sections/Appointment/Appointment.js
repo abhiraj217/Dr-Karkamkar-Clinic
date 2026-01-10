@@ -2,7 +2,7 @@ import React from 'react';
 import './Appointment.css';
 import { AiFillHome, AiTwotonePhone } from "react-icons/ai";
 
-const PHONE_NUMBER = "+919876543210";
+const PHONE_NUMBER = "9145569693";
 
 const locations = [
   {
