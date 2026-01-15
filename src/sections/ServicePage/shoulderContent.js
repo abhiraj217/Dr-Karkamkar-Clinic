@@ -582,102 +582,162 @@ const shoulderContent = {
         `
     },
     {
-        id: "shoulder-arthro-tab-5",
-        tabTitle: "Recovery",
-        type: "text",
-        content: `
-            <h4 class="kneePartsTitle">Recovery</h4>
+  id: "shoulder-arthro-tab-5",
+  tabTitle: "Recovery",
+  type: "text",
+  content: `
+    <h4 class="kneePartsTitle">Recovery</h4>
 
-            <p>
-            Although recovery from arthroscopy is often faster than recovery from open surgery, 
-            it may still take several weeks for the shoulder joint to completely recover. The 
-            extent of recovery depends on the type of repair performed and overall shoulder condition.
-            </p>
+    <ul>
+      <li>
+        Although recovery from arthroscopy is often faster than recovery from open surgery, 
+        it may still take weeks for shoulder joint to completely recover.
+      </li>
 
-            <ul>
-            <li>
-                Patient can expect some pain and discomfort for at least a week after surgery.  
-                If more extensive surgery has been done, it may take several weeks before pain subsides.
-            </li>
+      <li>
+        Patient can expect some pain and discomfort for at least a week after surgery.
+        If more extensive surgery has been done, however, it may take several weeks
+        before pain subsides.
+      </li>
 
-            <li>
-                Ice will help relieve pain and swelling. Sleeping on the same side should be avoided 
-                for a few weeks.
-            </li>
+      <li>
+        Ice will help relieve pain and swelling. Sleeping on same side has to avoided
+        for few weeks.
+      </li>
 
-            <li>
-                Some patients are more comfortable sleeping in a reclining chair or propped up in bed 
-                and sleeping on the opposite side.
-            </li>
+      <li>
+        Some patients are more comfortable sleeping in a reclining chair or propped
+        up in bed and on opposite side.
+      </li>
 
-            <li>
-                A few days after surgery, large bandages are replaced with simple Band-Aids.  
-                A sling or shoulder immobilizer may be needed to protect the shoulder.  
-                Your surgeon will guide you on how long the sling should be used.
-            </li>
+      <li>
+        A few days after surgery, large bandage are replaced by with simple Band-Aids.
+        Patient may need a sling or special immobilizer to protect shoulder.
+        Surgeon will discuss with patient how long the sling will be needed.
+      </li>
 
-            <li>
-                Work from home is usually permitted after 2 weeks.  
-                Most patients can return to sedentary office work within 4 to 6 weeks.
-            </li>
-            </ul>
+      <li>
+        Work from home is permitted after 2 weeks after surgery. And most of patients
+        are able to join office for sedentary work after 4 to 6 weeks.
+      </li>
+    </ul>
 
-            <h4 class="kneePartsTitle">Your Recovery at Home</h4>
+    <h4 class="kneePartsTitle">Your Recovery at Home</h4>
 
-            <h4 class="kneePartsTitle">Wound Care</h4>
-            <p>
-            You will have stitches or staples along your wound, or a suture beneath the skin 
-            on the front of your shoulder. Stitches or staples on the skin are removed 2 weeks 
-            after surgery. Deep muscle sutures dissolve on their own.
-            </p>
-            <p>
-            Avoid soaking the wound in water until it has fully sealed and dried.  
-            You may continue dressing the wound to prevent irritation from clothing.
-            </p>
+    <h4 class="kneePartsTitle">Wound Care</h4>
+    <p>
+      You will have stitches or staples running along your wound or a suture beneath your
+      skin on the front of your shoulder. The stitches or staples over skin will be removed 2
+      weeks after surgery. A sutures in deeper muscles dissolve on its own and don’t need
+      removal.
+    </p>
+    <p>
+      Avoid soaking the wound in water until it has thoroughly sealed and dried.
+      You may continue dressing of the wound to prevent irritation from clothing or support
+      stockings.
+    </p>
 
-            <h4 class="kneePartsTitle">Diet</h4>
-            <p>
-            Some loss of appetite is common for several days after surgery.  
-            Take light, small, and frequent meals. A high-protein diet helps with faster 
-            wound healing and muscle recovery.
-            </p>
+    <h4 class="kneePartsTitle">Diet</h4>
+    <p>
+      Some loss of appetite is common for several days after surgery.
+    </p>
+    <p>
+      Take light, small and frequent meals. High protein diet help in faster wound and muscle
+      strength recovery
+    </p>
 
-            <h4 class="kneePartsTitle">Activity</h4>
-            <p>
-            Exercise is a critical component of home care, especially during the first few weeks.  
-            You should be able to resume most normal daily activities within 3 to 4 weeks after surgery.
-            </p>
-            <p>
-            Some pain with activity and at night is common for several weeks.
-            </p>
+    <h4 class="kneePartsTitle">Activity</h4>
+    <p>
+      Exercise is a critical component of home care, particularly during the first few weeks after
+      surgery.
+    </p>
+    <p>
+      You should be able to resume most normal activities of daily living within 3 to 4 weeks
+      following surgery.
+    </p>
+    <p>
+      Some pain with activity and at night is common for several weeks after surgery.
+    </p>
 
-            <p>Your activity program should include:</p>
-            <ul>
-            <li>A graduated program to slowly increase mobility—initially at home, then outdoors</li>
-            <li>
-                Resuming normal household activities such as mild cleaning, basic kitchen work, 
-                and light sedentary tasks like typing or writing
-            </li>
-            <li>
-                Specific exercises several times a day to restore shoulder movement and strength  
-                (self-performed or guided by a physical therapist)
-            </li>
-            </ul>
+    <p>Your activity program should include:</p>
+    <ul>
+      <li>
+        A graduated program to slowly increase your mobility, initially in your home and
+        later outside
+      </li>
+      <li>
+        Resuming other normal household activities, such as home cleaning, basic kichen
+        work, and sedentary job of typing writing self-care
+      </li>
+      <li>
+        Specific exercises several times a day to restore movement and strengthen your
+        shoulder. You probably will be able to perform the exercises without help, but
+        you may have a physical therapist help you at home or in a therapy center the
+        first few weeks after surgery.
+      </li>
+    </ul>
 
-            <h4 class="kneePartsTitle">Rehabilitation</h4>
-            <ul>
-            <li>Rehabilitation plays an important role in returning to daily activities.</li>
-            <li>An exercise program helps regain shoulder strength and motion.</li>
-            <li>
-                Your surgeon will design a personalized rehabilitation plan based on the surgical procedure.  
-                A physical therapist may be recommended for supervised therapy.
-            </li>
-            <li>
-                Consistent effort in rehabilitation is essential for the success of surgery.
-            </li>
-            </ul>
-        `
-    },
+    <h4 class="kneePartsTitle">Recovery after arthroscopic rotator cuff repair</h4>
+    <p>Recovery depends on the procedure performed:</p>
+    <ul>
+      <li>Sling use: 4–6 weeks</li>
+      <li>Return to desk work: 1–2 weeks</li>
+      <li>Light or modified duty: 3 weeks</li>
+      <li>Strenuous work: 6 months or more</li>
+      <li>Return to sports: 9–12 months</li>
+    </ul>
+    <p>
+      Recovery should not be rushed, as muscles need time to adapt.
+    </p>
+
+    <p>Physical therapy is highly recommended.</p>
+    <ul>
+      <li>Therapy usually begins 3 weeks after surgery</li>
+      <li>Starts with gentle stretching and progresses to strengthening</li>
+      <li>Typically lasts several months</li>
+      <li>Initially done twice per week, then adjusted</li>
+    </ul>
+    <p>
+      Home exercises on non-therapy days are essential. Recovery speed varies, and slower
+      progress is normal.
+    </p>
+
+    <h4 class="kneePartsTitle">Return to work</h4>
+    <p>
+      This depends on your occupation:
+    </p>
+    <ul>
+      <li>Sedentary or desk work: about 14 days</li>
+      <li>Jobs requiring arm use: Longer recovery time</li>
+    </ul>
+    <p>
+      You should discuss job requirements with your surgeon before surgery to plan accordingly.
+    </p>
+
+    <h4 class="kneePartsTitle">Driving</h4>
+    <ul>
+      <li>Four-wheeler: Usually after 3 months</li>
+      <li>Two-wheeler: Typically, after 6–9 months, depending on the procedure</li>
+    </ul>
+    <p>
+      Driving is allowed only when strength, control, and safety are ensured.
+    </p>
+
+    <h4 class="kneePartsTitle">Rehabilitation</h4>
+    <ul>
+      <li>Rehabilitation plays an important role in getting back to your daily activities.</li>
+      <li>An exercise program will help to regain shoulder strength and motion.</li>
+      <li>
+        Surgeon will develop a rehabilitation plan based on the surgical procedures
+        required. It may be recommended to visit a physical therapist to supervise
+        exercise program.
+      </li>
+      <li>
+        It is important that you make a strong effort at rehabilitation in order to make surgery succeed.
+      </li>
+    </ul>
+  `
+},
 
     {
         id: "shoulder-arthro-tab-6",
@@ -1022,170 +1082,206 @@ const shoulderContent = {
   tabTitle: "Recovery",
   type: "text",
   content: `
-    <h4 class="kneePartsTitle">Postoperative Recovery</h4>
-
-    <p>
-      Recovery after shoulder replacement is a gradual process. Most patients experience steady 
-      improvement in pain, strength, and motion over several weeks. Following your surgeon's 
-      recommendations closely will ensure the best outcome.
-    </p>
-
-    <ul>
-      <li>You will most likely stay in the hospital for 3 to 4 days.</li>
-      <li>Physiotherapy begins immediately as advised.</li>
-      <li>Sling for 3 weeks.</li>
-
-      <li>
-        Patient can expect some pain and discomfort for at least a week after surgery.  
-        If more extensive surgery has been done, however, it may take several weeks 
-        before pain subsides.
-      </li>
-
-      <li>
-        Ice will help relieve pain and swelling. Sleeping on the same side must be avoided 
-        for a few weeks.
-      </li>
-
-      <li>
-        Some patients are more comfortable sleeping in a reclining chair or propped up in bed 
-        and lying on the opposite side.
-      </li>
-
-      <li>
-        A few days after surgery, large bandages are replaced with simple Band-Aids.  
-        You may need a sling or special immobilizer to protect the shoulder.  
-        Your surgeon will discuss how long the sling will be needed.
-      </li>
-
-      <li>
-        Work from home is permitted 2 weeks after surgery.  
-        Most patients are able to return to sedentary office work between 4 to 6 weeks.
-      </li>
-
-      <li>Range of movement: 3–6 weeks</li>
-      <li>Active assisted movement with sling: 6–9 weeks</li>
-      <li>
-        Active movements without sling: 9–12 weeks  
-        (Thera/resistance bands may be used to improve motion and strength)
-      </li>
-    </ul>
-
-    <p class="note">
-      *All mentioned time spans are general estimates and may vary for each patient.  
-      Post-surgery evaluation is needed for every patient by  
-      <a href="/" class="DrSachinName">Dr. Sachin Karkamkar</a>.*
-    </p>
+    <h4 class="kneePartsTitle">PostOperative Recovery</h4>
 
     <h4 class="kneePartsTitle">Pain Management</h4>
     <p>
-      After surgery, you will feel some pain, but your surgeon and nurses will prescribe 
-      medications to keep you comfortable. Effective pain management is essential for a 
-      smooth recovery.
+      After surgery, you will feel some pain, but your surgeon and nurses will provide
+      medication to make you feel as comfortable as possible. Pain management is an
+      important part of your recovery.
     </p>
     <p>
-      Shoulder movement begins soon after surgery. As pain decreases, you will be able to 
-      move your shoulder through larger angles and regain strength steadily.
+      Shoulder movement will begin soon after surgery, and when you feel less pain, you can
+      start moving for larger angles and also get your strength back more quickly.
     </p>
-    <p>Talk with your surgeon if postoperative pain becomes a problem.</p>
+    <p>
+      Talk with your surgeon if postoperative pain becomes a problem.
+    </p>
 
     <h4 class="kneePartsTitle">Physical Therapy</h4>
     <p>
-      Most patients start shoulder exercises the day after surgery.  
-      A physical therapist will teach exercises that strengthen the upper limb and restore 
-      shoulder motion so you can resume daily activities.
+      Most patients begin exercising their shoulder the day after surgery.
+    </p>
+    <p>
+      A physical therapist will teach you specific exercises to strengthen your upper limb and
+      restore shoulder movement to allow normal daily activities soon after your surgery.
     </p>
 
     <h4 class="kneePartsTitle">Your Recovery at Home</h4>
 
     <h4 class="kneePartsTitle">Wound Care</h4>
     <p>
-      You will have stitches or staples along your wound, or a suture beneath the skin.  
-      Stitches or staples on the skin are typically removed 2 weeks after surgery.  
-      Deep muscle sutures dissolve on their own.
+      You will have stitches or staples running along your wound or a suture beneath your
+      skin on the front of your shoulder. The stitches or staples over skin will be removed 2
+      weeks after surgery. A sutures in deeper muscles dissolve on its own and don’t need
+      removal.
     </p>
     <p>
-      Avoid soaking the wound until it has completely sealed and dried.  
-      You may continue dressing the wound to prevent irritation from clothing.
+      Avoid soaking the wound in water until it has thoroughly sealed and dried.
+    </p>
+    <p>
+      You may continue dressing of the wound to prevent irritation from clothing or support
+      stockings.
     </p>
 
     <h4 class="kneePartsTitle">Diet</h4>
     <p>
-      Some loss of appetite is common for several days after surgery.  
-      Eat light, small, and frequent meals. High-protein foods aid wound healing and muscle 
-      recovery.
+      Some loss of appetite is common for several days after surgery.
+    </p>
+    <p>
+      Take light, small and frequent meals. High protein diet help in faster wound and muscle
+      strength recovery
     </p>
 
     <h4 class="kneePartsTitle">Activity</h4>
     <p>
-      Exercise is an essential part of home care, particularly during the first few weeks.  
-      Most patients can resume normal daily activities within 3 to 4 weeks.
+      Exercise is a critical component of home care, particularly during the first few weeks
+      after surgery.
     </p>
     <p>
-      Some pain with activity and at night is common during the early recovery phase.
+      You should be able to resume most normal activities of daily living within 3 to 4 weeks
+      following surgery.
+    </p>
+    <p>
+      Some pain with activity and at night is common for several weeks after surgery.
     </p>
 
     <p>Your activity program should include:</p>
     <ul>
-      <li>A gradual walking/mobility program inside the home, then outdoors</li>
       <li>
-        Resuming household activities such as light cleaning, basic kitchen work, and 
-        sedentary tasks like typing or writing
+        A graduated program to slowly increase your mobility, initially in your home
+        and later outside
       </li>
       <li>
-        Specific exercises several times a day to restore movement and strengthen the shoulder  
-        (with or without a physiotherapist)
+        Resuming other normal household activities, such as home cleaning, basic
+        kichen work, and sedentary job of typing writing self-care
+      </li>
+      <li>
+        Specific exercises several times a day to restore movement and strengthen
+        your shoulder. You probably will be able to perform the exercises without help,
+        but you may have a physical therapist help you at home or in a therapy center
+        the first few weeks after surgery.
       </li>
     </ul>
+
+    <p><strong>This is a normal:</strong></p>
+    <p>
+      Most people feel some numbness in the skin around your incision.
+    </p>
+    <p>
+      You also may feel some soreness, particularly with excessive activities.
+    </p>
+    <p>
+      Most people also feel or hear some clicking with shoulder movement. This is not
+      worrisome
+    </p>
+    <p>
+      These differences often diminish with time and most patients find them to be tolerable
+      when compared with the pain and limited function they experienced prior to surgery.S
+    </p>
+    <p>
+      Your new shoulder may activate metal detectors required for security in airports and
+      some buildings. Tell the security agent about your shoulder replacement if the alarm is
+      activated.
+    </p>
+
+    <h4 class="kneePartsTitle">Recovery Timeline</h4>
+    <ul>
+      <li>You will most likely stay in the hospital for 3 to 4 days.</li>
+      <li>
+        Physiotherapy is advised immediately after surgery and is continued till minimum
+        3-6mth If continued afterwards as well will increase endurance and strength.
+      </li>
+      <li>Sling for 3weeks</li>
+      <li>
+        Patient can expect some pain and discomfort for at least a week after surgery. If
+        more extensive surgery has been done, however, it may take several weeks
+        before pain subsides.
+      </li>
+      <li>
+        Ice will help relieve pain and swelling. Sleeping on same side has to avoided for
+        few weeks.
+      </li>
+      <li>
+        Some patients are more comfortable sleeping in a reclining chair or propped up
+        in bed and on opposite side.
+      </li>
+      <li>
+        A few days after surgery, large bandage are replaced by with simple Band-Aids.
+        Patient may need a sling or special immobilizer to protect shoulder. Surgeon will
+        discuss with patient how long the sling will be needed.
+      </li>
+      <li>
+        Work from home is permitted after 2 weeks after surgery. And most of patients
+        are able to join office for sedentary work after 4 to 6 weeks.
+      </li>
+      <li>Active assisted movement with sling 6-9weeks</li>
+      <li>
+        Active movements without sling 9-12weeks, can be done further with thera
+        [resistant] band to improve movement and strength
+      </li>
+    </ul>
+
+    <h4 class="kneePartsTitle">Return to work</h4>
+    <ul>
+      <li>Work from home: Around 2 weeks after surgery</li>
+      <li>Sedentary office work: Typically, 4–6 weeks after surgery</li>
+    </ul>
+    <p>
+      This may vary depending on individual recovery and job requirements.
+    </p>
+
+    <h4 class="kneePartsTitle">Driving after shoulder replacement surgery</h4>
+    <ul>
+      <li>Four-wheeler driving: Approximately 3 months</li>
+      <li>Two-wheeler driving: Approximately 6 months</li>
+    </ul>
+    <p>
+      These timelines may vary depending on individual recovery and functional ability.
+    </p>
+
+    <p>
+      *All above mentioned time spans are in general and may varies with each patient. Post
+      surgery evaluation is needed for each patient @Dr Sachin Karkamkar *
+    </p>
 
     <h4 class="kneePartsTitle">Outcomes</h4>
-
-    <h4 class="kneePartsTitle">How Your New Shoulder Is Different</h4>
     <p>
-      Improvement of shoulder motion is a primary goal of total shoulder replacement,  
-      though complete restoration of range may not always be possible.  
-      Post-surgery shoulder movement often reflects the motion you had before surgery.
+      Improvement of shoulder motion is a goal of total shoulder replacement, but restoration
+      of full motion is uncommon. The motion of your shoulder replacement after surgery can
+      be predicted by the range of motion you have in your shoulder before surgery.
     </p>
-
     <p>
-      Most patients regain sufficient range for comfortable daily activity and functional tasks.
-    </p>
-
-    <p><strong>This is normal:</strong></p>
-    <ul>
-      <li>Some numbness around the incision</li>
-      <li>Soreness with excessive activities</li>
-      <li>Clicking sounds with shoulder movement (not harmful)</li>
-    </ul>
-
-    <p>
-      These sensations often decrease with time and are generally far easier to tolerate 
-      than pre-surgery pain.
-    </p>
-
-    <p>
-      Your new shoulder may activate metal detectors at airports or buildings.  
-      Inform security personnel if needed.
+      Most patients can expect to be able to almost fully move the replaced shoulder and to
+      move the shoulder sufficiently for daily work
     </p>
 
     <h4 class="kneePartsTitle">Protecting Your Shoulder Replacement</h4>
-
     <ul>
-      <li>Participate in regular light exercises to maintain strength and mobility.</li>
-      <li>Take precautions to avoid falls or injuries.</li>
       <li>
-        Inform your dentist about your shoulder replacement.  
-        You may require antibiotics before dental procedures for life.
+        Participate in regular light exercise programs to maintain proper strength and
+        mobility of your new shoulder
+      </li>
+      <li>Take special precautions to avoid falls and injuries.</li>
+      <li>
+        Make sure your dentist knows that you have a shoulder replacement. You
+        should be given antibiotics before all dental surgery for the rest of your life
       </li>
       <li>
-        Visit your orthopedic surgeon yearly for an examination and X-ray.
+        See your orthopedic surgeon periodically for a routine follow-up examination
+        and x-rays, usually once a year
       </li>
     </ul>
 
     <h4 class="kneePartsTitle">Extending the Life of Your Shoulder Implant</h4>
-
     <p>
-      More than 90% of modern total shoulder replacements function well for 15 years or longer.  
-      Following your surgeon's guidelines and protecting your shoulder are essential for long-term success.
+      Currently, more than 90% of modern total shoulder replacements are still functioning
+      well 15 years after the surgery.
+    </p>
+    <p>
+      Following your orthopedic surgeon's instructions after surgery and taking care to protect
+      your shoulder replacement and your general health are important ways you can
+      contribute to the final success of your surgery.
     </p>
   `
 },
