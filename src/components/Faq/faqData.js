@@ -1,325 +1,273 @@
 const faqData = {
-  kneeReplacement: [
+ kneeReplacement: [
   {
-    q: "What are Postural Modifications if you have a knee pain?",
-    a: "Not to sit cross legged\nNot to squat\nAvoid climbing stairs."
+    q: "What are the postural modifications for knee pain?",
+    a: "Avoid sitting cross-legged.\nAvoid squatting.\nAvoid climbing stairs as much as possible."
   },
   {
-    q: "Walking stick should be taken in which hand?",
-    a: "Stick is to be taken in opposite side as it increases efficiency of load transmission by liver arm mechanism."
+    q: "Walking stick – which hand should it be used in?",
+    a: "The walking stick should be used in the hand opposite to the affected knee.\nThis improves efficiency of load transmission through the lever arm mechanism, thereby reducing stress on the painful knee."
   },
   {
-    q: "Braces or knee cap.. Which is better?",
-    a: "Braces are preferred as they are stronger and more efficient."
+    q: "Braces or knee cap – which is better?",
+    a: "Braces are preferred as they are stronger, provide better support, and are more effective than knee caps."
   },
   {
-    q: "Exercise.. does it help you if yes how?",
-    a: "Yes, exercise helps by making muscles flexible and stronger.\nMore useful exercises are walking, cycling without resistance, swimming."
+    q: "Do exercises help? If yes, how?",
+    a: "Yes, exercises help by improving muscle strength and flexibility, which reduces stress on the knee joint.\nRecommended exercises include:\nWalking.\nCycling without resistance.\nSwimming."
   },
   {
-    q: "What else can be done for knee arthritis besides surgery?",
-    a: "Exercises, physiotherapy and gel injection…but their outcome is not predictable."
+    q: "What can be done for knee arthritis besides surgery?",
+    a: "Conservative options include exercises, physiotherapy, and gel injections.\nHowever, outcomes are not predictable, especially in advanced arthritis."
   },
   {
-    q: "Injection into knee …What, Why, When, Is it of use…",
-    a: "3 types of injections are available\n1. Steroid – instant relief for short duration.\n2. Hyaluronic acid – Early-stage Osteoarthritis or severe arthritis for those who are medically unfit or want to delay surgery for short duration.\n3. Platelet rich plasma – Early-stage Osteoarthritis. It has advantage of partially reversing the process of degeneration and helping for cartilage regeneration."
+    q: "Knee injections – what, why, when, and usefulness?",
+    a: "Three types of injections are available:\n1. Steroid injections – provide instant pain relief but for a short duration.\n2. Hyaluronic acid injections – useful in early-stage osteoarthritis or in severe arthritis for patients who are medically unfit or want to delay surgery temporarily.\n3. Platelet-rich plasma (PRP) – used in early-stage osteoarthritis and may partially reverse degeneration and help in cartilage regeneration."
   },
   {
-    q: "Should I wait as long as possible for replacement?",
-    a: "Osteoarthritis is progressive process\nUnnecessary waiting damages joint surface more, deforms bones, restricts movement, makes surgery technically more difficult for surgeon.\nPatients’ health deteriorates overtime and likelihood of surgery related complications.\nIn some scenario severely damaged joint may not be repairable with routine implants and may need more advanced and expensive implants that is with rods and hinge.\nWith age increasing osteoporosis compromise the hold of implant reducing the survivorship"
+    q: "Should I wait as long as possible for knee replacement?",
+    a: "Osteoarthritis is a progressive disease.\nUnnecessary delay can further damage joint surfaces, cause bone deformities, restrict movement, and make surgery technically more difficult.\nOver time, overall health may deteriorate, increasing surgical risks.\nSeverely damaged joints may require advanced and expensive implants such as rods or hinges.\nIncreasing age and osteoporosis can compromise implant fixation and longevity."
   },
   {
-    q: "Should I continue with medication as long as possible",
-    a: "Medication gives temporary relief for short duration. Long term use of pain killer can cause renal failure and peptic ulcerations."
+    q: "Should I continue medications for a long time?",
+    a: "Medications provide temporary relief only.\nLong-term use of painkillers can lead to kidney damage and peptic ulcer disease."
   },
   {
-    q: "Alternative therapies like Acupressure, Ozone, Magnetic, Laser may cure my advanced arthritis and knee pain",
-    a: "There is no scientifically proven permanent non-surgical cure on advanced osteoarthritis; theses all work for temporary relief in early to moderate arthritis. It is observed that many people end up with trying these therapies as they are fearful of uncertainty of surgery. This delays surgery but cannot avoid."
+    q: "Can alternative therapies cure advanced arthritis?",
+    a: "There is no scientifically proven permanent non-surgical cure for advanced osteoarthritis.\nThese therapies may provide temporary relief in early to moderate arthritis.\nFear of surgery often delays proper treatment, but surgery cannot be avoided in advanced stages."
   },
   {
-    q: "Am I too old for surgery / Am I too young",
-    a: "Age is no age bar as earliest TKR we had done was for 45 yrs old female of rheumatoid arthritis and oldest patient was of 90 yrs who had age related arthritis.\nAge is not contraindication for surgery, if clinically fit he/she can undergo the procedure after fitness from anesthesia and physician.\nWe may do total knee replacement in young patients. This requires in post-traumatic and rheumatoid arthritis patient. However, they need to avoid contact sports for increasing the longevity of implants."
+    q: "Am I too old or too young for knee replacement?",
+    a: "Age is not a barrier for surgery.\nTotal knee replacement has been successfully performed in patients as young as 45 years and as old as 90 years.\nIf a patient is medically fit and cleared by anesthesia and physician, surgery can be safely performed.\nYounger patients should avoid contact sports to prolong implant life."
   },
   {
-    q: "How do I know if knee replacement surgery will help me?",
-    a: "If you have\nPain of intensity that seeks you need for analgesic\nPain causing difficulty in daily activities\nPain stopping you from travel and compromising your quality of life\nConsider for Total Knee Replacement."
+    q: "How do I know if knee replacement will help me?",
+    a: "Consider surgery if you have persistent pain requiring regular painkillers.\nPain affecting daily activities.\nPain limiting travel and reducing quality of life."
   },
   {
     q: "Is there any harm in waiting?",
-    a: "After stage 4 arthritis, if your deformities are progressive, one should not wait more.\nWaiting makes arthritis more complex and that can cause reduction in success rate.\nJustifiable reason to wait is due to medical issue if any"
+    a: "In stage 4 arthritis, progressive deformities should not be ignored.\nDelaying surgery can reduce success rates and increase complexity.\nThe only justified reason to delay surgery is an untreated medical condition."
   },
   {
-    q: "Total Knee Replacement is very painful surgery ..there is lot of pain in postoperative period",
-    a: "Modern day approach such as multimodal medications, nerve blocks, and local tissue infiltration have made surgery relatively pain free and friendly."
+    q: "Is knee replacement a very painful surgery?",
+    a: "Modern techniques such as multimodal pain management, nerve blocks, and local tissue infiltration have made surgery relatively pain-free and patient-friendly."
   },
   {
-    q: "After surgery .. I will have to give up some activities and sports?",
-    a: "You have high probability of getting back activities like cycling and brisk walking.\nSquatting and sitting cross legged is possible but should be kept minimal in order to have longer life to implants."
+    q: "Will I have to give up activities after surgery?",
+    a: "Most patients return to activities such as cycling and brisk walking.\nSquatting and sitting cross-legged are possible but should be kept minimal to increase implant longevity."
   },
   {
-    q: "Driving is not possible after replacement?",
-    a: "It is lot easier and more possible after 8weeks"
+    q: "Can I drive after knee replacement?",
+    a: "Yes. Driving is usually possible after 8 weeks."
   },
   {
-    q: "How long does it take to make a complete recovery?",
-    a: "In 24 to 48 hrs patients walk, and become independent for toilet\nIn 3 weeks almost all start staircase climbing and social activities.\nKitchen activity for females possible after 4 weeks.\nRecovery is a gradual process. Walking and physical therapy exercises will help speed your recovery.\nMost patients are able to participate in most daily activities till 6 weeks.\nMost joint replacement patients have regained the strength and endurance they had before surgery till 3 months.\nMost patients can expect full recovery till 6 months, depending on the type of surgery and your overall health and the success of your rehabilitation."
+    q: "How long does complete recovery take?",
+    a: "24–48 hours: Walking and independent toilet use.\n3 weeks: Stair climbing and social activities.\n4 weeks: Kitchen activities.\n6 weeks: Most daily activities resumed.\n3 months: Strength and endurance comparable to pre-surgery.\nUp to 6 months: Full recovery depending on health and rehabilitation."
   },
   {
-    q: "Surgery is done one at a time",
-    a: "If cardio pulmonary status is okay and blood loss acceptable after one leg knee replacement.\nIf anesthesia team permits other side knee replacement can be done at same stage.\nOr else it is preferable after 6 to 12 weeks."
+    q: "Is surgery done one knee at a time?",
+    a: "If cardiopulmonary status is stable and anesthesia permits, both knees can be replaced in a single stage.\nOtherwise, the second knee is preferably done after 6–12 weeks."
   },
   {
-    q: "Are there any advantage of doing replacement in both knees at same time?",
-    a: "If we have pain relief in both knees earliest, gait improvement and walking will be better.\nAs well as anesthesia drug requirement, stay and cost of surgery is reduced by almost 40 percent if both side replacement id done in single stage."
+    q: "What are the advantages of replacing both knees at the same time?",
+    a: "Early pain relief in both knees.\nBetter gait and walking ability.\nReduced hospital stay, anesthesia exposure, and overall cost by nearly 40%."
   },
   {
-    q: "Implants work only for 10years",
-    a: "Precision of surgery, advancement in biomaterials, today’s knee last for around 20 years or longer and is lifetime for most. Studies have demonstrated that 85% of the knee implants placed 20 years ago are still functioning well. With significant improvements made in implant materials and surgical techniques, today’s knee implants will probably last much longer."
+    q: "Do implants last only 10 years?",
+    a: "With modern surgical precision and advanced biomaterials, implants last 20 years or longer and often a lifetime.\nStudies show 85% of implants placed 20 years ago are still functioning well."
   },
   {
-    q: "I am obese ,I cannot undergo knee replacement",
-    a: "It can be successfully done in obese. Evidence suggest comparable results, but these cases need more expertise and special techniques. Some people wait to reduce weight but lose weight better after replacement. Evidence says that if weight more than 130kg then do the bariatric surgery first."
+    q: "I am obese – can I undergo knee replacement?",
+    a: "Knee replacement can be successfully performed in obese patients with comparable results.\nWeight loss is often difficult due to pain.\nMany patients lose weight after surgery.\nIf body weight exceeds 130 kg, bariatric surgery may be advised first."
   },
   {
-    q: "I have diabetes, hypertension and heart diseases ,so I cannot undergo surgery?",
-    a: "These conditions are no bar. Detail checkup is routine, and treated patients are better candidates for surgery. These diseases do not affect outcome but cautions needed. One can gain better health after surgery."
+    q: "I have diabetes, hypertension, or heart disease – can I have surgery?",
+    a: "These conditions are not a contraindication.\nWith proper medical optimization, such patients are good surgical candidates.\nImproved mobility after surgery often leads to better disease control."
   },
   {
-    q: "Is it like the kidney or liver replacement and my whole knee is removed and new put?",
-    a: "No, whole knee is never replaced. Only worn-out part is removed and replaced by artificial ones. So technically it is more like resurfacing rather than replacement."
+    q: "Is my entire knee removed during surgery?",
+    a: "No. Only the damaged surfaces are replaced.\nIt is more of a resurfacing procedure than complete replacement."
   },
   {
-    q: "I will choose my implant from google?",
-    a: "There are various designs and company of implants, many are good. Different surgeons use different company, so better to choose surgeon and leave it upon him to choose implant."
+    q: "Can I choose my implant online?",
+    a: "There are many good implant designs and manufacturers.\nDifferent surgeons use different systems.\nIt is best to choose your surgeon and allow them to select the most suitable implant."
   },
   {
-    q: "Expensive implants are always better. Only expensive implants give good results?",
-    a: "There is reliable data to support that they are indeed superior. Indian and imported both are good but results don’t depend only on implants. Results depend on post operative care, physiotherapy and technique."
+    q: "Are expensive implants always better?",
+    a: "There is no strong evidence that expensive implants always give better results.\nBoth Indian and imported implants can give excellent outcomes.\nSuccess depends more on surgical technique, postoperative care, and physiotherapy."
   },
   {
-    q: "Computer navigation is of no use?",
-    a: "There is evidence that computer navigation is marginally better than conventional for overall alignment."
+    q: "Is computer navigation useful?",
+    a: "Evidence suggests computer navigation provides slightly better alignment than conventional techniques."
   },
   {
-    q: "Knee replacement cannot be done second time?",
-    a: "In an unfortunate event, knee replacement can be done again, it is called revision surgery and it has good survivorship."
+    q: "Can knee replacement be done again if it fails?",
+    a: "Yes. This is called revision knee replacement and has good long-term outcomes when performed appropriately."
   },
   {
-    q: "My body may reject implants as they are foreign bodies?",
-    a: "These are biocompatible implants. They are inert and don’t give allergic reactions to body."
+    q: "Will my body reject the implant?",
+    a: "Implants are biocompatible and inert.\nThey do not cause allergic or rejection reactions."
   },
   {
-    q: "This surgery has high risk and fails most of the times?",
-    a: "The only risk in the entire surgery is the risk of infection. This risk is around 2%. Research also showed that knee replacement surgery has 95% success rate in most patients."
+    q: "Is knee replacement a high-risk surgery?",
+    a: "The main risk is infection, which is approximately 2%.\nOverall success rate is around 95%."
   },
   {
-    q: "I will need lots of physiotherapy after the surgery and recovery is very slow?",
-    a: "99% patients do not need a physiotherapist at home. All exercises are taught in hospital. 98% patients are walking without an aid after 4 weeks."
+    q: "Will I need long-term physiotherapy?",
+    a: "99% of patients do not need home physiotherapy.\nExercises are taught in the hospital.\n98% of patients walk without support after 4 weeks."
   }
 ],
 shoulderReplacement: [
   {
-    q: "Does shoulder also become arthritic like knee?",
-    a: "Yes\nArthritis means ‘wear and tear’ of joint cartilage. It can happen with any joint. Only the pathology[reason] can be different depending on age, joint involved and history.\nLink Shoulder pain"
+    q: "Does the shoulder also become arthritic like the knee?",
+    a: 'Yes.\nArthritis refers to wear and tear of joint cartilage and can affect any joint in the body, including the shoulder.\nThe underlying cause may vary depending on age, the joint involved, and prior injury or medical history.\n(Link: <a href="/services/shoulder-pain" class="faq-link">Shoulder Pain</a>)'
   },
   {
-    q: "If one shoulder starts arthritis, do other shoulder will also get arthritis eventually?",
-    a: "Occurrence depends on cause of arthritis."
+    q: "If one shoulder develops arthritis, will the other shoulder also develop arthritis?",
+    a: "Not necessarily.\nThe likelihood of the other shoulder developing arthritis depends on the underlying cause, such as age-related degeneration, inflammatory disease, or previous injury."
   },
   {
-    q: "Why screening for common infections is required before surgery?",
-    a: "Infection from any other site [most common dental or urinary infection] can reach joint space through blood stream so screening is important to avoid post-operative infections."
+    q: "Why is screening for common infections required before surgery?",
+    a: "Infections from other sites—most commonly dental or urinary tract infections—can spread to the joint through the bloodstream.\nScreening and treating these infections beforehand help reduce the risk of post-operative joint infection."
   },
   {
-    q: "How much would be the range of shoulder motion after shoulder replacement surgery?",
-    a: "Range of motion depends on range of motion present before surgery. But mostly patient can move replaced shoulder fully and can use sufficiently for daily work."
+    q: "How much range of motion can I expect after shoulder replacement surgery?",
+    a: "The final range of motion largely depends on the range of motion before surgery.\nIn most cases, patients achieve good movement and are able to use the replaced shoulder comfortably for daily activities."
   },
   {
-    q: "What things are not worrisome after surgery?",
-    a: "Link What is normal after surgery"
-  },
-  {
-    q: "For how much period I need to wear sling?",
-    a: "Approximately for 3wks it is necessary to wear the sling."
-  },
-  {
-    q: "When can I start active movements?",
-    a: "Approximately after 9-12wks\nThis may vary depending on individual conditions."
-  },
-  {
-    q: "How much time required to return normal range of motion?",
-    a: "Active assisted movement with sling 6-9weeks\nActive movements without sling 9-12weeks, can be done further with thera [resistant] band to improve movement and strength"
-  },
-  {
-    q: "When is physiotherapy started after surgery?",
-    a: "Physiotherapy is advised immediately after surgery and is continued till minimum 3-6mth\nIf continued afterwards as well will increase endurance and strength."
-  },
-  {
-    q: "When can I returned to work?",
-    a: "Work from home is permitted after 2 weeks after surgery. And most of patients are able to join office for sedentary work after 4 to 6 weeks."
-  },
-  {
-    q: "When can I resume driving after shoulder replacement surgery?",
-    a: "2-wheeler driving can be resumed approximately after 6mth and 4-wheeler driving after 3mths.\nThis may vary depending on individual conditions."
+    q: "What symptoms after surgery are not worrisome?",
+    a: '<a href="/services/shoulder-normal"  rel="noopener noreferrer" class="faq-link">What Is Normal After Surgery</a>'
   }
+
 ],
-  shoulderArthroscopy: [
+shoulderArthroscopy: [
   {
-    q: "HOW DOES THE SURGEON SEE AND PERFORM WORK IN THE SHOULDER ARTHROSCOPY?",
-    a: "What is shoulder arthroscopy",
-    link: "/services/shoulder-arthroscopy"
+    q: "How does the surgeon see and perform work during shoulder arthroscopy?",
+    a: 'Shoulder arthroscopy is a minimally invasive procedure performed using a small camera called an arthroscope, which is inserted through tiny incisions around the shoulder.\nThe camera projects high-resolution images onto a screen, allowing the surgeon to clearly visualize and repair damaged structures inside the joint.\n(Link: <a href="/services/shoulder-arthroscopy" rel="noopener noreferrer" class="faq-link" > What is Shoulder Arthroscopy)</a>'
   },
   {
-    q: "HOW MANY DAYS I NEED TO STAY IN HOSPITAL AFTER SURGERY?",
-    a: "Shoulder arthroscopy is typically need to stay for 2 to 3 days. This is mainly to monitor your recovery from anaesthesia, IV antibiotic and for your pain relief"
+    q: "Are there risks involved with shoulder arthroscopy?",
+    a: 'Like any surgical procedure, shoulder arthroscopy carries some risks, although complications are uncommon.\n(Link: <a href="/services/shoulder-arthroscopy"  rel="noopener noreferrer" class="faq-link">Complications of Shoulder Arthroscopy) </a>'
   },
   {
-    q: "ARE THERE RISKS INVOLVED WITH HAVING SURGERY?",
-    a: "Link complcations shoulder arthroscopy"
+    q: "When will I have follow-up appointments after surgery?",
+    a: "Follow-up visits are important to monitor healing, assess progress, and guide rehabilitation.\nTypical follow-up schedule: 1 week, 2 weeks, 1 month, 2 months, 3 months, 1 year.\nIn many cases, your doctor may advise reviews every 3 weeks, depending on recovery."
   },
   {
-    q: "WHAT MEDICATIONS WILL BE PRESCRIBED AFTER SURGERY?",
-    a: "Pain relievers will be prescribed after surgery. These are typically taken less than 7-10 days after surgery. The pain medication will not completely prevent any pain. It is normal and appropriate to have some pain after surgery. The goal of using medication should be to make pain tolerable, not to have no pain. We also need antibiotic for first 3 to days. Certain medications are given to promote healing and immunity"
+    q: "How much pain will I have after surgery?",
+    a: "Pain varies greatly from person to person.\nThe same procedure may cause different levels of pain in different patients.\nPain control includes:\nIcing the shoulder.\nAppropriate pain medications.\nLimiting activity.\nFollowing physiotherapy instructions.\nA nerve block is often administered during surgery, providing excellent pain relief for several hours.\nWhen the block wears off, pain may increase temporarily.\nTingling in the arm indicates the block is wearing off—this is the ideal time to start oral pain medication."
   },
   {
-    q: "WHEN WILL I HAVE FOLLOW UP APPOINTMENTS AFTER SURGERY?",
-    a: "Follow up appointments after surgery are important to monitor your progress, assess any limitations or setbacks, and plan your continued care. Typically, you will be seen at the following intervals: 1 week, 2 weeks, 1 months, 2months, 3 months and one year. Additional appointments may be recommended in certain situations. Usually, doctor ask for review every three weeks"
+    q: "What are the advantages of arthroscopic rotator cuff repair compared to not having surgery?",
+    a: "Advantages include:\nSmaller incisions.\nLess blood loss.\nBetter visualization of damaged structures.\nFaster healing.\nImproved functional outcomes compared to non-surgical treatment in indicated cases."
   },
   {
-    q: "HOW MUCH PAIN AM I GOING TO HAVE AFTER SURGERY?",
-    a: "This is a common question, but one that is very difficult to answer. Every patient experiences pain differently. The same procedure may cause drastically different amounts of pain in different patients. Key components of controlling pain after surgery include icing the shoulder, taking appropriate pain medications, limiting activity appropriately, and following recommendations by the physical therapist. A nerve block is often placed by the anesthesia team during surgery. This block often works for several hours after surgery. As a result, your pain may be well controlled initially, but may increase after the block wears off. This is a normal part of the block wearing off, and shouldn’t be cause for concern in most cases. When you start to feel tingling in the arm, this is an indication that the block is beginning to wear off. This is a good time to begin taking pain medication."
+    q: "If pain persists for a few weeks after surgery, is it worrisome?",
+    a: "No.\nDespite small incisions, significant work is done inside the shoulder.\nStiffness and soreness for several weeks are normal.\nThe effectiveness of surgery should not be judged until 12–16 weeks after the procedure."
   },
   {
-    q: "WHAT DO I DO WITH THE DRESSINGS AFTER SURGERY?",
-    a: "First dressing will be done two days after surgery. Next one after one week and then suture removal after two weeks of surgery."
+    q: "What conditions require shoulder arthroscopy?",
+    a: 'Shoulder arthroscopy is commonly performed for various shoulder conditions.\n(Link: <a href="/services/shoulder-arthroscopy"  rel="noopener noreferrer" class="faq-link"> Indications for Shoulder Arthroscopy</a> )'
   },
   {
-    q: "WHAT ARE THE ADVANTAGES AND DISADVANTAGES OF ARTHROSCOPIC SHOULDER ROTATOR CUFF REPAIR COMPARED TO NOT HAVING SURGERY?",
-    a: "Arthroscopic shoulder rotator cuff repair has several advantages compared to non-surgical treatment. Smaller incision, lesser blood loss, faster healing better visualization of damaged structures"
+    q: "Will I need to use a sling after surgery?",
+    a: "Yes.\nA specialized sling is usually worn for 4–6 weeks.\nIt should be worn at all times except during bathing or exercises as advised.\nThe sling protects the shoulder and signals others to be cautious around you.\nYou may remove the sling several times a day to move the elbow, wrist, and hand to prevent stiffness.\nLifting more than 2–5 pounds with the operated arm is not allowed during this period."
   },
   {
-    q: "If pain remains for few weeks after surgery, is it worrisome?",
-    a: "Even though there are only a few small incisions, there was a significant amount of work that was done inside the Shoulder. The Shoulder can be stiff and sore for several weeks and you can expect some discomfort. Please do not judge the effectiveness of the surgery until after you have given yourself ample time to recover from the surgery. This may be at least 12 to 16 weeks after the surgery"
+    q: "Will surgery restore full range of motion and strength?",
+    a: "Most patients regain near-normal range of motion.\nPhysical therapy is critical to prevent stiffness.\nStrength recovery depends on tear size, tissue quality, and duration of injury.\nLarge or chronic tears may not regain full strength, but significant improvement is expected."
   },
   {
-    q: "WHAT ARE THE INDICATION OR ILLNESS THAT NEED SHOULDER ARTHROSCOPY ?",
-    a: "Link Indication shoulder arthroscopy"
+    q: "Will I be able to return to the same activities as before surgery?",
+    a: "In most cases, yes.\nReturn depends on age, activity level, and type of sport.\nSome patients may experience mild limitations due to stiffness, weakness, or fear of reinjury."
   },
   {
-    q: "WILL I NEED TO USE A SLING AFTER SURGERY?",
-    a: "Yes. A particular type of sling is typically recommended (and provided in clinic prior to surgery) for protection for approximately 4-6 weeks after surgery. Doctor recommends that you wear the sling at all times after surgery. You are encouraged to come out of the sling several times per day and move the elbow/hand/wrist to prevent them from becoming stiff. You may remove the sling to shower according to your post-op instruction sheet. The sling is a good reminder for you to be careful with the shoulder after surgery. It is also a signal to those around you to be careful, so it is especially important to wear your sling at work/school and in crowds. You will not be allowed to lift any significant weight (nothing more than 2-5 pounds) with the surgical arm for approximately 4-6 weeks after surgery. You may use the arm to perform some basic activities of daily living such as eating, hygiene and working at a computer."
+    q: "Will I develop arthritis in my shoulder after surgery?",
+    a: "Possibly, but the risk is low.\nSurgery restores function but cannot completely reverse prior joint damage."
   },
   {
-    q: "HOW LONG IS THE RECOVERY AFTER SHOULDER ARTHROSCOPIC ROTATOR CUFF REPAIR?",
-    a: "It depends on the procedure performed. Most patients will need to wear their sling for approximately 4-6 weeks after surgery. Most patients can return to sedentary work around 1-2 weeks after surgery. More strenuous work may require more time to return, depending on the duties of your job profile. With strenuous jobs, it can take 6 months or more to return. Many patients are able to return to limited or light duty 3 weeks after surgery. Most patients return to sports activity around 9 to 12 months after surgery. Return to sports activities takes time and should not be rushed."
-  },
-  {
-    q: "WILL PHYSICAL THERAPY BE NEEDED AFTER SHOULDER ARTHROSCOPy?",
-    a: "Physical therapy is HIGHLY recommended after shoulder arthroscopic repair. Therapy begins three weeks after surgery to allow the repaired tissue to begin healing. Therapy starts with simple stretching exercises and progresses to strengthening. Duration varies and may last several months. Initially visits are twice per week. Recovery rate differs between patients and this is normal. Home exercises are important. Therapist assessment is crucial before returning to sports or work."
-  },
-  {
-    q: "WHEN CAN I BEGIN DRIVING AFTER ARTHROSCOPIC SHOULDER ROTATOR CUFF REPAIR?",
-    a: "Four wheeler usually at the end of 3 months. Two wheeler after 6 to 9 months depending upon procedure done"
-  },
-  {
-    q: "WILL ARTHROSCOPIC SHOULDER ROTATOR CUFF REPAIR ALLOW MY SHOULDER FULL RANGE OF MOTION AND STRENGTH ONCE RECOVERED?",
-    a: "In most cases, range of motion recovers to near full motion. Stiffness and weakness are associated risks. Physical therapy is critical. Recovery of strength depends on tear size and duration. Daily exercises are important."
-  },
-  {
-    q: "WILL I BE ABLE RETURN TO THE SAME ACTIVITIES AFTER SURGERY THAT I WAS DOING BEFORE SURGERY?",
-    a: "In most cases, yes. This depends on age, activity level and sport. Goal of surgery is to restore shoulder function. Some patients may have pain, stiffness or fear of reinjury that limits return."
-  },
-  {
-    q: "WILL I GET ARTHRITIS IN MY SHOULDER?",
-    a: "Maybe. Surgery corrects shoulder structure but prior damage can lead to arthritis. Chances are very low and long term and less worrisome."
-  },
-  {
-    q: "What should you not do after shoulder arthroscopy?",
-    a: "Don’t put weight on your arm or lift anything for 6 weeks. Don’t use arm to get up from chair. Don’t reach behind or above you. Don’t lie on operated side for 6 weeks. Don’t get bandage wet. Don’t drive until safe."
+    q: "What should I not do after shoulder arthroscopy?",
+    a: "Do not lift or bear weight on the arm for 6 weeks.\nDo not reach overhead or behind your back.\nDo not lie on the operated side for 6 weeks.\nDo not get the bandage wet.\nDo not drive until cleared by your doctor."
   },
   {
     q: "Is shoulder arthroscopy safe?",
-    a: "Shoulder arthroscopy is usually very safe with success rate of 90 to 95%. Risks include blood clots, excessive bleeding or swelling, nerve or vessel damage, and infection."
-  },
-  {
-    q: "When can I return to work?",
-    a: "It depends on occupation. Sedentary job may allow return after 14 days. Jobs requiring arm use need more time. Discuss with doctor prior to surgery for planning."
+    a: "Yes.\nShoulder arthroscopy is a very safe procedure with a success rate of 90–95%.\nRare risks include infection, bleeding, nerve injury, blood clots, or swelling."
   }
 ],
 hipReplacement: [
   {
-    q: "Do all types of pain in gluteal or buttock area are connected with hip joint?",
-    a: "No.\nPain in the gluteal/buttock region is due to spine. Pain in groin region is usually because of hip joint."
+    q: "Do all types of pain in the gluteal or buttock area originate from the hip joint?",
+    a: "No.\nPain in the gluteal or buttock region is more commonly related to the spine, whereas pain in the groin region is usually associated with the hip joint."
   },
   {
-    q: "Does the replaced hip sustain as anormal hip during activity?",
-    a: "Yes, they are as good as normal God given hip joint, provided it is done by a well experienced hip replacement surgeons and you have done a physiotherapy after that."
+    q: "Does a replaced hip function like a normal hip during daily activities?",
+    a: "Yes.\nA well-performed hip replacement can function almost like a normal, natural hip joint, provided the surgery is done by an experienced hip replacement surgeon and proper postoperative physiotherapy is followed."
   },
   {
-    q: "Can I sit cross legged or use Indian toilets after hip replacement surgery?",
-    a: "Many can manage to sit cross legged or use Indian toilets but it is not safe. Even if you can do, it puts excessive load on hip joint that causes early arthritis or early loosening of implant and decreases the shelf life of new replaced joint. So preferable to avoid."
+    q: "Can I sit cross-legged or use Indian toilets after hip replacement surgery?",
+    a: "Some patients may be able to sit cross-legged or use Indian-style toilets; however, this is not recommended.\nThese positions place excessive stress on the hip joint, which can lead to early implant loosening, accelerated wear, and reduced implant lifespan.\nIt is therefore advisable to avoid these activities."
   },
   {
-    q: "Is prolonged sitting painful after hip Replacement?",
-    a: "No, but it is advisable to take frequent breaks in between as muscles do not become fatigued or stiff after prolonged sitting."
+    q: "Is prolonged sitting painful after hip replacement?",
+    a: "No.\nHowever, it is advisable to take frequent breaks to prevent muscle stiffness or fatigue associated with prolonged sitting."
   }
 ],
 kneeArthroscopy: [
   {
-    q: "Knee is loosened while walking. Is it ligament tear?",
-    a: "In absence of injury/trauma, it may be due to muscle weakness. You need to focus on Physiotherapy. Make the muscles strong.\nIf you have a injury or trauma then you have to investigate [MRI] and confirm that you do not have ligament tear."
+    q: "My knee feels loose or gives way while walking. Is it a ligament tear?",
+    a: "In the absence of any injury or trauma, this sensation may be due to muscle weakness rather than a ligament tear.\nIn such cases, focused physiotherapy is advised to strengthen the surrounding muscles.\nHowever, if there has been a history of injury or trauma, further investigation is required.\nAn MRI scan is usually recommended to confirm the diagnosis of a ligament tear."
   },
   {
-    q: "If Ligament is torn, is it possible to reform it as original?",
-    a: "Certain ligaments in body like MCL and LCL may have capacity to regenerate. If other ligaments like ACL and PCL that are within the joint [intraarticular] get torn with Grade 3 that is complete tear then they do not unite. It requires arthroscopic repair."
+    q: "If a ligament is torn, can it heal and become normal again?",
+    a: "The healing potential depends on the grade of injury:\nGrade 1: Mild.\nGrade 2: Moderate.\nGrade 3: Severe.\nCertain ligaments, such as the Medial Collateral Ligament (MCL) and Lateral Collateral Ligament (LCL), have the ability to heal and regenerate.\nLigaments like the Anterior Cruciate Ligament (ACL) and Posterior Cruciate Ligament (PCL), which are located inside the joint (intra-articular), have a lower healing capacity and often require surgical treatment in grade 3 tears."
   },
   {
-    q: "Do knee work normally if meniscus is removed for any reason?",
-    a: "Yes, you can walk normally, knee can work normally if meniscus is removed. But meniscus act as cushion in knee joint so it is removed, risk of early arthritis increases. So to prevent it, you need to maintain diet, weight and do regular exercises."
+    q: "Will the knee function normally if the meniscus is removed?",
+    a: "Yes, normal walking and daily activities are possible even after meniscus removal.\nHowever, the meniscus acts as a cushion in the knee joint.\nIts removal increases the risk of early arthritis.\nTo delay this risk, it is important to maintain a healthy diet, control body weight, and perform regular strengthening exercises."
   },
   {
-    q: "Can I play again or climbed stairs or do trekking after ligament/meniscus repair?",
-    a: "Yes, after ligament/meniscus surgery, after couple of months when your rehabilitation program is done, you have done a good physiotherapy, your muscles are good, then you can think to restart your sport or trekking. This usually take one to one and half yr after index surgery."
+    q: "Can I play sports, climb stairs, or go trekking after ligament or meniscus repair?",
+    a: "Yes. Proper rehabilitation and physiotherapy help restore range of motion, strength, balance, and proprioception.\nOnce the rehabilitation program is completed—usually 1 to 1.5 years after surgery—you may gradually resume sports, trekking, and other physical activities."
   },
   {
-    q: "Can I sit cross legged or use Indian toilet after ligament/meniscus repair?",
-    a: "Yes, after 9mths to 1yr. If it is done before that it can cause twisting of repaired structure and does not seem to be safe, as getting up from these positions are actions against gravity and puts excessive weight on joint, so not advisable before 9mths to 1yr. [Duration may get prolonged depending on individual condition]."
+    q: "Can I sit cross-legged or use an Indian toilet after ligament or meniscus repair?",
+    a: "Yes, but only after 9 months to 1 year.\nAttempting this earlier may cause twisting stress on the repaired structures and is not considered safe.\nRising from these positions places significant load on the knee joint.\nThe timeline may vary depending on individual recovery."
   },
   {
-    q: "Can I sit for a long or travel long distance after ligament/meniscus repair?",
-    a: "Yes. Safe way is to keep leg in straight position, have a frequent breaks during travel, take vehicle walk for couple of minutes and then again continue travelling."
+    q: "Can I sit for long periods or travel long distances after ligament or meniscus repair?",
+    a: "Yes.\nIt is advisable to keep the leg in a straight position.\nTake frequent breaks during travel.\nPerform gentle warm-up exercises.\nTake short walks if permitted."
   }
 ],
 sportsMedicine: [
   {
-    q: "Any specific physiotherapy or training is there as per specific sports?",
-    a: "Yes, each sports have a different mechanism of joint movement so different joints at risk. So, each sport has individualised rehabilitation program that physiotherapist will advise you."
+    q: "Is there specific physiotherapy or training for different sports?",
+    a: "Yes.\nEach sport involves unique movement patterns and joint demands, placing different joints at varying levels of risk.\nTherefore, sport-specific and individualized rehabilitation programs are designed and guided by a physiotherapist to meet the requirements of each sport."
   },
   {
-    q: "After any surgery/ligament/meniscus repair can I play the sport again?",
-    a: "Yes, you are able to play after the index problem is healed and you have gained enough strength and balance after that operative procedure."
+    q: "Can I return to sports after surgery or ligament or meniscus repair?",
+    a: "Yes.\nReturn to sports is possible once the treated condition has adequately healed and you have regained sufficient strength, flexibility, balance, and coordination following the surgical or rehabilitative procedure."
   }
 ],
 trauma: [
   {
-    q: "When to use ice packs and when to do hot fomentation?",
-    a: "Ice : Pain or disability after any injury\nHot fomentation : Aging pain/ overactivity pain/ Mechanical overloading"
+    q: "When should ice packs be used and when is hot fomentation advised?",
+    a: "Ice packs:\nRecommended immediately after an injury when there is pain, swelling, or disability.\n\nHot fomentation:\nUseful for chronic pain, age-related pain, pain due to overactivity, or mechanical overloading of muscles and joints."
   },
   {
-    q: "What is cast and what is slab?",
-    a: "Slab : A plaster slab is applied immediately after a fracture as a temporary splint to immobilize the limb.\nLocal swelling may increase in 48-72hrs, slab encircle only 2/3 rd of limb thus preventing neurovascular compression.\nSlab material is hard plastic or foam.\nCast : A plaster cast is applied for longer duration.\nIt is applied after swelling and inflammation subsides.\nCast material is a rigid fiberglass or POP."
+    q: "What is a slab and what is a cast?",
+    a: "Slab:\nA slab is applied immediately after a fracture as a temporary splint to immobilize the limb.\nSlab material is hard plastic or foam.\nSwelling may increase within 48–72 hours after injury, slab covers only two-thirds of the limb, thus reducing the risk of neurovascular compression.\n\nCast:\nA cast is applied for long-term immobilization.\nCast materials is fiberglass or plaster of Paris (POP).\nIt is usually applied after swelling and inflammation have subsided."
   },
   {
-    q: "Which type of cast to be used Fiberglass or POP?",
-    a: "Fiberglass material : It is light, stronger and radiolucent [can take xray through cast]. Good for children.\nPOP : It is a traditional type of cast. Its use has been reduced. It is heavy, less strong and require longer time for setting."
+    q: "Which type of cast is better: Fiberglass or POP?",
+    a: "Fiberglass cast:\nLightweight and stronger.\nRadiolucent (X-rays can be taken through the cast).\nMore comfortable and preferred, especially for children.\n\nPOP (Plaster of Paris) cast:\nTraditional casting material.\nHeavier and less strong.\nTakes longer to set.\nIts use has significantly decreased in modern practice."
   },
   {
-    q: "What is to be done if plaster loosen up?",
-    a: "Report to doctor and apply new. As if it is too loose it may not support the fracture adequately so fracture may be at risk of displacement."
+    q: "What should be done if the plaster becomes loose?",
+    a: "You should report to your doctor.\nA loose plaster may fail to adequately support the fracture, increasing the risk of displacement and improper healing."
   },
   {
-    q: "If itching is experienced at plaster site?",
-    a: "As skin is not in contact with air and water it causes accumulation of dead skin. This causes itching.\nKeep the site dry and clean."
+    q: "What should be done if itching occurs under the plaster?",
+    a: "Itching occurs because the skin is unable to breathe or come into contact with air and water, leading to accumulation of dead skin.\nKeep the cast dry and clean.\nDo not insert objects inside the cast to scratch.\nInform your doctor if itching becomes severe or persistent."
   }
 ]
 };

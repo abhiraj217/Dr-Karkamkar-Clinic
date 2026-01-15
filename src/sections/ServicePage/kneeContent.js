@@ -800,173 +800,210 @@ const kneeContent = {
 
                 </div>
                 `},
-            { 
-                id: "Recovery", 
-                tabTitle: "Recovery", 
-                type: "text", 
-                content: `
-                    <div class="knee-wrapper">
+{
+  id: "Recovery",
+  tabTitle: "Recovery",
+  type: "text",
+  content: `
+    <div class="knee-wrapper">
 
-                        <h4 class="kneePartsTitle">Post-operative Recovery</h4>
+      <h4 class="kneePartsTitle">Post-operative Recovery</h4>
 
-                        <ul>
-                            <li>You will most likely stay in the hospital for 4 days.</li>
-                            <li>Physiotherapy is started immediately as advised</li>
-                            <li>Range of movement should improve progressively over first 4 weeks</li>
-                            <li>Strengthening improves progressively in next 8 weeks</li>
-                            <li>Walking with walker first 2 weeks</li>
-                            <li>Followed by walking with stick for next 2 weeks</li>
-                            <li>Followed by walking without walking aids</li>
-                        </ul>
+      <ul>
+        <li>You will most likely stay in the hospital for 4 days.</li>
+        <li>Physiotherapy is started immediately as advised</li>
+        <li>Range of movement should improve progressively over first 4weeks</li>
+        <li>Strengthening improves progressively in next 8weeks</li>
+        <li>Walking with walker first 2weeks</li>
+        <li>Followed by Walking with stick for next 2weeks</li>
+        <li>Followed by walking without walking aids</li>
+      </ul>
 
-                        <p>
-                            *All above mentioned time spans are in general and may varies with each patient. Post surgery 
-                            evaluation is needed for each patient @Dr Sachin Karkamkar *
-                        </p>
+      <h4 class="kneePartsTitle">Complete Recovery Take?</h4>
+      <ul>
+        <li>24–48 hours: Walking and independent toilet use</li>
+        <li>3 weeks: Stair climbing and social activities</li>
+        <li>4 weeks: Kitchen activities (for most women)</li>
+        <li>6 weeks: Most daily activities resumed</li>
+        <li>3 months: Strength and endurance comparable to pre-surgery</li>
+        <li>Up to 6 months: Full recovery, depending on health and rehabilitation</li>
+      </ul>
 
-                        <h4 class="kneePartsTitle">Pain Management</h4>
+      <h4 class="kneePartsTitle">Driving After Knee Replacement?</h4>
+      <p>
+        Driving is usually possible after 8 weeks.
+      </p>
 
-                        <p>
-                            After surgery, you will feel some pain, but your surgeon and nurses will provide medication to make 
-                            you feel as comfortable as possible. Different routes are utilized for this. Intravenous, skin 
-                            patches, local infiltration and regional blocks help to ease out pain of patient. Pain management is 
-                            an important part of your recovery.
-                        </p>
+      <p>
+        *All above mentioned time spans are in general and may varies with each patient. Post
+        surgery evaluation is needed for each patient @Dr Sachin Karkamkar *
+      </p>
 
-                        <p>
-                            Walking and knee movement will begin soon after surgery, and when you feel less pain, you can 
-                            start moving sooner and get your strength back more quickly. Talk with your surgeon if 
-                            postoperative pain becomes a problem.
-                        </p>
+      <h4 class="kneePartsTitle">Pain Management</h4>
+      <p>
+        After surgery, you will feel some pain, but your surgeon and nurses will provide medication to
+        make you feel as comfortable as possible. Different routes are utilized for this. Intravenous ,skin
+        patches ,local infiltration and regional blocks help to ease out pain of patient . Pain management
+        is an important part of your recovery.
+      </p>
+      <p>
+        Walking and knee movement will begin soon after surgery, and when you feel less pain, you can
+        start moving sooner and get your strength back more quickly.
+      </p>
+      <p>
+        Talk with your surgeon if postoperative pain becomes a problem.
+      </p>
 
-                        <h4 class="kneePartsTitle">Blood Clot Prevention</h4>
+      <h4 class="kneePartsTitle">Blood Clot Prevention</h4>
+      <p>
+        Your orthopaedic surgeon may prescribe one or more measures to prevent blood clots and
+        decrease leg swelling.
+      </p>
+      <p>
+        These may include special support hose, inflatable leg coverings (compression boots), and blood
+        thinners.
+      </p>
+      <p>
+        Foot and ankle movement also is encouraged immediately following surgery to increase blood
+        flow in your leg muscles to help prevent leg swelling and blood clots.
+      </p>
 
-                        <p>
-                            Your orthopaedic surgeon may prescribe one or more measures to prevent blood clots and decrease 
-                            leg swelling. These may include special support hose, inflatable leg coverings (compression boots), 
-                            and blood thinners.
-                        </p>
+      <h4 class="kneePartsTitle">Physical Therapy</h4>
+      <p>
+        A continuous passive motion machine can help prevent postoperative knee stiffness in the early
+        postoperative period.
+      </p>
+      <p>
+        Most patients begin exercising their knee the day after surgery.
+      </p>
+      <p>
+        A physical therapist will teach you specific exercises to strengthen your leg and restore knee
+        movement to allow walking and other normal daily activities soon after your surgery.
+      </p>
 
-                        <p>
-                            Foot and ankle movement also is encouraged immediately following surgery to increase blood flow in 
-                            your leg muscles to help prevent leg swelling and blood clots.
-                        </p>
+      <h4 class="kneePartsTitle">Your Recovery at Home</h4>
 
-                        <h4 class="kneePartsTitle">Physical Therapy</h4>
+      <h4 class="kneePartsTitle">Wound Care</h4>
+      <p>
+        You will have stitches or staples running along your wound or a suture beneath your skin on the
+        front of your knee. The stitches or staples over skin will be removed two weeks after surgery. A
+        sutures in deeper muscles dissolve on its own and don’t need removal.
+      </p>
+      <p>
+        Avoid soaking the wound in water until it has thoroughly sealed and dried.
+      </p>
+      <p>
+        You may continue to bandage the wound to prevent irritation from clothing or support stockings.
+      </p>
 
-                        <p>
-                            A continuous passive motion machine can help prevent postoperative knee stiffness in the early 
-                            postoperative period. Most patients begin exercising their knee the day after surgery. 
-                        </p>
+      <h4 class="kneePartsTitle">Diet</h4>
+      <p>
+        Some loss of appetite is common for several weeks after surgery.
+      </p>
+      <p>
+        Take light, small and frequent meals. High protein diet help in faster wound and muscle strength
+        recovery
+      </p>
 
-                        <p>
-                            A physical therapist will teach you specific exercises to strengthen your leg and restore knee 
-                            movement to allow walking and other normal daily activities soon after your surgery.
-                        </p>
+      <h4 class="kneePartsTitle">Activity</h4>
+      <p>
+        Exercise is a critical component of home care, particularly during the first few weeks after
+        surgery.
+      </p>
+      <p>
+        You should be able to resume most normal activities of daily living within 3 to 6 weeks
+        following surgery.
+      </p>
+      <p>
+        Some pain with activity and at night is common for several weeks after surgery.
+      </p>
 
-                        <h4 class="kneePartsTitle">Your Recovery at Home</h4>
+      <p>Your activity program should include:</p>
+      <ul>
+        <li>
+          A graduated walking program to slowly increase your mobility, initially in your home
+          and later outside
+        </li>
+        <li>
+          Resuming other normal household activities, such as sitting, standing, and climbing
+          stairs
+        </li>
+        <li>
+          Specific exercises several times a day to restore movement and strengthen your knee.
+          You probably will be able to perform the exercises without help, but you may have a
+          physical therapist help you at home or in a therapy center the first few weeks after
+          surgery. Involving a physiotherapist fastens your progress.
+        </li>
+      </ul>
 
-                        <h4 class="kneePartsTitle">Wound Care</h4>
+      <h4 class="kneePartsTitle">Outcomes</h4>
 
-                        <p>
-                            You will have stitches or staples running along your wound or a suture beneath your skin on the 
-                            front of your knee. The stitches or staples over skin will be removed two weeks after surgery. 
-                            Sutures in deeper muscles dissolve on their own and don’t need removal.
-                        </p>
+      <h4 class="kneePartsTitle">How Your New Knee Is Different</h4>
+      <p>
+        Improvement of knee motion is a goal of total knee replacement, but restoration of full motion
+        depends on preoperative stage. The motion of your knee replacement after surgery can be
+        predicted by the range of motion you have in your knee before surgery.
+      </p>
+      <p>
+        Most patients can expect to be able to almost fully straighten the replaced knee and to bend to
+        near normal range .Movements of knee are more than sufficient to climb stairs and get in and out
+        of a car, and sit comfortably on chair or stool.
+      </p>
 
-                        <p>
-                            Avoid soaking the wound in water until it has thoroughly sealed and dried. You may continue to 
-                            bandage the wound to prevent irritation from clothing or support stockings.
-                        </p>
+      <p>This is a normal:</p>
+      <ul>
+        <li>Most people feel some numbness in the skin around your incision.</li>
+        <li>You also may feel some stiffness, particularly with excessive bending activities.</li>
+        <li>
+          Most people also feel or hear some clicking of the metal and plastic with knee bending or
+          walking.
+        </li>
+      </ul>
 
-                        <h4 class="kneePartsTitle">Diet</h4>
+      <p>
+        These differences often diminish with time and most patients find them to be tolerable
+        when compared with the pain and limited function they experienced prior to surgery.
+      </p>
 
-                        <p>
-                            Some loss of appetite is common for several weeks after surgery. Take light, small, and frequent 
-                            meals. High protein diet helps in faster wound and muscle strength recovery.
-                        </p>
+      <p>
+        Your new knee may activate metal detectors required for security in airports and some
+        buildings. Tell the security agent about your knee replacement if the alarm is activated.
+      </p>
 
-                        <h4 class="kneePartsTitle">Activity</h4>
+      <h4 class="kneePartsTitle">Protecting Your Knee Replacement</h4>
+      <ul>
+        <li>
+          Participate in regular light exercise programs to maintain proper strength and
+          mobility of your new knee
+        </li>
+        <li>
+          Take special precautions to avoid falls and injuries. If you break a bone in your leg,
+          you may require more surgery
+        </li>
+        <li>
+          Make sure your dentist knows that you have a knee replacement. You should be given
+          antibiotics before all dental surgery for the rest of your life
+        </li>
+        <li>
+          See your orthopedic surgeon periodically for a routine follow-up examination and x-
+          rays, usually once a year
+        </li>
+      </ul>
 
-                        <p>
-                            Exercise is a critical component of home care, particularly during the first few weeks after 
-                            surgery. You should be able to resume most normal activities of daily living within 3 to 6 weeks 
-                            following surgery.
-                        </p>
+      <h4 class="kneePartsTitle">Extending the Life of Your Knee Implant</h4>
+      <p>
+        Currently, more than 90% of modern total knee replacements are still functioning well 20 yrs
+        years after the surgery.
+      </p>
+      <p>
+        Following your orthopedic surgeon's instructions after surgery and taking care to protect your
+        knee replacement and your general health are important ways you can contribute to the final
+        success of your surgery.
+      </p>
 
-                        <p>
-                            Some pain with activity and at night is common for several weeks after surgery.
-                        </p>
-
-                        <p>Your activity program should include:</p>
-
-                        <ul>
-                            <li>A graduated walking program to slowly increase your mobility, initially in your home and later outside</li>
-                            <li>Resuming other normal household activities, such as sitting, standing, and climbing stairs</li>
-                            <li>
-                                Specific exercises several times a day to restore movement and strengthen your knee. You 
-                                probably will be able to perform the exercises without help, but you may have a physical 
-                                therapist help you at home or in a therapy center the first few weeks after surgery. 
-                                Involving a physiotherapist fastens your progress.
-                            </li>
-                        </ul>
-
-                        <h4 class="kneePartsTitle">Outcomes</h4>
-
-                        <h4 class="kneePartsTitle">How Your New Knee Is Different</h4>
-
-                        <p>
-                            Improvement of knee motion is a goal of total knee replacement, but restoration of full motion 
-                            depends on preoperative stage. The motion of your knee replacement after surgery can be predicted 
-                            by the range of motion you have before surgery.
-                        </p>
-
-                        <p>
-                            Most patients can expect to be able to almost fully straighten the replaced knee and to bend to 
-                            near normal range. Movements of knee are more than sufficient to climb stairs and get in and out 
-                            of a car, and sit comfortably on a chair or stool.
-                        </p>
-
-                        <p>This is normal:</p>
-
-                        <ul>
-                            <li>Most people feel some numbness in the skin around your incision.</li>
-                            <li>You also may feel some stiffness, particularly with excessive bending activities.</li>
-                            <li>Most people also feel or hear some clicking of the metal and plastic with knee bending or walking.</li>
-                        </ul>
-
-                        <p>
-                            These differences often diminish with time and most patients find them to be tolerable when compared 
-                            with the pain and limited function they experienced prior to surgery.
-                        </p>
-
-                        <p>
-                            Your new knee may activate metal detectors required for security in airports and some buildings. Tell 
-                            the security agent about your knee replacement if the alarm is activated.
-                        </p>
-
-                        <h4 class="kneePartsTitle">Protecting Your Knee Replacement</h4>
-
-                        <ul>
-                            <li>Participate in regular light exercise programs to maintain proper strength and mobility of your new knee</li>
-                            <li>Take special precautions to avoid falls and injuries; a fracture may require more surgery</li>
-                            <li>Make sure your dentist knows that you have a knee replacement; antibiotics are required before dental surgery</li>
-                            <li>See your orthopedic surgeon periodically for routine follow-up examination and x-rays, usually once a year</li>
-                        </ul>
-
-                        <h4 class="kneePartsTitle">Extending the Life of Your Knee Implant</h4>
-
-                        <p>
-                            Currently, more than 90% of modern total knee replacements are still functioning well 20 years after 
-                            the surgery. Following your orthopedic surgeon's instructions after surgery and taking care to protect 
-                            your knee replacement and general health are important ways you can contribute to the final success 
-                            of your surgery.
-                        </p>
-
-                    </div>
-
-
-                `},
+    </div>
+  `
+},
                 { 
                 id: "Preparing-for-knee-Replacement" ,
                 tabTitle: "knee Replacement Surgery", 
