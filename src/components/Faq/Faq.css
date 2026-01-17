@@ -139,6 +139,19 @@
   text-decoration: none;
 }
 
+.faq-bullet-list {
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.faq-bullet-list li {
+  list-style-type: disc;
+  margin-bottom: 6px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
 /* ======================
       RESPONSIVE
 ====================== */

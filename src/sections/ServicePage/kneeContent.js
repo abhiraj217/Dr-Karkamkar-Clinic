@@ -12,7 +12,7 @@ import arthoscoopyimageknee1 from "../../assets/ServicesPageImages/KneeArthoscop
 import arthoscoopyimageknee2 from "../../assets/ServicesPageImages/kneArthoscopyImagemrthod.png";
 import kneemeniscusImage from "../../assets/ServicesPageImages/kneetearmisclinoutypesImage.png";
 import kneemeniscusImage2 from "../../assets/ServicesPageImages/kneeMicslineousimage2.png";
-import kneemeniscusImage3 from "../../assets/ServicesPageImages/musilineausRepair.png";
+import kneemeniscusImage3 from "../../assets/ServicesPageImages/newMislineausRepair.png";
 import kneeReplacementImage from "../../assets/ServicesPageImages/kneeReplacementImage.png";
 import kneeReplacementXrayImage from "../../assets/ServicesPageImages/kneeReplacementXray.png";
 import kneeReplacementArthhiticsImage from "../../assets/ServicesPageImages/kneeReplacementXrayArthitics.png";
@@ -484,11 +484,11 @@ const kneeContent = {
 
                 <div class ="repairImageDiv">
                     <div class="arthroscopy-img-2 repairImageInnerDiv">
-                            <img src=${kneemeniscusImage2} alt="arthoscopyImage" />
+                            <img src=${kneemeniscusImage3} alt="arthoscopyImage" />
                             <p class="kneePartsTitle centerAlignedknee ">Meniscus repair</p>
                     </div>
                     <div class="arthroscopy-img-2 repairImageInnerDiv">
-                            <img src=${kneemeniscusImage3} alt="arthoscopyImage" />
+                            <img src=${kneemeniscusImage2} alt="arthoscopyImage" />
                             <p class="kneePartsTitle centerAlignedknee">ACL Reconstruction</p>
                     </div>
                 </div>
