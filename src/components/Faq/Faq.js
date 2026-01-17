@@ -14,6 +14,36 @@ const toSentenceCase = (text = "") => {
   return lower.charAt(0).toUpperCase() + lower.slice(1);
 };
 
+/* ✅ Render answers as bullet points */
+const renderAnswerWithBullets = (answer = "") => {
+  if (!answer) return null;
+
+  const points = answer
+    .split("\n")
+    .map((line) => line.trim())
+    .filter(Boolean);
+
+  return (
+    <ul className="faq-bullet-list">
+      {points.map((point, index) => {
+        const hasHTML = /<\/?[a-z][\s\S]*>/i.test(point);
+
+        return (
+          <li key={index}>
+            {hasHTML ? (
+              <span dangerouslySetInnerHTML={{ __html: point }} />
+            ) : (
+              point
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
+
+
 const Faq = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -38,6 +68,18 @@ const Faq = () => {
           }}
         >
           Knee Replacement
+        </button>
+
+        <button
+          className={`faq-tab ${
+            activeTab === "kneeArthroscopy" ? "active" : ""
+          }`}
+          onClick={() => {
+            setActiveTab("kneeArthroscopy");
+            setOpenIndex(null);
+          }}
+        >
+          Knee Arthroscopy
         </button>
 
         <button
@@ -76,18 +118,6 @@ const Faq = () => {
 
         <button
           className={`faq-tab ${
-            activeTab === "kneeArthroscopy" ? "active" : ""
-          }`}
-          onClick={() => {
-            setActiveTab("kneeArthroscopy");
-            setOpenIndex(null);
-          }}
-        >
-          Knee Arthroscopy
-        </button>
-
-        <button
-          className={`faq-tab ${
             activeTab === "sportsMedicine" ? "active" : ""
           }`}
           onClick={() => {
@@ -121,9 +151,7 @@ const Faq = () => {
             >
               {toSentenceCase(item.q)}
               <span
-                className={`faq-arrow ${
-                  openIndex === index ? "open" : ""
-                }`}
+                className={`faq-arrow ${openIndex === index ? "open" : ""}`}
               >
                 ▾
               </span>
@@ -131,10 +159,7 @@ const Faq = () => {
 
             {openIndex === index && (
               <div className="faq-answer">
-                {/* Render HTML safely */}
-                <div
-                  dangerouslySetInnerHTML={{ __html: item.a }}
-                />
+                {renderAnswerWithBullets(item.a)}
               </div>
             )}
           </div>

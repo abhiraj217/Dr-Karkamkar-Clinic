@@ -22,7 +22,7 @@ const faqData = {
   },
   {
     q: "Knee injections – what, why, when, and usefulness?",
-    a: "Three types of injections are available:\n1. Steroid injections – provide instant pain relief but for a short duration.\n2. Hyaluronic acid injections – useful in early-stage osteoarthritis or in severe arthritis for patients who are medically unfit or want to delay surgery temporarily.\n3. Platelet-rich plasma (PRP) – used in early-stage osteoarthritis and may partially reverse degeneration and help in cartilage regeneration."
+    a: "Three types of injections are available:\nSteroid injections – provide instant pain relief but for a short duration.\n Hyaluronic acid injections – useful in early-stage osteoarthritis or in severe arthritis for patients who are medically unfit or want to delay surgery temporarily.\n Platelet-rich plasma (PRP) – used in early-stage osteoarthritis and may partially reverse degeneration and help in cartilage regeneration."
   },
   {
     q: "Should I wait as long as possible for knee replacement?",
@@ -251,7 +251,7 @@ sportsMedicine: [
 trauma: [
   {
     q: "When should ice packs be used and when is hot fomentation advised?",
-    a: "Ice packs:\nRecommended immediately after an injury when there is pain, swelling, or disability.\n\nHot fomentation:\nUseful for chronic pain, age-related pain, pain due to overactivity, or mechanical overloading of muscles and joints."
+    a: "Ice packs \nRecommended immediately after an injury when there is pain, swelling, or disability.\n\nHot fomentation:\nUseful for chronic pain, age-related pain, pain due to overactivity, or mechanical overloading of muscles and joints."
   },
   {
     q: "What is a slab and what is a cast?",
