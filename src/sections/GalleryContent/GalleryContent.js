@@ -47,7 +47,7 @@ const videoList = [
   },
    {
     id: 6,
-    url: "https://www.youtube.com/embed/es1TNw19y2M",
+    url: "https://youtu.be/dtv7NLinJac?si=6YUFd23bNK_P5maY",
   },
   {
     id: 7,
